@@ -292,9 +292,6 @@ a {
   .title__h4 {
     font-size: 4rem;
   }
-
-  .title__description {
-  }
 }
 /*
   @media (min-width: 48rem) {
@@ -341,10 +338,6 @@ a {
   animation: slideIn auto;
   animation-timeline: view();
   animation-range: entry 0% entry 100%;
-}
-
-.section:nth-child(even) {
-  /* border: 3px solid var(--red); */
 }
 
 @keyframes scroll-indicator {
