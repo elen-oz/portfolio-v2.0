@@ -7,9 +7,26 @@
   --red: #b91c1c;
   --dark-text: #262626;
   --dark-gray: #525252;
+  --gray: #979797;
   --neutral-gray: #737373;
   --light-gray: #fafafa;
 }
+
+/* @media (min-width: 36rem) {
+
+}
+
+@media (min-width: 48rem) {
+
+}
+
+@media (min-width: 62rem) {
+
+}
+
+@media (min-width: 75rem) {
+
+} */
 
 html,
 body {
@@ -61,7 +78,7 @@ a {
 }
 
 .header {
-  /* border: 1px solid red; */
+  max-width: 100%;
 }
 
 .header__wrapper {
@@ -74,18 +91,126 @@ a {
   width: 6rem;
 }
 
-.nav-main__list {
+.nav-mobile {
+}
+
+@media (min-width: 36rem) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--neutral-gray);
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: 0.3s;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+
+  width: 18rem;
+  height: fit-content;
+  margin: 0;
+  padding: 60px 0 30px;
+  list-style: none;
+  text-align: center;
+  background-color: #eceff1;
+  box-shadow: -7px 0px 20px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+}
+
+.menu__item {
+  display: block;
+  padding: 20px 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.menu__item:hover {
+  color: var(--light-gray);
+  background-color: var(--gray);
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 36rem) {
+  .nav-desktop {
+    display: block;
+  }
+}
+
+.nav-desktop__list {
   padding: 0 1rem;
   display: flex;
   gap: 1rem;
   list-style: none;
 }
 
-.nav-main__link {
+.nav-desktop__link {
   text-decoration: none;
   transition: 0.2s;
 }
-.nav-main__link:hover {
+.nav-desktop__link:hover {
   border-bottom: 2px solid var(--red);
 }
 
@@ -153,6 +278,7 @@ a {
 }
 
 .footer {
+  max-width: 100%;
   flex: 0 0 auto;
   text-align: center;
   color: var(--light-gray);

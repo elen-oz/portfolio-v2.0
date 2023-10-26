@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Elena Ozerova's portfolio</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
@@ -33,19 +34,42 @@
               src="./assets/logo-elena.png"
               alt="Logo with name Elena"
             />
-            <nav class="nav-main">
-              <ul class="nav-main__list">
-                <li class="nav-main__item">
-                  <a class="nav-main__link" href="#about">About</a>
+
+            <nav class="nav-mobile">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+
+              <ul class="menu__box">
+                <li>
+                  <a class="menu__item" href="#about">About</a>
                 </li>
-                <li class="nav-main__item">
-                  <a class="nav-main__link" href="#skills">Skills</a>
+                <li>
+                  <a class="menu__item" href="#skills">Skills</a>
                 </li>
-                <li class="nav-main__item">
-                  <a class="nav-main__link" href="#work">Work</a>
+                <li>
+                  <a class="menu__item" href="#work">Work</a>
                 </li>
-                <li class="nav-main__item">
-                  <a class="nav-main__link" href="#contact">Contact</a>
+                <li>
+                  <a class="menu__item" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="nav-desktop">
+              <ul class="nav-desktop__list">
+                <li class="nav-desktop__item">
+                  <a class="nav-desktop__link" href="#about">About</a>
+                </li>
+                <li class="nav-desktop__item">
+                  <a class="nav-desktop__link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-desktop__item">
+                  <a class="nav-desktop__link" href="#work">Work</a>
+                </li>
+                <li class="nav-desktop__item">
+                  <a class="nav-desktop__link" href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
