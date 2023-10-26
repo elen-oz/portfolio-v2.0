@@ -304,7 +304,7 @@ a {
   width: 100%;
   height: fit-content;
 
-  place-self: center;
+  place-self: start;
 
   display: flex;
   flex-direction: column;
@@ -318,8 +318,9 @@ a {
 
 .project-image {
   object-fit: cover;
+  object-position: top;
   width: 100%;
-  /* height: ; */
+  max-height: 160px;
 }
 .project-info {
 }
