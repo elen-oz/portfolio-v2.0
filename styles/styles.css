@@ -1,5 +1,5 @@
 @import url(./normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;600;700;800;900&family=Raleway:wght@200;400;600&display=swap');
 
 :root {
   --dark-theme-bg: #1f2937;
@@ -39,10 +39,15 @@ h5 {
 
 } */
 
+/* 
+font-family: 'Lexend', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lexend', sans-serif;
   background-color: var(--light-gray);
   scroll-behavior: smooth;
 }
@@ -90,6 +95,7 @@ a {
 
 .header {
   max-width: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header__wrapper {
@@ -318,14 +324,12 @@ a {
   transform-origin: 0 0;
 }
 
-.link-to-top a {
+#link-to-top {
+  font-weight: 300;
+  display: block;
   z-index: 1000;
   width: 2.3rem;
   height: 2.3rem;
-
-  /* line-height: 0.5;
-  /* padding: 1rem; */
-  /* line-height: 0.5; */
   position: fixed;
   right: 1rem;
   bottom: 1rem;
@@ -333,8 +337,8 @@ a {
   text-decoration: none;
   font-size: 2rem;
   text-align: center;
-  color: #fff;
-  background-color: var(--red);
+  color: var(--red);
+  border: var(--border);
 }
 
 .section__container {
@@ -492,6 +496,7 @@ a {
 
 .footer {
   max-width: 100%;
+  font-family: 'Raleway', sans-serif;
   flex: 0 0 auto;
   text-align: center;
   color: var(--light-gray);
