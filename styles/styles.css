@@ -66,18 +66,30 @@ a {
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 6rem;
 }
 
 .nav-main__list {
-  padding: 0;
+  padding: 0 1rem;
   display: flex;
   gap: 1rem;
   list-style: none;
 }
 
+.nav-main__link {
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav-main__link:hover {
+  border-bottom: 2px solid var(--red);
+}
+
 .main {
   flex: 1 0 auto;
-  /* border: 1px solid blue; */
 }
 
 .hero-section > .container {
