@@ -467,7 +467,7 @@ a {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 5%;
+  top: 40%;
   font-size: 1.3em;
   text-align: center;
   /* text-transform: uppercase; */
@@ -476,7 +476,7 @@ a {
   transition: top 0.5s ease;
 }
 .hover-effect:hover .hover-effect__title {
-  top: 0%;
+  top: 20%;
 }
 
 .hover-effect-button {
