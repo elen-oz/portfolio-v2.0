@@ -321,8 +321,9 @@ a {
 }
 
 .section__subtitle {
-  font-size: 1.3rem;
-  color: black;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--dark-text);
 }
 
 @keyframes slideIn {
