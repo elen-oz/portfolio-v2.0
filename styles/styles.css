@@ -1,0 +1,57 @@
+@import url(./normalize.css);
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0 1rem;
+  border: 2px solid gray;
+}
+
+@media (min-width: 36rem) {
+  .container {
+    max-width: 33rem;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 48rem) {
+  .container {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .container {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .container {
+    max-width: 71rem;
+  }
+}
+
+.header {
+  border: 2px solid red;
+}
+.main {
+  flex: 1 0 auto;
+  border: 2px solid blue;
+}
+.footer {
+  flex: 0 0 auto;
+  text-align: center;
+  border: 2px solid green;
+}
