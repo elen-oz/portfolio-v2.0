@@ -100,11 +100,11 @@ a {
   }
 }
 
-#menu__toggle {
+#mobile-menu__toggle {
   opacity: 0;
 }
 
-.menu__btn {
+.mobile-menu__btn {
   display: flex;
   align-items: center;
   position: fixed;
@@ -116,31 +116,31 @@ a {
   z-index: 1;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.mobile-menu__btn > span,
+.mobile-menu__btn > span::before,
+.mobile-menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: var(--neutral-gray);
 }
-.menu__btn > span::before {
+.mobile-menu__btn > span::before {
   content: '';
   top: -8px;
 }
-.menu__btn > span::after {
+.mobile-menu__btn > span::after {
   content: '';
   top: 8px;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.mobile-menu__btn > span,
+.mobile-menu__btn > span::before,
+.mobile-menu__btn > span::after {
   transition-duration: 0.3s;
 }
 
-.menu__box {
+.mobile-menu__box {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -158,7 +158,7 @@ a {
   transition-duration: 0.3s;
 }
 
-.menu__item {
+.mobile-menu__item {
   display: block;
   padding: 20px 20px;
   color: #333;
@@ -168,23 +168,23 @@ a {
   transition-duration: 0.3s;
 }
 
-.menu__item:hover {
+.mobile-menu__item:hover {
   color: var(--light-gray);
   background-color: var(--gray);
 }
 
-#menu__toggle:checked ~ .menu__btn > span {
+#mobile-menu__toggle:checked ~ .mobile-menu__btn > span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked ~ .menu__btn > span::before {
+#mobile-menu__toggle:checked ~ .mobile-menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
-#menu__toggle:checked ~ .menu__btn > span::after {
+#mobile-menu__toggle:checked ~ .mobile-menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+#mobile-menu__toggle:checked ~ .mobile-menu__box {
   visibility: visible;
   right: 0;
 }
@@ -199,18 +199,18 @@ a {
   }
 }
 
-.nav-desktop__list {
+.desktop-menu__list {
   padding: 0 1rem;
   display: flex;
   gap: 1rem;
   list-style: none;
 }
 
-.nav-desktop__link {
+.desktop-menu__link {
   text-decoration: none;
   transition: 0.2s;
 }
-.nav-desktop__link:hover {
+.desktop-menu__link:hover {
   border-bottom: 2px solid var(--red);
 }
 
