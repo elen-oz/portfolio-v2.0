@@ -18,6 +18,10 @@ body {
   background-color: var(--light-gray);
 }
 
+a {
+  color: inherit;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -25,7 +29,6 @@ body {
 }
 
 .container {
-  height: 100%;
   padding: 0 1rem;
   border: 1px solid gray;
 }
@@ -57,7 +60,7 @@ body {
 }
 
 .header {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header__wrapper {
@@ -74,7 +77,17 @@ body {
 
 .main {
   flex: 1 0 auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+
+.hero-section > .container {
+  height: 90vh;
+}
+
+.section__title {
+  margin: 0 1rem;
+  display: inline-block;
+  border-bottom: 3px solid var(--red);
 }
 
 @keyframes slideIn {
@@ -97,7 +110,7 @@ body {
 }
 
 .section:nth-child(even) {
-  border: 3px solid var(--red);
+  /* border: 3px solid var(--red); */
 }
 
 @keyframes scroll-indicator {
@@ -127,5 +140,6 @@ body {
 .footer {
   flex: 0 0 auto;
   text-align: center;
-  border: 1px solid green;
+  color: var(--light-gray);
+  background-color: var(--neutral-gray);
 }
