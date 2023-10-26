@@ -1,8 +1,10 @@
 @import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
 
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
