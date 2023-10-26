@@ -318,6 +318,25 @@ a {
   transform-origin: 0 0;
 }
 
+.link-to-top a {
+  z-index: 1000;
+  width: 2.3rem;
+  height: 2.3rem;
+
+  /* line-height: 0.5;
+  /* padding: 1rem; */
+  /* line-height: 0.5; */
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: var(--red);
+}
+
 .section__container {
   max-height: fit-content;
 }
