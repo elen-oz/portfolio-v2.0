@@ -221,7 +221,24 @@ a {
 .hero-section > .container {
   height: 90vh;
 }
-
+.hero__h3,
+.hero__h4 {
+  margin: 0;
+  padding: 0;
+}
+.hero__h3 {
+  color: var(--red);
+}
+.hero__image {
+  max-width: 13rem;
+}
+.hero__h4 {
+  font-size: 2rem;
+  color: var(--dark-gray);
+}
+.hero__description {
+}
+/* -------------------- */
 .section__title {
   padding-top: 3rem;
 }
