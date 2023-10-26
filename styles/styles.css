@@ -339,37 +339,42 @@ a {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 5%; /* Отступ сверху */
-  font-size: 1.3em; /* Размер текста заголовка */
+  top: 5%;
+  font-size: 1.3em;
   text-align: center;
-  /* text-transform: uppercase;  */
-  color: white; /* Цвет заголовка */
+  /* text-transform: uppercase; */
+  color: white;
   z-index: 1;
   transition: top 0.5s ease;
 }
 .hover-effect:hover .hover-effect__title {
-  top: 0%; /* Отступ сверху при наведении */
+  top: 0%;
 }
 
 .hover-effect__button {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 65%; /* Отступ сверху */
+  top: 65%;
   text-align: center;
   opacity: 0;
   transition: opacity 0.35s ease;
 }
 .hover-effect__button a {
-  padding: 15px 40px; /* Отступ */
+  text-decoration: none;
+  padding: 15px 40px;
   text-align: center;
-  background: #ff921e; /* Цвет кнопки */
-  color: white; /* Цвет текста */
-  border: 1px solid white; /* Ширина, стиль и цвет границы */
+
+  border: 2px solid var(--red);
+  color: white;
   z-index: 1;
+  transition: 0.5s;
 }
 .hover-effect:hover .hover-effect__button {
   opacity: 1;
+}
+.hover-effect__button:hover a {
+  background: var(--red);
 }
 
 .project-image {
