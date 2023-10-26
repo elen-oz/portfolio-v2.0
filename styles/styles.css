@@ -14,7 +14,7 @@ body {
 .container {
   height: 100%;
   padding: 0 1rem;
-  border: 2px solid gray;
+  border: 1px solid gray;
 }
 
 @media (min-width: 36rem) {
@@ -44,14 +44,28 @@ body {
 }
 
 .header {
-  border: 2px solid red;
+  border: 1px solid red;
 }
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-main__list {
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  border: 1px solid orange;
+}
+
 .main {
   flex: 1 0 auto;
-  border: 2px solid blue;
+  border: 1px solid blue;
 }
 .footer {
   flex: 0 0 auto;
   text-align: center;
-  border: 2px solid green;
+  border: 1px solid green;
 }
