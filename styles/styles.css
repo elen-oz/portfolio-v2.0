@@ -10,6 +10,8 @@
   --gray: #979797;
   --neutral-gray: #737373;
   --light-gray: #fafafa;
+
+  --border: 3px solid var(--red);
 }
 
 h1,
@@ -224,7 +226,7 @@ a {
   transition: 0.2s;
 }
 .desktop-menu__link:hover {
-  border-bottom: 2px solid var(--red);
+  border-bottom: var(--border);
 }
 
 .main {
@@ -263,7 +265,7 @@ a {
 
   font-size: 2rem;
   display: inline-block;
-  border-bottom: 3px solid var(--red);
+  border-bottom: var(--border);
 }
 
 .section__subtitle {
@@ -407,29 +409,40 @@ a {
   top: 0%;
 }
 
-.hover-effect__button {
+.hover-effect-button {
   position: absolute;
-  width: 100%;
+  opacity: 0;
   left: 0;
   top: 65%;
   text-align: center;
-  opacity: 0;
+}
+.hero-button a {
+  background-color: var(--red);
+}
+.hero-button:hover a {
+  background-color: #fff !important;
+  color: var(--red);
+  border: var(--border);
+}
+
+.site-button {
+  width: 100%;
   transition: opacity 0.35s ease;
 }
-.hover-effect__button a {
+.site-button a {
   text-decoration: none;
   padding: 15px 40px;
   text-align: center;
 
-  border: 2px solid var(--red);
+  border: var(--border);
   color: white;
   z-index: 1;
   transition: 0.5s;
 }
-.hover-effect:hover .hover-effect__button {
+.hover-effect:hover .hover-effect-button {
   opacity: 1;
 }
-.hover-effect__button:hover a {
+.site-button:hover a {
   background: var(--red);
 }
 
