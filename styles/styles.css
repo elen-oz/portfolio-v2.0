@@ -88,8 +88,27 @@ a {
 }
 
 .header__logo {
-  width: 6rem;
+  margin-right: 3rem;
+  width: 4rem;
 }
+@media (min-width: 36rem) {
+  .header__logo {
+    margin-right: 0;
+    width: 6rem;
+  }
+}
+/* 
+@media (min-width: 48rem) {
+
+}
+
+@media (min-width: 62rem) {
+
+}
+
+@media (min-width: 75rem) {
+
+} */
 
 .nav-mobile {
 }
