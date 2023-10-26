@@ -98,6 +98,10 @@ a {
 }
 
 .section__title {
+  padding-top: 3rem;
+}
+
+.section__title {
   margin: 0 1rem;
   display: inline-block;
   border-bottom: 3px solid var(--red);
@@ -115,8 +119,6 @@ a {
 
 .section {
   height: 70vh;
-  /* padding: 10rem 0; */
-  border-bottom: 1px solid #ddd;
   animation: slideIn auto;
   animation-timeline: view();
   animation-range: entry 0% entry 100%;
