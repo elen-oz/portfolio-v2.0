@@ -556,7 +556,6 @@ a {
 .projects-section {
   animation: none;
 }
-/* V */
 .projects-title-page {
   width: 7rem;
   margin: 2rem auto;
@@ -564,14 +563,12 @@ a {
   border-bottom: var(--border);
 }
 
-/* V */
 .projects-subtitle {
   padding-top: 0;
   display: block;
   border: none;
   font-size: 1.2rem;
 }
-/* V */
 .text-accent {
   color: var(--red);
 }
@@ -580,17 +577,14 @@ a {
 .projects-list li {
   list-style-type: none;
 }
-/* V */
 .projects-list li:before {
   content: '\203A \2002';
 }
-/* V */
 .projects-card {
   padding-top: 3rem;
   max-width: 500px;
   margin: 0 auto;
 }
-/* V */
 .button-container {
   width: 100%;
   text-align: center;
@@ -600,28 +594,6 @@ a {
   gap: 3rem;
 }
 
-/* 
-V переименовать site-button в > button-link-wrapper
-.button-link-wrapper {
-  width: 100%;
-  transition: opacity 0.35s ease;
-}
-.button-link-wrapper a {
-  padding: 15px 40px;
-  text-align: center;
-
-  border: var(--border);
-  color: white;
-  z-index: 1;
-  transition: 0.3s;
-}
-.hover-effect:hover .hover-effect-button {
-  opacity: 1;
-}
-.button-link-wrapper:hover a {
-  background: var(--red);
-} */
-
 /* ? переименовать site-button--width и обьединить с а? (это ДИВ) */
 .site-button--width {
   display: flex;
@@ -630,7 +602,6 @@ V переименовать site-button в > button-link-wrapper
   flex: 1;
 }
 
-/* V переименовать site-button--projects в button-link (это ссылка) */
 .button-link {
   display: inline-block;
   width: 100%;
@@ -652,11 +623,9 @@ V переименовать site-button в > button-link-wrapper
   background-color: var(--dark-gray) !important;
 }
 
-/* V */
 .projects-image {
   display: block;
   width: 100%;
-  /* margin: 0 auto; */
   padding-top: 2rem;
 }
 
