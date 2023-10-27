@@ -5,7 +5,7 @@
   --dark-theme-bg: #1f2937;
   --dark-theme-text: #d4d4d4;
   --red: #b91c1c;
-  --dark-text: #262626;
+  --dark-text: #2e2e2e;
   --dark-gray: #525252;
   --gray: #979797;
   --neutral-gray: #737373;
@@ -92,6 +92,7 @@ a {
 .header {
   max-width: 100%;
   font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 .header__wrapper {
@@ -500,7 +501,7 @@ a {
   border: var(--border);
   color: white;
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .hover-effect:hover .hover-effect-button {
   opacity: 1;
