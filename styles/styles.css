@@ -262,9 +262,7 @@ a {
 }
 .title__h4 {
   font-size: 2rem;
-  line-height: 3.9rem;
   color: var(--neutral-gray);
-  margin-bottom: 0.5rem;
 }
 
 .title__description {
@@ -284,7 +282,7 @@ a {
   }
 }
 
-.description__about {
+.description__two-col {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -301,7 +299,7 @@ a {
 }
 
 @media (min-width: 48rem) {
-  .description__about {
+  .description__two-col {
     margin: 0 auto;
     max-width: 800px;
     display: flex;
@@ -309,12 +307,15 @@ a {
     justify-content: center;
     gap: 1.5rem;
   }
-  .description--left-col {
+  .description__two-col--skills {
+    gap: 3rem;
+  }
+  .description--first-col {
     margin: 1rem auto 2rem;
     text-align: right;
     flex: 1;
   }
-  .description--right-col {
+  .description--second-col {
     margin: 1rem auto 2rem;
     flex: 1;
   }
@@ -322,23 +323,22 @@ a {
 
 .section__title {
   padding-top: 3rem;
-  /* margin: 0 1rem; */
   margin: 0 0 1rem;
-
   font-size: 2rem;
   display: inline-block;
   border-bottom: var(--border);
 }
 
 .section__subtitle {
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: 400;
   color: var(--dark-text);
 }
-.subtitle--about {
+.subtitle--second {
   font-weight: 800;
   color: var(--dark-gray);
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 @keyframes slideIn {
@@ -420,9 +420,19 @@ a {
     bottom: 3rem;
   }
 }
+.skills__container {
+}
+.skills__container--first {
+}
+.skills__container--second {
+}
 
 .section__container {
   max-height: fit-content;
+}
+
+.skills__img {
+  max-width: 80px;
 }
 
 .grid__container {

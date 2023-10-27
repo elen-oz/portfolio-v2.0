@@ -84,7 +84,9 @@
               <h3 class="title__h3">Hi! I am</h3>
               <img class="hero__image" src="./assets/my-name.png" alt="Elena" />
 
-              <h4 class="title__h4">and I love programming</h4>
+              <h4 class="title__h4" style="line-height: 3.5rem">
+                and I love programming
+              </h4>
               <p class="title__description">
                 An enthusiastic <strong>Frontend Developer</strong> based in
                 Stockholm, Sweden.
@@ -95,31 +97,27 @@
             </div>
           </section>
 
-          <div class="scroll-indicator"></div>
-
-          <a href="#top"
-            ><span id="link-to-top"
-              ><img src="./assets/up-arrow.svg" alt="" /></span
-          ></a>
-
           <section class="section" id="about">
             <h2 class="section__title">About</h2>
 
-            <h4 class="section__subtitle subtitle--about">
+            <h4
+              class="section__subtitle subtitle--second"
+              style="text-align: center"
+            >
               Hey, I'm Elena Ozerova
             </h4>
-            <div class="description__about">
-              <p class="title__description description--left-col">
+            <div class="description__two-col">
+              <div class="title__description description--first-col">
                 &mdash; Frontend developer with over a year of self-study in
                 frontend development. Currently enhancing my skills at
                 <strong>Hyper Island&#39;s</strong> program. Proficient in React
                 and JavaScript, I&#39;m dedicated to delivering top-quality
                 solutions.
-              </p>
-              <p class="title__description description--right-col">
+              </div>
+              <div class="title__description description--second-col">
                 Eager for new opportunities and collaborations, let&#39;s create
                 exceptional digital applications together!
-              </p>
+              </div>
             </div>
           </section>
 
@@ -129,7 +127,70 @@
             <h4 class="section__subtitle">
               &#47;&#47;&nbsp;These are the technologies I&#39;ve worked with
             </h4>
-            <p class="title__description">Description</p>
+            <div class="description__two-col description__two-col--skills">
+              <div class="title__description description--first-col">
+                <h4 class="subtitle--second">Feel confident in:</h4>
+                <div class="skills__container skills__container--first">
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/html_logo.svg"
+                    alt=""
+                  />
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/css_logo.svg"
+                    alt=""
+                  />
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/git_logo.svg"
+                    alt=""
+                  />
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/javascript_logo.svg"
+                    alt=""
+                  />
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/react_logo.svg"
+                    alt=""
+                  />
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/terminal__logo.svg"
+                    alt=""
+                  />
+
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/bootstrap_logo.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="title__description description--second-col">
+                <h4 class="subtitle--second">Currently studying:</h4>
+                <div class="skills__container skills__container--second">
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/typescript_logo.svg"
+                    alt=""
+                  />
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/node_icon.svg"
+                    alt=""
+                  />
+
+                  <img
+                    class="skills__img"
+                    src="./assets/skills/firebase_logo.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </section>
 
           <section class="section" id="work">
@@ -273,6 +334,13 @@
             </h4>
           </section>
         </div>
+
+        <div class="scroll-indicator"></div>
+
+        <a href="#top"
+          ><span id="link-to-top"
+            ><img src="./assets/up-arrow.svg" alt="" /></span
+        ></a>
       </main>
       <footer class="footer">
         <div class="container">
