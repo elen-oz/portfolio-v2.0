@@ -14,6 +14,10 @@
   --border: 3px solid var(--red);
 }
 
+/* * {
+  box-sizing: border-box;
+} */
+
 h1,
 h2,
 h3,
@@ -459,6 +463,7 @@ a {
   background: var(--red);
 }
 
+/* --- переименовать в work из project */
 .project-image {
   object-fit: cover;
   object-position: top;
@@ -542,13 +547,93 @@ a {
 }
 
 .footer__icon {
-  margin-left: 1rem;
+  margin-left: 0.7rem;
   display: inline-block;
   width: 16px;
   height: 16px;
 }
 
 /* --------- WORK PAGE ----------- */
+.projects-section {
+  animation: none;
+}
+
+.projects-title-page {
+  width: 7rem;
+  margin: 2rem auto;
+  display: inline-block;
+  border-bottom: var(--border);
+}
+
+.projects-subtitle {
+  padding-top: 0;
+  display: block;
+  border: none;
+  font-size: 1.2rem;
+}
+.text-accent {
+  color: var(--red);
+}
+
+.projetcs-list li {
+  list-style-type: none;
+}
+
+.projetcs-list li:before {
+  content: '\203A \2002';
+}
+
+.projects-card {
+  padding-top: 3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.projects-image {
+  display: block;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-top: 2rem;
+}
+
+.button-container {
+  /* margin: 0 auto; */
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.site-button--width {
+  display: flex;
+}
+.site-button--width a {
+  flex: 1;
+}
+
+.site-button--projects {
+  display: inline-block;
+  width: 100%;
+  color: var(--red) !important;
+  position: relative;
+}
+.site-button--projects:hover {
+  color: var(--light-gray) !important;
+  border-color: var(--dark-gray);
+  background-color: var(--dark-gray) !important;
+}
+
+.button-red {
+  color: var(--light-gray) !important;
+  background-color: var(--red);
+}
+.button-red:hover {
+  border-color: var(--dark-gray);
+  background-color: var(--dark-gray) !important;
+}
+
+/* --------- MEDIA ------------ */
 
 @media (min-width: 36rem) {
   .container {
