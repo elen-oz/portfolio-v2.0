@@ -548,6 +548,8 @@ a {
   height: 16px;
 }
 
+/* --------- WORK PAGE ----------- */
+
 @media (min-width: 36rem) {
   .container {
     max-width: 33rem;
