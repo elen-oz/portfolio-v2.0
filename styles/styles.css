@@ -458,15 +458,7 @@ a {
   padding: 0.2rem 0.5rem 0.5rem 0.5rem;
 }
 
-/* .contact__wrapper {
-  margin: 0 auto;
-} */
-
-.contact__container {
-  /* margin: 0 auto; */
-}
-
-.contact__div {
+.item-container {
   margin: 0 auto;
 
   display: flex;
