@@ -58,6 +58,10 @@ a {
   border: 1px solid gray;
 }
 
+.section:last-child {
+  margin-bottom: 3rem;
+}
+
 .header {
   max-width: 100%;
   font-family: 'Raleway', sans-serif;
