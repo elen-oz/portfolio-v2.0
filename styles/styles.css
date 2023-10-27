@@ -146,6 +146,19 @@ a {
   align-items: end;
 }
 
+.menu__item {
+  position: relative;
+}
+
+.menu__item--mail {
+  top: 3px;
+}
+
+/* .menu__link--mail {
+  position: absolute;
+  top: -10px;
+} */
+
 .menu__link {
   padding: 0.5rem;
   display: inline-block;
@@ -407,7 +420,7 @@ a {
   transition: top 0.5s ease;
 }
 .hover-effect:hover .hover-effect__title {
-  top: 20%;
+  top: 15%;
 }
 
 .hover-effect-button {
