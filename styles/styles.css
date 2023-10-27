@@ -443,11 +443,11 @@ a {
   border: var(--border);
 }
 
-.site-button {
+.button-link-wrapper {
   width: 100%;
   transition: opacity 0.35s ease;
 }
-.site-button a {
+.button-link-wrapper a {
   padding: 15px 40px;
   text-align: center;
 
@@ -459,7 +459,7 @@ a {
 .hover-effect:hover .hover-effect-button {
   opacity: 1;
 }
-.site-button:hover a {
+.button-link-wrapper:hover a {
   background: var(--red);
 }
 
@@ -490,13 +490,12 @@ a {
 
 .item-container {
   margin: 0 auto;
-
   display: flex;
   justify-content: center;
 }
+
 .contact__item {
   width: 7rem;
-
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
   color: var(--dark-gray);
@@ -557,7 +556,7 @@ a {
 .projects-section {
   animation: none;
 }
-
+/* V */
 .projects-title-page {
   width: 7rem;
   margin: 2rem auto;
@@ -565,39 +564,34 @@ a {
   border-bottom: var(--border);
 }
 
+/* V */
 .projects-subtitle {
   padding-top: 0;
   display: block;
   border: none;
   font-size: 1.2rem;
 }
+/* V */
 .text-accent {
   color: var(--red);
 }
 
-.projetcs-list li {
+/* ? как убрать у всех списков буллеты? */
+.projects-list li {
   list-style-type: none;
 }
-
-.projetcs-list li:before {
+/* V */
+.projects-list li:before {
   content: '\203A \2002';
 }
-
+/* V */
 .projects-card {
   padding-top: 3rem;
   max-width: 500px;
   margin: 0 auto;
 }
-
-.projects-image {
-  display: block;
-  width: 100%;
-  /* margin: 0 auto; */
-  padding-top: 2rem;
-}
-
+/* V */
 .button-container {
-  /* margin: 0 auto; */
   width: 100%;
   text-align: center;
 
@@ -605,6 +599,30 @@ a {
   justify-content: space-between;
   gap: 3rem;
 }
+
+/* 
+V переименовать site-button в > button-link-wrapper
+.button-link-wrapper {
+  width: 100%;
+  transition: opacity 0.35s ease;
+}
+.button-link-wrapper a {
+  padding: 15px 40px;
+  text-align: center;
+
+  border: var(--border);
+  color: white;
+  z-index: 1;
+  transition: 0.3s;
+}
+.hover-effect:hover .hover-effect-button {
+  opacity: 1;
+}
+.button-link-wrapper:hover a {
+  background: var(--red);
+} */
+
+/* ? переименовать site-button--width и обьединить с а? (это ДИВ) */
 .site-button--width {
   display: flex;
 }
@@ -612,13 +630,14 @@ a {
   flex: 1;
 }
 
-.site-button--projects {
+/* V переименовать site-button--projects в button-link (это ссылка) */
+.button-link {
   display: inline-block;
   width: 100%;
   color: var(--red) !important;
   position: relative;
 }
-.site-button--projects:hover {
+.button-link:hover {
   color: var(--light-gray) !important;
   border-color: var(--dark-gray);
   background-color: var(--dark-gray) !important;
@@ -631,6 +650,14 @@ a {
 .button-red:hover {
   border-color: var(--dark-gray);
   background-color: var(--dark-gray) !important;
+}
+
+/* V */
+.projects-image {
+  display: block;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-top: 2rem;
 }
 
 /* --------- MEDIA ------------ */
@@ -708,7 +735,6 @@ a {
     margin: 1rem auto 2rem;
     flex: 1;
   }
-  /* here */
   .skills-separator {
     position: absolute;
     top: 4rem;
