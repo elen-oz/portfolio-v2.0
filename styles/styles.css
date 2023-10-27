@@ -557,6 +557,8 @@ a {
 /* --------- WORK PAGE ----------- */
 .projects-section {
   animation: none;
+  padding-bottom: 3rem;
+  /* border-bottom: 2px solid var(--dark-gray); */
 }
 .projects-title-page {
   width: 7rem;
