@@ -458,6 +458,30 @@ a {
   padding: 0.2rem 0.5rem 0.5rem 0.5rem;
 }
 
+/* .contact__wrapper {
+  margin: 0 auto;
+} */
+
+.contact__container {
+  margin: 0 auto;
+}
+.contact__item {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  text-decoration: none;
+  display: block;
+  width: 400px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.contact__item > svg {
+  padding-right: 0.5rem;
+  width: 1.2rem;
+}
+
 .footer {
   max-width: 100%;
   font-family: 'Raleway', sans-serif;
