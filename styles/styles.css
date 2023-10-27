@@ -126,7 +126,6 @@ a {
 
 .container {
   padding: 0 1rem;
-  border: 1px solid gray;
 }
 
 .section:last-child {
@@ -168,7 +167,6 @@ a {
 .menu__link {
   padding: 0.5rem;
   display: inline-block;
-  /* width: 20px; */
   fill: #818181;
   transition: 0.2s;
 }
@@ -254,7 +252,6 @@ a {
   color: #333;
   font-size: 20px;
   font-weight: 600;
-  /* text-decoration: none; */
   transition-duration: 0.3s;
 }
 
@@ -465,8 +462,7 @@ a {
   background: var(--red);
 }
 
-/* --- переименовать в work из project */
-.project-image {
+.work-image {
   object-fit: cover;
   object-position: top;
   width: 100%;
@@ -476,7 +472,7 @@ a {
   transition: opacity 124ms linear, transform 124ms linear;
 }
 
-.project-image:hover {
+.work-image:hover {
   opacity: 0.9;
 }
 
