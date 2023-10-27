@@ -83,11 +83,11 @@ a {
   }
 }
 
-@media (min-width: 75rem) {
+/* @media (min-width: 75rem) {
   .container {
     max-width: 71rem;
   }
-}
+} */
 
 .header {
   max-width: 100%;
@@ -237,7 +237,7 @@ a {
 }
 
 .container > .hero-section {
-  height: 90vh;
+  height: 50vh;
 }
 
 .hero-section {
