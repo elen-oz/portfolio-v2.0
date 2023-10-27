@@ -584,7 +584,8 @@ a {
     gap: 1.5rem;
   }
   .description__two-col--skills {
-    gap: 3rem;
+    position: relative;
+    gap: 5rem;
   }
   .description--first-col {
     margin: 1rem auto 2rem;
@@ -594,6 +595,14 @@ a {
   .description--second-col {
     margin: 1rem auto 2rem;
     flex: 1;
+  }
+  /* here */
+  .skills-separator {
+    position: absolute;
+    top: 4rem;
+    background-color: var(--red);
+    width: 0.2rem;
+    height: 9rem;
   }
 }
 
