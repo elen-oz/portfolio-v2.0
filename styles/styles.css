@@ -33,9 +33,11 @@ ol {
   padding: 0;
 }
 
-a,
-li {
+a {
   text-decoration: none;
+}
+li {
+  list-style-type: none;
 }
 
 html,
@@ -573,10 +575,6 @@ a {
   color: var(--red);
 }
 
-/* ? как убрать у всех списков буллеты? */
-.projects-list li {
-  list-style-type: none;
-}
 .projects-list li:before {
   content: '\203A \2002';
 }
@@ -594,12 +592,8 @@ a {
   gap: 3rem;
 }
 
-/* ? переименовать site-button--width и обьединить с а? (это ДИВ) */
-.site-button--width {
+.wrapper--flex {
   display: flex;
-}
-.site-button--width a {
-  flex: 1;
 }
 
 .button-link {
