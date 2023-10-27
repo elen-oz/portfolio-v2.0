@@ -598,3 +598,11 @@ a {
   color: var(--light-gray);
   background-color: var(--neutral-gray);
 }
+
+.footer__link {
+  text-decoration: underline;
+}
+
+.footer__link:hover {
+  color: var(--red);
+}
