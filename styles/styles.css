@@ -147,10 +147,13 @@ a {
 .menu__link {
   display: inline-block;
   width: 20px;
+  fill: #818181;
   transition: 0.2s;
 }
+
 .menu__link:hover {
-  box-shadow: -2px 9px 35px -2px rgba(185, 28, 28, 0.51);
+  /* stroke: var(--red); */
+  fill: var(--red);
 }
 
 .logo-container {
