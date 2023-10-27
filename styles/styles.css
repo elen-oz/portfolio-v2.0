@@ -558,7 +558,6 @@ a {
 .projects-section {
   animation: none;
   padding-bottom: 3rem;
-  /* border-bottom: 2px solid var(--dark-gray); */
 }
 .projects-title-page {
   width: 7rem;
@@ -620,7 +619,8 @@ a {
 
 .projects-image {
   display: block;
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   padding-top: 2rem;
 }
 
