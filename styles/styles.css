@@ -63,7 +63,16 @@ a {
   }
 }
 
-.section {
+/* .section {
+  height: fit-content;
+  animation: slideIn auto;
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
+} */
+
+/* class="animation__slide-in" */
+
+.animation__slide-in {
   height: fit-content;
   animation: slideIn auto;
   animation-timeline: view();
