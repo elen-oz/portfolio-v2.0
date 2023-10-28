@@ -81,17 +81,23 @@ a {
 }
 
 .scroll-indicator {
-  z-index: 1000;
-  width: 100%;
-  height: 0.7rem;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: var(--red);
+  display: none;
+}
 
-  animation: scroll-indicator auto linear;
-  animation-timeline: scroll();
-  transform-origin: 0 0;
+@supports (animation-timeline: scroll()) {
+  .scroll-indicator {
+    display: block;
+    z-index: 1000;
+    width: 100%;
+    height: 0.7rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--red);
+    animation: scroll-indicator auto linear;
+    animation-timeline: scroll();
+    transform-origin: 0 0;
+  }
 }
 
 #link-to-top {
@@ -618,6 +624,17 @@ a {
   margin: 0 auto;
   width: 80%;
   padding-top: 2rem;
+}
+
+.section-name {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  border-bottom: var(--border);
+}
+
+p.section-name ~ p {
+  margin-top: 0;
 }
 
 /* --------- MEDIA ------------ */
