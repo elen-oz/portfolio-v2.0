@@ -10,6 +10,7 @@
   /* main / accent / grey */
 
   --accent: #991b1b;
+  --accent-dark: #7f1d1d;
   --main: #737373;
   --gray: #2e2e2e;
   --main-dark: #525252;
@@ -145,9 +146,11 @@ a {
 
 .background {
   width: 100%;
+  height: auto;
   background-image: url('../assets/img/3024-4032_milad-fakurian-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left bottom;
 }
 
 .section:last-child {
@@ -493,8 +496,8 @@ a {
 }
 .button-link:hover {
   color: var(--main-light) !important;
-  border-color: var(--main-dark);
-  background-color: var(--main-dark) !important;
+  border-color: var(--accent-dark);
+  background-color: var(--accent-dark) !important;
 }
 
 .button-red {
@@ -502,8 +505,8 @@ a {
   background-color: var(--accent);
 }
 .button-red:hover {
-  border-color: var(--main-dark);
-  background-color: var(--main-dark) !important;
+  border-color: var(--accent-dark);
+  background-color: var(--accent-dark) !important;
 }
 
 .work-image {
