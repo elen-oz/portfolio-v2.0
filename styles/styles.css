@@ -1,3 +1,8 @@
+/* Todo: */
+/* * -- Изменить анимацию на праллакс? */
+/* * -- сделать хедер фиксированным */
+/* * -- разбить файл CSS на подкатегории: глобал/лайаут/сомонентс/медиа-запросы/  ресет? */
+
 @import url(./normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;600;700;800;900&family=Raleway:wght@200;400;600&display=swap');
 
