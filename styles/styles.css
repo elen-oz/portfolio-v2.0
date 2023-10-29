@@ -16,7 +16,8 @@
   --main-dark: #525252;
   --main-light: #f5f5f5;
 
-  --border: 3px solid var(--accent);
+  /* --border: 3px solid var(--accent); */
+  --border: 3px solid;
 }
 
 /* * {
@@ -364,7 +365,7 @@ a {
 }
 
 .desktop-menu__link:hover {
-  border-bottom: var(--border);
+  border-bottom: var(--border) var(--accent);
 }
 
 .main {
@@ -422,7 +423,7 @@ a {
   margin: 0 0 1rem;
   font-size: 2rem;
   display: inline-block;
-  border-bottom: var(--border);
+  border-bottom: var(--border) var(--accent);
 }
 
 .section__subtitle {
@@ -513,7 +514,7 @@ a {
 
 .hero-button:hover a {
   background-color: var(--accent-dark) !important;
-  border: var(--border);
+  border: var(--border) var(--accent-dark);
   box-shadow: 0px 12px 30px -10px rgba(153, 27, 27, 0.9);
 }
 
@@ -525,7 +526,7 @@ a {
   padding: 15px 40px;
   text-align: center;
 
-  border: var(--border);
+  border: var(--border) var(--accent);
   color: var(--main-light);
   z-index: 1;
   transition: 0.3s;
@@ -661,7 +662,7 @@ a {
   width: 7rem;
   margin: 2rem auto;
   display: inline-block;
-  border-bottom: var(--border);
+  border-bottom: var(--border) var(--accent);
 }
 
 .projects-subtitle {
@@ -705,7 +706,7 @@ a {
   display: inline-block;
   margin-bottom: 0.4rem;
   text-transform: uppercase;
-  border-bottom: var(--border);
+  border-bottom: var(--border) var(--accent);
 }
 
 p.section-name ~ p {
