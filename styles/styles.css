@@ -148,6 +148,13 @@ a {
   padding: 0 1rem;
 }
 
+.background {
+  width: 100%;
+  background-image: url('../assets/img/3024-4032_milad-fakurian-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section:last-child {
   margin-bottom: 3rem;
 }
