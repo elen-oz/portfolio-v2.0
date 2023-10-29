@@ -7,16 +7,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;600;700;800;900&family=Raleway:wght@200;400;600&display=swap');
 
 :root {
-  --dark-theme-bg: #1f2937;
-  --dark-theme-text: #d4d4d4;
-  --red: #b91c1c;
-  --dark-text: #2e2e2e;
-  --dark-gray: #525252;
-  --gray: #979797;
-  --neutral-gray: #737373;
-  --light-gray: #fafafa;
+  /* main / accent / grey */
 
-  --border: 3px solid var(--red);
+  /* --accent: #b91c1c; */
+  --accent: #991b1b;
+  --main: #737373;
+  --gray: #2e2e2e;
+  /* --dark-gray: #525252; */
+  --main-dark: #525252;
+  /* --light-gray: #f5f5f5; */
+  --main-light: #f5f5f5;
+
+  --border: 3px solid var(--accent);
 }
 
 /* * {
@@ -49,13 +51,18 @@ html,
 body {
   height: 100%;
   font-family: 'Lexend', sans-serif;
-  color: var(--dark-text);
-  background-color: var(--light-gray);
+  color: var(--gray);
+  background-color: var(--main-light);
   scroll-behavior: smooth;
 }
 
 a {
   color: inherit;
+}
+
+.svg-accent {
+  stroke: var(--accent);
+  fill: var(--accent);
 }
 
 @keyframes slideIn {
@@ -107,7 +114,7 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--red);
+    background-color: var(--accent);
     animation: scroll-indicator auto linear;
     animation-timeline: scroll();
     transform-origin: 0 0;
@@ -134,8 +141,8 @@ a {
 }
 
 #link-to-top:hover {
-  background-color: var(--red);
-  stroke: white;
+  background-color: var(--accent);
+  fill: white;
 }
 
 .wrapper {
@@ -199,8 +206,8 @@ a {
 }
 
 .menu__link:hover {
-  /* stroke: var(--red); */
-  fill: var(--red);
+  /* stroke: var(--accent); */
+  fill: var(--accent);
 }
 
 .logo-container {
@@ -238,7 +245,8 @@ a {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: var(--neutral-gray);
+  /* background-color: var(--neutral-gray); */
+  background-color: var(--main);
 }
 .mobile-menu__btn > span::before {
   content: '';
@@ -283,8 +291,8 @@ a {
 }
 
 .mobile-menu__item:hover {
-  color: var(--light-gray);
-  background-color: var(--gray);
+  color: var(--main-light);
+  background-color: var(--main);
 }
 
 #mobile-menu__toggle:checked ~ .mobile-menu__btn > span {
@@ -340,14 +348,15 @@ a {
 
 .title__h3 {
   font-weight: 400;
-  color: var(--red);
+  color: var(--accent);
 }
 .hero__image {
   max-width: 13rem;
 }
 .title__h4 {
   font-size: 2rem;
-  color: var(--neutral-gray);
+  /* color: var(--neutral-gray); */
+  color: var(--main);
 }
 
 .title__description {
@@ -383,11 +392,11 @@ a {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: 400;
-  color: var(--dark-text);
+  color: var(--gray);
 }
 .subtitle--second {
   font-weight: 800;
-  color: var(--dark-gray);
+  color: var(--main-dark);
   margin-bottom: 1rem;
 }
 
@@ -461,11 +470,13 @@ a {
   text-align: center;
 }
 .hero-button a {
-  background-color: var(--red);
+  background-color: var(--accent);
+  text-transform: uppercase;
 }
+/* here */
 .hero-button:hover a {
-  background-color: #fff !important;
-  color: var(--red);
+  background-color: #e5e5e5 !important;
+  color: var(--accent);
   border: var(--border);
 }
 
@@ -486,7 +497,29 @@ a {
   opacity: 1;
 }
 .button-link-wrapper:hover a {
-  background: var(--red);
+  background: var(--accent);
+}
+
+.button-link {
+  /* text-transform: uppercase; */
+  display: inline-block;
+  width: 100%;
+  color: var(--accent) !important;
+  position: relative;
+}
+.button-link:hover {
+  color: var(--main-light) !important;
+  border-color: var(--main-dark);
+  background-color: var(--main-dark) !important;
+}
+
+.button-red {
+  color: var(--main-light) !important;
+  background-color: var(--accent);
+}
+.button-red:hover {
+  border-color: var(--main-dark);
+  background-color: var(--main-dark) !important;
 }
 
 .work-image {
@@ -523,7 +556,7 @@ a {
   width: 7rem;
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
-  color: var(--dark-gray);
+  color: var(--main-dark);
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -552,8 +585,9 @@ a {
   font-family: 'Raleway', sans-serif;
   flex: 0 0 auto;
   text-align: center;
-  color: var(--light-gray);
-  background-color: var(--neutral-gray);
+  color: var(--main-light);
+  /* background-color: var(--neutral-gray); */
+  background-color: var(--main);
 }
 
 .footer__container {
@@ -567,7 +601,7 @@ a {
 }
 
 .footer__link:hover {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .footer__icon {
@@ -595,7 +629,7 @@ a {
   font-size: 1.2rem;
 }
 .text-accent {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .projects-list li:before {
@@ -617,27 +651,6 @@ a {
 
 .wrapper--flex {
   display: flex;
-}
-
-.button-link {
-  display: inline-block;
-  width: 100%;
-  color: var(--red) !important;
-  position: relative;
-}
-.button-link:hover {
-  color: var(--light-gray) !important;
-  border-color: var(--dark-gray);
-  background-color: var(--dark-gray) !important;
-}
-
-.button-red {
-  color: var(--light-gray) !important;
-  background-color: var(--red);
-}
-.button-red:hover {
-  border-color: var(--dark-gray);
-  background-color: var(--dark-gray) !important;
 }
 
 .projects-image {
@@ -736,7 +749,7 @@ p.section-name ~ p {
   .skills-separator {
     position: absolute;
     top: 4rem;
-    background-color: var(--red);
+    background-color: var(--accent);
     width: 0.2rem;
     height: 9rem;
   }
