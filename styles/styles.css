@@ -512,9 +512,9 @@ a {
 }
 
 .hero-button:hover a {
-  background-color: #e5e5e5 !important;
-  color: var(--accent);
+  background-color: var(--accent-dark) !important;
   border: var(--border);
+  box-shadow: 0px 12px 30px -10px rgba(153, 27, 27, 0.9);
 }
 
 .button-link-wrapper {
@@ -537,6 +537,7 @@ a {
   background: var(--accent);
 }
 
+/* here */
 .button-link {
   display: inline-block;
   width: 100%;
@@ -547,6 +548,7 @@ a {
   color: var(--main-light) !important;
   border-color: var(--accent-dark);
   background-color: var(--accent-dark) !important;
+  box-shadow: 0px 12px 30px -10px rgba(153, 27, 27, 0.9);
 }
 
 .button-red {
