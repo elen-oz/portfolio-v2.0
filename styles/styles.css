@@ -195,9 +195,19 @@ a {
 }
 
 .header {
-  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+
+  z-index: 1000;
+}
+
+.header__container {
+  background-color: rgba(245, 245, 245, 0.2);
 }
 
 .header__wrapper {
@@ -361,10 +371,11 @@ a {
 }
 
 .container > .hero-section {
-  height: 60vh;
+  height: calc(100vh - 6rem);
 }
 
 .hero-section {
+  margin-top: 6rem;
   padding: 5rem 0;
 }
 
@@ -406,7 +417,7 @@ a {
 }
 
 .section__title {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   margin: 0 0 1rem;
   font-size: 2rem;
   display: inline-block;
