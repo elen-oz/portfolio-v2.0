@@ -18,7 +18,7 @@
 
   /* --border: 3px solid var(--accent); */
   --border: 3px solid;
-  --shadow-dark: 0px 12px 30px -10px rgba(0, 0, 0, 0.9);
+  --shadow-dark: 0px 12px 30px -10px rgba(0, 0, 0, 0.8);
   --shadow-accent: 0px 12px 30px -10px rgba(153, 27, 27, 0.9);
 }
 
@@ -705,7 +705,8 @@ a {
   display: block;
   margin: 0 auto;
   width: 80%;
-  padding-top: 2rem;
+  margin-top: 1rem;
+  box-shadow: var(--shadow-dark);
 }
 
 .section-name {
@@ -717,6 +718,12 @@ a {
 
 p.section-name ~ p {
   margin-top: 0;
+}
+
+/* -----here experiment ----- */
+
+.projects__accordion {
+  padding-top: 2rem;
 }
 
 /* --------- MEDIA ------------ */
