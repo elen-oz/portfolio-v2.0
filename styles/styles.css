@@ -207,7 +207,8 @@ a {
 }
 
 .header__container {
-  background-color: rgba(245, 245, 245, 0.2);
+  background-color: rgba(245, 245, 245, 0.5);
+  box-shadow: 0 0 55px 3cqh rgba(245, 245, 245, 0.6);
 }
 
 .header__wrapper {
