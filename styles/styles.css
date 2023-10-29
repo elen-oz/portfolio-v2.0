@@ -508,11 +508,14 @@ a {
   text-align: center;
 }
 .hero-button a {
-  background-color: var(--accent);
+  /* background-color: var(--accent); */
+  color: var(--accent) !important;
+  background-color: none !important;
   text-transform: uppercase;
 }
 
 .hero-button:hover a {
+  color: var(--main-light) !important;
   background-color: var(--accent-dark) !important;
   border: var(--border) var(--accent-dark);
   box-shadow: 0px 12px 30px -10px rgba(153, 27, 27, 0.9);
