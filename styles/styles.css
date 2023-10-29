@@ -647,6 +647,10 @@ a {
 }
 
 /* --------- WORK PAGE ----------- */
+.projects-section:first-child {
+  margin-top: 6rem;
+}
+
 .projects-section {
   animation: none;
   padding-bottom: 3rem;
