@@ -160,7 +160,6 @@ a {
   bottom: 2.2rem;
   font-size: 2rem;
   text-align: center;
-  border-radius: 100%;
   transition: 0.3s;
 }
 #link-to-top img {
@@ -655,7 +654,11 @@ a {
   height: 16px;
 }
 
-/* --------- WORK PAGE ----------- */
+/* --------- PROJECTS PAGE ----------- */
+.projects__section-wrapper {
+  padding-top: 1.5rem;
+}
+
 .projects-section:first-child {
   margin-top: 6rem;
 }

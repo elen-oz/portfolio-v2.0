@@ -26,8 +26,8 @@
 
   <body>
     <div class="background">
-      <div class="wrapper">
-        <header class="header header__container" id="top">
+      <div class="wrapper" id="top">
+        <header class="header header__container">
           <div class="container">
             <div class="header__wrapper">
               <nav class="burger-menu">
@@ -183,559 +183,574 @@
         <main class="main">
           <div class="container">
             <!-- ----------- PROJECT_1 ----------- -->
-            <section class="section projects-section" id="food-order-app">
-              <h2 class="projects-title-page">My Work</h2>
+            <div class="projects__section-wrapper" id="food-order-app">
+              <section class="section projects-section">
+                <h2 class="projects-title-page">My Work</h2>
 
-              <h4
-                class="section__title projects-subtitle"
-                style="padding-top: 0"
-              >
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;Food Order App
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
-                <p>
-                  This is a food ordering application built with React.js, CSS,
-                  and HTML. The application allows users to browse through a
-                  menu, select their desired items, and place an order.
-                </p>
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    Browse through a list of available food items
-                  </li>
-                  <li class="projects__item">
-                    Add desired items to a shopping cart
-                  </li>
-                  <li class="projects__item">
-                    Place an order for the selected items
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                <h4
+                  class="section__title projects-subtitle"
+                  style="padding-top: 0"
+                >
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;Food Order
+                  App
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
+                  <p>
+                    This is a food ordering application built with React.js,
+                    CSS, and HTML. The application allows users to browse
+                    through a menu, select their desired items, and place an
+                    order.
+                  </p>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      Browse through a list of available food items
+                    </li>
+                    <li class="projects__item">
+                      Add desired items to a shopping cart
+                    </li>
+                    <li class="projects__item">
+                      Place an order for the selected items
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/food-order.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/food-order.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        class="button-link"
-                        href="https://github.com/elen-oz/food-order-app"
-                        target="_blank"
-                        >GitHub</a
-                      >
-                    </div>
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        class="button-link button-red"
-                        href="https://food-order-app-9b4ad.web.app/"
-                        target="_blank"
-                        >Live</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          class="button-link"
+                          href="https://github.com/elen-oz/food-order-app"
+                          target="_blank"
+                          >GitHub</a
+                        >
+                      </div>
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          class="button-link button-red"
+                          href="https://food-order-app-9b4ad.web.app/"
+                          target="_blank"
+                          >Live</a
+                        >
+                      </div>
                     </div>
                   </div>
-
-                  <!--  ---- here experiment ----- -->
-
-                  <!-- <img
-                    class="projects-image"
-                    src="../../assets/projects/food-order.png"
-                    alt=""
-                  /> -->
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_2 ----------- -->
-            <section class="section projects-section" id="rss-aggregator">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;RSS Aggregator
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
-                <p>
-                  RSS Aggregator is a specialized tool designed to collate news
-                  feeds, article announcements, and other content from various
-                  websites. It provides an easy way for users to subscribe to
-                  updates and view them in a user-friendly manner. This project
-                  is built with pure JavaScript and uses the Bootstrap library
-                  for styling.
-                </p>
+            <div class="projects__section-wrapper" id="rss-aggregator">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;RSS
+                  Aggregator
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
+                  <p>
+                    RSS Aggregator is a specialized tool designed to collate
+                    news feeds, article announcements, and other content from
+                    various websites. It provides an easy way for users to
+                    subscribe to updates and view them in a user-friendly
+                    manner. This project is built with pure JavaScript and uses
+                    the Bootstrap library for styling.
+                  </p>
 
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>Subscribe to RSS Feeds</strong>: Users can subscribe
-                    to RSS feeds from various websites.
-                  </li>
-                  <li class="projects__item">
-                    <strong>View Posts</strong>: Users can view a list of all
-                    posts from their subscribed feeds.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Mark Posts as Read</strong>: Users can mark posts as
-                    read, helping them keep track of the content they have
-                    already viewed.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Post Summary</strong>: Users can view a summary of
-                    each post within the aggregator in a modal window.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Auto-Update</strong>: The feed updates automatically
-                    every 5 seconds, ensuring users always have the latest
-                    content.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>Subscribe to RSS Feeds</strong>: Users can
+                      subscribe to RSS feeds from various websites.
+                    </li>
+                    <li class="projects__item">
+                      <strong>View Posts</strong>: Users can view a list of all
+                      posts from their subscribed feeds.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Mark Posts as Read</strong>: Users can mark posts
+                      as read, helping them keep track of the content they have
+                      already viewed.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Post Summary</strong>: Users can view a summary of
+                      each post within the aggregator in a modal window.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Auto-Update</strong>: The feed updates
+                      automatically every 5 seconds, ensuring users always have
+                      the latest content.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/rss.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/rss.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/rss-aggregator"
-                        >GitHub</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/rss-aggregator"
+                          >GitHub</a
+                        >
+                      </div>
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link button-red"
+                          href="https://frontend-project-11-01.vercel.app/"
+                          >Live</a
+                        >
+                      </div>
                     </div>
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link button-red"
-                        href="https://frontend-project-11-01.vercel.app/"
-                        >Live</a
-                      >
-                    </div>
-                  </div>
 
-                  <!-- <img
+                    <!-- <img
                     class="projects-image"
                     src="../../assets/projects/rss.png"
                     alt=""
                   /> -->
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_3 ----------- -->
-            <section class="section projects-section" id="management-app">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;Management App
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
+            <div class="projects__section-wrapper" id="management-app">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;Management
+                  App
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
 
-                <p>
-                  The Dojo is a collaborative project management tool that
-                  allows users to register, invite colleagues, and work together
-                  on projects. This application is built with React.js, CSS, and
-                  HTML, and uses Firebase for backend services.
-                </p>
+                  <p>
+                    The Dojo is a collaborative project management tool that
+                    allows users to register, invite colleagues, and work
+                    together on projects. This application is built with
+                    React.js, CSS, and HTML, and uses Firebase for backend
+                    services.
+                  </p>
 
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>User Registration and Login</strong>: The
-                    application supports user registration and login using
-                    Firebase, ensuring a personalized experience for each user.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Avatar Image Upload</strong>: Users can upload their
-                    own image to be used as an avatar, adding a personal touch
-                    to their profile.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Project Creation and Management</strong>: Users can
-                    create new projects and manage them. They can also delete
-                    projects when they are completed.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Commenting</strong>: Users can comment on projects,
-                    facilitating discussion and collaboration.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Project Sorting</strong>: Projects can be sorted by
-                    categories, making it easy to manage and navigate through
-                    different types of projects.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>User Registration and Login</strong>: The
+                      application supports user registration and login using
+                      Firebase, ensuring a personalized experience for each
+                      user.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Avatar Image Upload</strong>: Users can upload
+                      their own image to be used as an avatar, adding a personal
+                      touch to their profile.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Project Creation and Management</strong>: Users
+                      can create new projects and manage them. They can also
+                      delete projects when they are completed.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Commenting</strong>: Users can comment on
+                      projects, facilitating discussion and collaboration.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Project Sorting</strong>: Projects can be sorted
+                      by categories, making it easy to manage and navigate
+                      through different types of projects.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/dojo.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/dojo.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/the-dojo"
-                        >GitHub</a
-                      >
-                    </div>
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link button-red"
-                        href="https://thedojosite-355e3.web.app/"
-                        >Live</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/the-dojo"
+                          >GitHub</a
+                        >
+                      </div>
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link button-red"
+                          href="https://thedojosite-355e3.web.app/"
+                          >Live</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_4 ----------- -->
-            <section class="section projects-section" id="cooking-app">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;Cooking App
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
-                <p>
-                  Grin and Baste It is a cooking site that provides recipes and
-                  cooking tips for food enthusiasts. This project is built with
-                  React.js, CSS, and HTML.
-                </p>
+            <div class="projects__section-wrapper" id="cooking-app">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;Cooking App
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
+                  <p>
+                    Grin and Baste It is a cooking site that provides recipes
+                    and cooking tips for food enthusiasts. This project is built
+                    with React.js, CSS, and HTML.
+                  </p>
 
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>Add/Remove Items</strong>: The application allows
-                    users to add and delete recipes.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Theme Switching</strong>: The application includes a
-                    feature to switch between different color themes.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Firestore Integration</strong>: The application uses
-                    Firestore for storing and retrieving data.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>Add/Remove Items</strong>: The application allows
+                      users to add and delete recipes.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Theme Switching</strong>: The application includes
+                      a feature to switch between different color themes.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Firestore Integration</strong>: The application
+                      uses Firestore for storing and retrieving data.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/cookingApp.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/cookingApp.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/cooking-site"
-                        >GitHub</a
-                      >
-                    </div>
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link button-red"
-                        href="https://cooking-ninja-site-e369e.web.app/"
-                        >Live</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/cooking-site"
+                          >GitHub</a
+                        >
+                      </div>
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link button-red"
+                          href="https://cooking-ninja-site-e369e.web.app/"
+                          >Live</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_5 ----------- -->
-            <section class="section projects-section" id="today-i-learned">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;Today I
-                Learned
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
-                <p>
-                  Today I Learned is a web application where users can share
-                  interesting facts and vote for others. This project is built
-                  with React and uses Supabase for backend services.
-                </p>
+            <div class="projects__section-wrapper" id="today-i-learned">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;Today I
+                  Learned
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
+                  <p>
+                    Today I Learned is a web application where users can share
+                    interesting facts and vote for others. This project is built
+                    with React and uses Supabase for backend services.
+                  </p>
 
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>Interaction with Supabase</strong>: The application
-                    uses Supabase for backend services, providing a seamless
-                    experience for data management.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Adding New Facts</strong>: Users can share
-                    interesting facts they have learned.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Liking Facts</strong>: Users can vote for facts they
-                    find interesting.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Sorting Facts</strong>: Facts can be sorted based on
-                    the number of likes they have received, making it easy to
-                    find the most popular facts.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Category Filter</strong>: Users can filter facts
-                    based on categories, allowing them to focus on topics they
-                    are interested in.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>Interaction with Supabase</strong>: The
+                      application uses Supabase for backend services, providing
+                      a seamless experience for data management.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Adding New Facts</strong>: Users can share
+                      interesting facts they have learned.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Liking Facts</strong>: Users can vote for facts
+                      they find interesting.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Sorting Facts</strong>: Facts can be sorted based
+                      on the number of likes they have received, making it easy
+                      to find the most popular facts.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Category Filter</strong>: Users can filter facts
+                      based on categories, allowing them to focus on topics they
+                      are interested in.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/today-i-learned.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/today-i-learned.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/today-i-learned-app"
-                        >GitHub</a
-                      >
-                    </div>
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link button-red"
-                        href="https://today-i-learned-app-mauve.vercel.app/"
-                        >Live</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/today-i-learned-app"
+                          >GitHub</a
+                        >
+                      </div>
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link button-red"
+                          href="https://today-i-learned-app-mauve.vercel.app/"
+                          >Live</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_6 ----------- -->
-            <section class="section projects-section" id="my-money">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;My Money
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
-                <p>
-                  My Money is a web application designed to help users keep
-                  track of their expenses. This project is built with React and
-                  uses Firebase for backend services.
-                </p>
+            <div class="projects__section-wrapper" id="my-money">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;My Money
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
+                  <p>
+                    My Money is a web application designed to help users keep
+                    track of their expenses. This project is built with React
+                    and uses Firebase for backend services.
+                  </p>
 
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>Interaction with Firebase</strong>: The application
-                    uses Firebase for backend services.
-                  </li>
-                  <li class="projects__item">
-                    <strong>User Registration and Login</strong>: The
-                    application supports user registration and login.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Adding and Deleting Records</strong>: Users can add
-                    and delete their own expense records.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>Interaction with Firebase</strong>: The
+                      application uses Firebase for backend services.
+                    </li>
+                    <li class="projects__item">
+                      <strong>User Registration and Login</strong>: The
+                      application supports user registration and login.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Adding and Deleting Records</strong>: Users can
+                      add and delete their own expense records.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/myMoney.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/myMoney.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/my-money"
-                        >GitHub</a
-                      >
-                    </div>
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link button-red"
-                        href="https://mymoney-54d85.web.app/"
-                        >Live</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/my-money"
+                          >GitHub</a
+                        >
+                      </div>
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link button-red"
+                          href="https://mymoney-54d85.web.app/"
+                          >Live</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_7 ----------- -->
-            <section class="section projects-section" id="diff-calc">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;Difference
-                Calculator: CLI App
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
+            <div class="projects__section-wrapper" id="diff-calc">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;Difference
+                  Calculator: CLI App
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
 
-                <p>
-                  Difference Calculator is a program designed to determine the
-                  difference between two data structures. It supports various
-                  file formats including .json and .yaml, and can handle both
-                  flat and nested structures.
-                </p>
-                <p class="section-name">Features</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>Comparison of Flat Structures</strong>: The program
-                    can compare flat .json and .yaml files with a plain
-                    structure.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Comparison of Nested Structures</strong>: The
-                    program can compare .json files with a nested structure. It
-                    supports different output formats including STYLISH, PLAIN,
-                    and JSON.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p>
+                    Difference Calculator is a program designed to determine the
+                    difference between two data structures. It supports various
+                    file formats including .json and .yaml, and can handle both
+                    flat and nested structures.
+                  </p>
+                  <p class="section-name">Features</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>Comparison of Flat Structures</strong>: The
+                      program can compare flat .json and .yaml files with a
+                      plain structure.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Comparison of Nested Structures</strong>: The
+                      program can compare .json files with a nested structure.
+                      It supports different output formats including STYLISH,
+                      PLAIN, and JSON.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/difference-calculator.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/difference-calculator.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/difference-calculator"
-                        >GitHub</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/difference-calculator"
+                          >GitHub</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <!-- ----------- PROJECT_8 ----------- -->
-            <section class="section projects-section" id="brain-games">
-              <h4 class="section__title projects-subtitle">
-                <span class="text-accent"> &#47;&#47;</span>&nbsp;Brain Games:
-                CLI App
-              </h4>
-              <div>
-                <p class="section-name">Description</p>
-                <p>
-                  Brain Games is a collection of five mini-games designed to
-                  challenge the users mental agility. Each game begins with a
-                  greeting, personalized with the users name, and consists of
-                  three rounds.
-                </p>
+            <div class="projects__section-wrapper" id="brain-games">
+              <section class="section projects-section">
+                <h4 class="section__title projects-subtitle">
+                  <span class="text-accent"> &#47;&#47;</span>&nbsp;Brain Games:
+                  CLI App
+                </h4>
+                <div>
+                  <p class="section-name">Description</p>
+                  <p>
+                    Brain Games is a collection of five mini-games designed to
+                    challenge the users mental agility. Each game begins with a
+                    greeting, personalized with the users name, and consists of
+                    three rounds.
+                  </p>
 
-                <p class="section-name">Games</p>
-                <ul class="projects-list">
-                  <li class="projects__item">
-                    <strong>Brain Even</strong>: The game asks the user to
-                    determine if a number is even.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Brain Calc</strong>: The game presents an arithmetic
-                    operation (addition, subtraction, multiplication) on two
-                    numbers and asks the user to calculate the result.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Brain GCD</strong>: The game asks the user to find
-                    the greatest common divisor of two numbers.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Brain Progression</strong>: The game presents an
-                    arithmetic progression with one number missing and asks the
-                    user to identify the missing number.
-                  </li>
-                  <li class="projects__item">
-                    <strong>Brain Prime</strong>: The game asks the user to
-                    determine if a number is prime.
-                  </li>
-                </ul>
-                <details class="projects__accordion">
-                  <summary>
-                    <strong>View Preview</strong>
-                  </summary>
+                  <p class="section-name">Games</p>
+                  <ul class="projects-list">
+                    <li class="projects__item">
+                      <strong>Brain Even</strong>: The game asks the user to
+                      determine if a number is even.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Brain Calc</strong>: The game presents an
+                      arithmetic operation (addition, subtraction,
+                      multiplication) on two numbers and asks the user to
+                      calculate the result.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Brain GCD</strong>: The game asks the user to find
+                      the greatest common divisor of two numbers.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Brain Progression</strong>: The game presents an
+                      arithmetic progression with one number missing and asks
+                      the user to identify the missing number.
+                    </li>
+                    <li class="projects__item">
+                      <strong>Brain Prime</strong>: The game asks the user to
+                      determine if a number is prime.
+                    </li>
+                  </ul>
+                  <details class="projects__accordion">
+                    <summary>
+                      <strong>View Preview</strong>
+                    </summary>
 
-                  <img
-                    class="projects-image"
-                    src="../../assets/projects/brain-game.png"
-                    alt=""
-                  />
-                </details>
+                    <img
+                      class="projects-image"
+                      src="../../assets/projects/brain-game.png"
+                      alt=""
+                    />
+                  </details>
 
-                <div class="projects-card">
-                  <div class="button-container">
-                    <div class="button-link-wrapper wrapper--flex">
-                      <a
-                        target="_blank"
-                        class="button-link"
-                        href="https://github.com/elen-oz/brain-games"
-                        >GitHub</a
-                      >
+                  <div class="projects-card">
+                    <div class="button-container">
+                      <div class="button-link-wrapper wrapper--flex">
+                        <a
+                          target="_blank"
+                          class="button-link"
+                          href="https://github.com/elen-oz/brain-games"
+                          >GitHub</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
 
           <div class="scroll-indicator"></div>
@@ -743,28 +758,15 @@
           <a href="#top">
             <span id="link-to-top">
               <svg
-                viewBox="-3 0 32 32"
-                version="1.1"
+                width="24"
+                height="24"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g id="icomoon-ignore"></g>
-                  <path
-                    d="M26.221 16c0-7.243-5.871-13.113-13.113-13.113s-13.113 5.87-13.113 13.113c0 7.242 5.871 13.113 13.113 13.113s13.113-5.871 13.113-13.113zM1.045 16c0-6.652 5.412-12.064 12.064-12.064s12.064 5.412 12.064 12.064c0 6.652-5.411 12.064-12.064 12.064-6.652 0-12.064-5.412-12.064-12.064z"
-                    fill=""
-                  ></path>
-                  <path
-                    d="M18.746 15.204l0.742-0.742-6.379-6.379-6.378 6.379 0.742 0.742 5.112-5.112v12.727h1.049v-12.727z"
-                    fill=""
-                  ></path>
-                </g>
+                <path
+                  d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"
+                />
               </svg> </span
           ></a>
         </main>
