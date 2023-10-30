@@ -707,7 +707,7 @@ a {
 .projects-image {
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 30rem;
   margin-top: 1rem;
   box-shadow: var(--shadow-dark);
 }
