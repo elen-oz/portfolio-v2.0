@@ -726,7 +726,11 @@ p.section-name ~ p {
 /* -----here experiment ----- */
 
 .projects__accordion {
+  display: inline-block;
+  color: var(--main-dark);
+  text-transform: uppercase;
   padding-top: 2rem;
+  border-bottom: var(--border) var(--accent);
 }
 
 /* --------- MEDIA ------------ */
