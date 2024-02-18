@@ -24,7 +24,7 @@ const Header = () => {
       <div className='mx-auto py-2 flex place-content-between'>
         <Link
           to='/'
-          className='pl-8 flex gap-2 bg-white h-[49px] hover:text-yellow-400'
+          className='pl-8 flex gap-2 bg-white h-[49px] hover:text-yellow'
           onClick={handleClickToHome}
         >
           <div className=''>
@@ -43,22 +43,22 @@ const Header = () => {
 
         <nav className='px-8 bg-white flex md:items-center'>
           <ul className='flex flex-col  text-right md:flex-row md:gap-2 '>
-            <li className='hover:text-sky-300'>
+            <li className='hover:text-sky'>
               <Link to='/' onClick={handleClickToHome}>
                 Home
               </Link>
             </li>
-            <li className='hover:text-rose-500'>
+            <li className='hover:text-red'>
               <Link to='/' onClick={handleClickToSkills}>
                 Skills
               </Link>
             </li>
-            <li className='hover:text-fuchsia-300'>
+            <li className='hover:text-purple'>
               <Link to='/' onClick={handleClickToWork}>
                 Work
               </Link>
             </li>
-            <li className='hover:text-green-600'>
+            <li className='hover:text-green'>
               <Link to='/' onClick={handleClickToContact}>
                 Contact
               </Link>
