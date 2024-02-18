@@ -1,25 +1,33 @@
 import photoImg from '../../../assets/hero.jpeg';
+import photoMdImg from '../../../assets/hero-md.jpg';
 
 const HeroSection = () => {
   return (
-    <section className='h-screen flex flex-col justify-end p-8'>
-      <div className=' flex justify-between'>
-        <div className='flex flex-col justify-end'>
-          <p className='pb-2'>HELLO, I'M</p>
-          <h1 className='text-4xl max-w-64 pb-2 leading-normal'>
+    <section className='min-h-screen flex flex-col justify-end px-4 pt-[100px] md:px-8 md:py-0'>
+      <div className='flex flex-col md:flex-row justify-between md:gap-2'>
+        <div className='flex-1 flex flex-col justify-end'>
+          <p className='pb-2 lg:text-3xl'>HELLO, I'M</p>
+          <h1 className='text-4xl max-w-64 pb-2 leading-normal md:text-3xl md:leading-normal lg:text-6xl lg:leading-normal'>
             ELENA OZEROVA
           </h1>
-          <h2 className='text-3xl'>FRONTEND DEVELOPER</h2>
-          <p>FROM SWEDEN</p>
+          <h2 className='text-3xl lg:text-6xl'>FRONTEND DEVELOPER</h2>
+          <p className='lg:text-3xl'>FROM SWEDEN</p>
         </div>
 
-        <div className='relative'>
-          <div className='hidden md:block absolute top-[120px] left-[-70px] w-[150px] h-[150px] bg-red-500 rounded-full' />
+        <div className='relative flex-1 pt-[50px] md:pt-0'>
+          <div className='absolute w-[100px] h-[100px] md:w-[150px] md:h-[150px] top-[10px] left-[50px] md:top-[35%] md:left-[-7%]  bg-red-500 rounded-full' />
+
+          <img
+            src={photoMdImg}
+            alt="Elena's photo"
+            className='block md:hidden'
+            style={{ width: '95%' }}
+          />
 
           <img
             src={photoImg}
             alt="Elena's photo"
-            style={{ maxWidth: '500px' }}
+            className='hidden md:block max-w-[485px] lg:max-w-[100%]'
           />
         </div>
       </div>
