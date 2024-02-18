@@ -5,6 +5,7 @@ import MainPage from './pages/MainPage/MainPage';
 import SkillsSection from './pages/MainPage/sections/SkillsSection';
 import WorkSection from './pages/MainPage/sections/WorkSection';
 import ContactSection from './pages/MainPage/sections/ContactSection';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
       <Routes>
         <Route path='/' element={<ContainerPage />}>
           <Route index element={<MainPage />} />
-          <Route path='/skills' element={<SkillsSection />} />
+          <Route path='*' element={<NotFoundPage />} />
+          {/* <Route path='/skills' element={<SkillsSection />} />
           <Route path='/work' element={<WorkSection />} />
-          <Route path='/contact' element={<ContactSection />} />
+          <Route path='/contact' element={<ContactSection />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
