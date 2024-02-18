@@ -10,14 +10,6 @@ const Header = () => {
     const element = document.getElementById('skills');
     element!.scrollIntoView({ behavior: 'smooth' });
   };
-  const handleClickToWork = () => {
-    const element = document.getElementById('work');
-    element!.scrollIntoView({ behavior: 'smooth' });
-  };
-  const handleClickToContact = () => {
-    const element = document.getElementById('contact');
-    element!.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <header className='fixed top-0 left-0 right-0 z-10 text-xl md:py-[30px] md:text-[1.7rem]'>
@@ -54,14 +46,10 @@ const Header = () => {
               </Link>
             </li>
             <li className='hover:text-purple'>
-              <Link to='/' onClick={handleClickToWork}>
-                Work
-              </Link>
+              <Link to='/work'>Work</Link>
             </li>
             <li className='hover:text-green'>
-              <Link to='/' onClick={handleClickToContact}>
-                Contact
-              </Link>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </nav>
