@@ -7,6 +7,11 @@ export default {
         serif: ['DM Sans', 'Manrope', 'sans-serif'],
         accent: ['Rock Salt', 'Reenie Beanie', 'cursive'],
       },
+      letterSpacing: {
+        tight: '-0.08rem',
+        normal: '0',
+        wide: '0.1em',
+      },
     },
   },
   plugins: [],
