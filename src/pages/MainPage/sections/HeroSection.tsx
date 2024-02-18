@@ -15,7 +15,7 @@ const HeroSection = () => {
         </div>
 
         <div className='relative flex-1 pt-[50px] md:pt-0'>
-          <div className='absolute w-[100px] h-[100px] md:w-[150px] md:h-[150px] top-[10px] left-[50px] md:top-[35%] md:left-[-7%]  bg-red-500 rounded-full' />
+          <div className='absolute w-[100px] h-[100px] md:w-[150px] md:h-[150px] top-[10px] left-[50px] md:top-[35%] md:left-[-7%]  bg-rose-500 rounded-full' />
 
           <img
             src={photoMdImg}

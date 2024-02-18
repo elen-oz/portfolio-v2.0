@@ -1,4 +1,8 @@
 const WorkSection = () => {
-  return <section className='h-screen'>WorkSection</section>;
+  return (
+    <section className='h-screen' id='work'>
+      WorkSection
+    </section>
+  );
 };
 export default WorkSection;

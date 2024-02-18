@@ -5,12 +5,12 @@ import ContactSection from './sections/ContactSection';
 
 const MainPage = () => {
   return (
-    <>
+    <div id='top'>
       <HeroSection />
       <SkillsSection />
       <WorkSection />
       <ContactSection />
-    </>
+    </div>
   );
 };
 export default MainPage;
