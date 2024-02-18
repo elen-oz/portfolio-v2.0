@@ -2,9 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ContainerPage from './pages/ContainerPage';
 import MainPage from './pages/MainPage/MainPage';
-import SkillsSection from './pages/MainPage/sections/SkillsSection';
-import WorkSection from './pages/MainPage/sections/LinksSection';
-import ContactSection from './pages/MainPage/sections/ContactSection';
+import WorkPage from './pages/WorkPage/WorkPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
@@ -13,10 +12,9 @@ function App() {
       <Routes>
         <Route path='/' element={<ContainerPage />}>
           <Route index element={<MainPage />} />
-          <Route path='*' element={<NotFoundPage />} />
-          {/* 
           <Route path='/work' element={<WorkPage />} />
-          */}
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

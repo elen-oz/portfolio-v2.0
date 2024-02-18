@@ -4,9 +4,11 @@ import Footer from '../components/Footer';
 
 const ContainerPage = () => {
   return (
-    <div className='relative h-full flex flex-col justify-between'>
+    <div className='relative flex flex-col min-h-screen'>
       <Header />
-      <Outlet />
+      <div className='flex-1'>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
