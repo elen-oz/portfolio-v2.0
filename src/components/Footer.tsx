@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className='absolute bottom-0 right-0 left-0 px-8 flex justify-between text-xl text-stone-600'>
+    <footer className='hidden md:block md:absolute md:bottom-0 md:right-0 md:left-0 md:px-8 md:flex md:flex-row md:justify-between md:text-xl text-stone-600'>
       <a
         className='hover:text-green underline uppercase'
         href='https://github.com/elen-oz/portfolio-v2.0'
