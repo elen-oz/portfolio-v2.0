@@ -12,11 +12,11 @@ const Header = () => {
   };
 
   return (
-    <header className='fixed top-0 left-0 right-0 z-10 text-xl md:py-[30px] md:text-[1.7rem]'>
+    <header className='fixed top-0 left-0 right-0 w-screen z-10 text-xl md:py-[30px] md:text-[1.7rem]'>
       <div className='mx-auto py-2 flex place-content-between'>
         <Link
           to='/'
-          className='pl-8 flex gap-2 bg-white h-[49px] hover:text-yellow'
+          className='pl-8 flex gap-2 bg-white h-[55px] hover:text-yellow'
           onClick={handleClickToHome}
         >
           <div className=''>
