@@ -1,9 +1,9 @@
 const AboutSection = () => {
   return (
-    <section className='w-full bg-gray-200 h-screen pt-4'>
+    <section className='w-full bg-gray-200 h-screen pt-4 px-4'>
       <h2 className='text-6xl text-center pt-4'>/About/</h2>
       <div className='h-full flex flex-col justify-center items-center text-center'>
-        <ul className='w-[700px] mx-auto flex justify-center gap-1 text-3xl flex-wrap'>
+        <ul className='max-w-[700px] mx-auto flex justify-center gap-1 text-xl md:text-3xl flex-wrap'>
           <li className='whitespace-nowrap'>&#9737;AVID TRAVELER</li>
           <li className='whitespace-nowrap'>&#9737;ACRYLIC ARTIST</li>
           <li className='whitespace-nowrap'>&#9737;CROSSFIT ENTHUSIAST</li>

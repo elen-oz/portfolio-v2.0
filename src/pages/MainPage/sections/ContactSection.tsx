@@ -1,8 +1,11 @@
 const ContactSection = () => {
   return (
-    <section className='h-screen bg-white uppercase md:px-8' id='work'>
+    <section
+      className='h-full pt-9 bg-white uppercase px-4 md:px-8 pb-[50px]'
+      id='work'
+    >
       <div className='h-[80vh] flex flex-col justify-end items-start'>
-        <h2 className='text-6xl pt-8 lowercase text-white'>contacts</h2>
+        <h2 className='text-6xl lowercase text-white'>contacts</h2>
         <ul className='flex flex-col text-6xl'>
           <li className='hover:text-yellow'>
             <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>

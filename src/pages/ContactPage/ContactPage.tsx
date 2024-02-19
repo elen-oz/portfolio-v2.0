@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const ContactPage = () => {
   return (
     <div className='z-90 h-screen uppercase'>
-      <div className='fixed z-100 mt-[1vh] top-0 left-8 h-full w-full md:px-8'>
+      <div className='fixed z-100 mt-[1vh] top-[80px] left-8 h-full w-full md:px-8'>
         <div className='h-[80vh] flex flex-col justify-end items-start'>
           <ul className='flex flex-col text-6xl'>
             <li className='lowercase'>&#8921;SCROLL&#8920;</li>

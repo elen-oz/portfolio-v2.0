@@ -8,7 +8,7 @@ const LinksSection = () => {
     >
       <h2 className='text-6xl text-center pt-8'>(FIND HERE)</h2>
 
-      <div className='h-[50vh] flex flex-col justify-center items-center'>
+      <div className='md:h-[50vh] h-full flex flex-col justify-center items-center pb-4'>
         <ul className='flex flex-col text-6xl'>
           <li className='hover:text-red'>
             <Link to='/work'>
