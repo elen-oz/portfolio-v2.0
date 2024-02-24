@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const handleClickToHome = () => {
     const element = document.getElementById('top');
-    element!.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleClickToSkills = () => {
-    const element = document.getElementById('skills');
-    element!.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -32,11 +27,6 @@ const Header = () => {
             <li className='hover:text-sky'>
               <Link to='/' onClick={handleClickToHome}>
                 Home
-              </Link>
-            </li>
-            <li className='hover:text-red'>
-              <Link to='/' onClick={handleClickToSkills}>
-                Skills
               </Link>
             </li>
             <li className='hover:text-purple'>
