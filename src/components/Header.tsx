@@ -16,21 +16,14 @@ const Header = () => {
       <div className='mx-auto py-2 flex place-content-between'>
         <Link
           to='/'
-          className='pl-8 flex gap-2 bg-white h-[55px] hover:text-yellow'
+          className='h-full grid relative pl-8 grid-cols-[auto,1fr] grid-rows-[29px] gap-x-2 bg-white hover:text-yellow'
           onClick={handleClickToHome}
         >
-          {/* todo: 1-div grid instead of 2-div flex */}
-          <div className=''>
-            <div>elena.</div>
-            <div>2024</div>
-          </div>
-
-          <div className='relative'>
-            <span>portfolio</span>
-
-            <div className='absolute text-xl bottom-[-7px] md:bottom-[-8px] right-0 self-end px-[11px] pb-[3px] border-solid border-black border-2 md:border-[2.5px] rounded-full text-black'>
-              c
-            </div>
+          <div>elena.</div>
+          <div>portfolio</div>
+          <div>2024</div>
+          <div className='absolute text-xl right-0 bottom-14 md:bottom-0 px-[11px] pb-[3px] border-solid border-black border-2 md:border-[2.5px] rounded-full text-black'>
+            c
           </div>
         </Link>
 
