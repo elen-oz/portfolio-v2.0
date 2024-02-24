@@ -6,13 +6,13 @@ import ContactSection from './sections/ContactSection';
 
 const MainPage = () => {
   return (
-    <div id='top'>
+    <main>
       <HeroSection />
       <AboutSection />
       <SkillsSection />
       <LinksSection />
       <ContactSection />
-    </div>
+    </main>
   );
 };
 export default MainPage;

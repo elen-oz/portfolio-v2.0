@@ -19,6 +19,7 @@ const Header = () => {
           className='pl-8 flex gap-2 bg-white h-[55px] hover:text-yellow'
           onClick={handleClickToHome}
         >
+          {/* todo: 1-div grid instead of 2-div flex */}
           <div className=''>
             <div>elena.</div>
             <div>2024</div>
