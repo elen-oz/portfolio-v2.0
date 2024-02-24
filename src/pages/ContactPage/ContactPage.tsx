@@ -40,7 +40,7 @@ const ContactPage = () => {
                 <a
                   href='https://rebrand.ly/elen-oz-cv'
                   target='_blank'
-                  rel='noopener noreferrer'
+                  rel='noreferrer'
                 >
                   resume
                 </a>
@@ -58,7 +58,7 @@ const ContactPage = () => {
                 <a
                   href='https://www.linkedin.com/in/elen-oz/'
                   target='_blank'
-                  rel='noopener noreferrer'
+                  rel='noreferrer'
                 >
                   LinkedIn
                 </a>
