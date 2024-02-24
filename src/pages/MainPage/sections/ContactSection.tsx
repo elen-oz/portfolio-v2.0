@@ -1,4 +1,14 @@
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useState } from 'react';
+
 const ContactSection = () => {
+  const [copied, setCopied] = useState(false);
+
+  const onCopy = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section
       className='h-full pt-9 bg-white uppercase px-4 md:px-8 pb-[50px]'
@@ -33,7 +43,11 @@ const ContactSection = () => {
             </a>
           </li>
           <li className='hover:text-sky'>
-            <a>Telegram</a>
+            <CopyToClipboard text='@elenoz'>
+              <button onClick={onCopy}>
+                {copied ? 'username is copied' : 'TELEGRAM'}
+              </button>
+            </CopyToClipboard>
           </li>
         </ul>
       </div>
