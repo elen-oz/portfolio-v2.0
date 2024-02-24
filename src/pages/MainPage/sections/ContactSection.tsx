@@ -44,7 +44,7 @@ const ContactSection = () => {
           </li>
           <li className='hover:text-sky'>
             <CopyToClipboard text='@elenoz'>
-              <button onClick={onCopy}>
+              <button className='text-left' onClick={onCopy}>
                 {copied ? 'username is copied' : 'TELEGRAM'}
               </button>
             </CopyToClipboard>
