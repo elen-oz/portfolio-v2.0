@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useState } from 'react';
 
 const bgColors = [
   'bg-stone-600',
@@ -25,6 +27,13 @@ const bgColors = [
 ];
 
 const ContactPage = () => {
+  const [copied, setCopied] = useState(false);
+
+  const onCopy = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <main>
       <div className='z-90 h-screen uppercase'>
@@ -74,7 +83,11 @@ const ContactPage = () => {
                 </a>
               </li>
               <li className='hover:text-white'>
-                <a>Telegram</a>
+                <CopyToClipboard text='@elenoz'>
+                  <button onClick={onCopy}>
+                    {copied ? 'copied to the clipboard' : 'TELEGRAM'}
+                  </button>
+                </CopyToClipboard>
               </li>
             </ul>
           </div>
