@@ -3,10 +3,7 @@ import photoMdImg from '../../../assets/hero-md.webp';
 
 const HeroSection = () => {
   return (
-    <section
-      id='top'
-      className='min-h-screen flex flex-col justify-end px-4 pt-[100px] md:px-8 md:pt-0 md:pb-8'
-    >
+    <section className='min-h-screen flex flex-col justify-end px-4 pt-[100px] md:px-8 md:pt-0 md:pb-8'>
       <div className='flex flex-col md:flex-row justify-between md:gap-2'>
         <div className='flex-1 flex flex-col justify-end'>
           <p className='pb-2 lg:text-3xl'>HELLO, I'M</p>
@@ -28,18 +25,6 @@ const HeroSection = () => {
               style={{ width: '95%' }}
             />
           </picture>
-          {/* <img
-            src={photoMdImg}
-            alt="Elena's photo"
-            className='block md:hidden'
-            style={{ width: '95%' }}
-          />
-
-          <img
-            src={photoImg}
-            alt="Elena's photo"
-            className='hidden md:block max-w-[485px] lg:max-w-[100%]'
-          /> */}
         </div>
       </div>
     </section>
