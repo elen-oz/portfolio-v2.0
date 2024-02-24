@@ -17,7 +17,7 @@ const Header = () => {
           <div>elena.</div>
           <div>portfolio</div>
           <div>2024</div>
-          <div className='absolute text-xl right-0 bottom-14 md:bottom-0 px-[11px] pb-[3px] border-solid border-black border-2 md:border-[2.5px] rounded-full text-black'>
+          <div className='absolute text-xl right-0 bottom-0.5 md:bottom-0 px-[11px] pb-[3px] border-solid border-black border-2 md:border-[2.5px] rounded-full text-black'>
             c
           </div>
         </Link>
