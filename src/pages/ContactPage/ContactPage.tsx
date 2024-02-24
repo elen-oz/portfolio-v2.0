@@ -1,5 +1,29 @@
 import { Link } from 'react-router-dom';
 
+const bgColors = [
+  'bg-stone-600',
+  'bg-purple',
+  'bg-grey',
+  'bg-green',
+  'bg-white',
+  'bg-red',
+  'bg-[#ffbaba]',
+  'bg-violet',
+  'bg-blue',
+  'bg-white',
+  'bg-grey',
+  'bg-purple',
+  'bg-red',
+  'bg-green',
+  'bg-sky',
+  'bg-violet',
+  'bg-grey',
+  'bg-[#daf67c]',
+  'bg-[#92400e]',
+  'bg-[#adebb2]',
+  'bg-violet',
+];
+
 const ContactPage = () => {
   return (
     <main>
@@ -56,88 +80,9 @@ const ContactPage = () => {
           </div>
         </div>
 
-        <div className='h-full bg-stone-600'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-[#ffbaba]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-blue'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-sky'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-[#daf67c]'></div>
-        <div className='h-full bg-[#92400e]'></div>
-        <div className='h-full bg-[#adebb2]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-[#ffbaba]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-blue'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-sky'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-[#daf67c]'></div>
-        <div className='h-full bg-[#92400e]'></div>
-        <div className='h-full bg-[#adebb2]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-[#ffbaba]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-blue'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-sky'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-[#daf67c]'></div>
-        <div className='h-full bg-[#92400e]'></div>
-        <div className='h-full bg-[#adebb2]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-[#ffbaba]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-blue'></div>
-        <div className='h-full bg-white'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-purple'></div>
-        <div className='h-full bg-red'></div>
-        <div className='h-full bg-green'></div>
-        <div className='h-full bg-sky'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-grey'></div>
-        <div className='h-full bg-[#daf67c]'></div>
-        <div className='h-full bg-[#92400e]'></div>
-        <div className='h-full bg-[#adebb2]'></div>
-        <div className='h-full bg-violet'></div>
-        <div className='h-full bg-purple'></div>
+        {bgColors.map((color, index) => (
+          <div key={index} className={`h-full ${color}`} />
+        ))}
       </div>
     </main>
   );
