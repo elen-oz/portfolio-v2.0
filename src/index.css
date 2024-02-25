@@ -10,3 +10,43 @@
     @apply font-accent;
   }
 }
+
+.hover\:underline-red:hover {
+  text-decoration-color: #e24848;
+}
+
+.hover\:underline-blue:hover {
+  text-decoration-color: #0047ff;
+}
+
+.hover\:underline-green:hover {
+  text-decoration-color: #008f64;
+}
+
+.hover\:underline-purple:hover {
+  text-decoration-color: #dbacff;
+}
+
+.hover\:underline-yellow:hover {
+  text-decoration-color: #d9ae02;
+}
+
+.hover\:underline-sky:hover {
+  text-decoration-color: #50a8dc;
+}
+
+.hover\:underline-violet:hover {
+  text-decoration-color: #620fcb;
+}
+
+.hover\:underline-lightGreen:hover {
+  text-decoration-color: #daf67c;
+}
+
+.hover\:underline-pink:hover {
+  text-decoration-color: #ffbaba;
+}
+
+.hover\:underline-cyan:hover {
+  text-decoration-color: #adebb2;
+}
