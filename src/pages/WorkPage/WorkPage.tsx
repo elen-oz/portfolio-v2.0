@@ -1,6 +1,10 @@
+import rssApp from '../../assets/projects/RSS-App.webp';
+import diffCalc from '../../assets/projects/diff-calc.webp';
+import brainGames from '../../assets/projects/brain-games.webp';
+
 const WorkPage = () => {
   return (
-    <section className='h-full p-4 text-2xl'>
+    <section className='h-full p-4 text-xl'>
       <div className='h-screen flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px] '>
         <h2 className='mb-4 md:flex-1 text-6xl md:text-8xl uppercase text-left'>
           Projects
@@ -22,53 +26,88 @@ const WorkPage = () => {
         <ul className=''>
           <li className='w-full flex flex-col md:flex-row gap-x-2 hover:bg-gray'>
             <div className='flex-1'>
-              <h3 className='pt-2 uppercase'>Title</h3>
+              <h3 className='pt-2 uppercase'>RSS Aggregator</h3>
               <p className='py-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                beatae, iure distinctio perspiciatis temporibus! Nisi illo
-                architecto sit!
+                RSS Aggregator is a specialized tool designed to collate news
+                feeds, article announcements, and other content from various
+                websites. It provides an easy way for users to subscribe to
+                updates and view them in a user-friendly manner. This project is
+                built with pure JavaScript and uses the Bootstrap library for
+                styling.
               </p>
               <div className='flex justify-between uppercase'>
-                <a>LIVE</a>
-                <a>Github</a>
+                <a
+                  className='hover:text-yellow'
+                  href='https://frontend-project-11-01.vercel.app/'
+                >
+                  LIVE
+                </a>
+                <a
+                  className='hover:text-green'
+                  href='https://github.com/elen-oz/rss-aggregator'
+                >
+                  Github
+                </a>
               </div>
             </div>
-            <div className='flex-1 h-[200px] bg-black self-end'>
-              <img />
+            <div className='flex-1 max-h-[320px] bg-black self-end overflow-hidden'>
+              <img src={rssApp} alt='RSS Aggregator screenshot' />
             </div>
           </li>
+
           <li className='w-full flex flex-col md:flex-row gap-x-2 hover:bg-gray'>
             <div className='flex-1'>
-              <h3 className='pt-2 uppercase'>Title</h3>
+              <h3 className='pt-2 uppercase'>Difference Calculator: CLI App</h3>
               <p className='py-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                beatae, iure distinctio perspiciatis temporibus! Nisi illo
-                architecto sit!
+                Difference Calculator is a console application that designed to
+                determine the difference between two data structures. It
+                supports various file formats including .json and .yaml, and can
+                handle both flat and nested structures.
               </p>
               <div className='flex justify-between uppercase'>
-                <a>LIVE</a>
-                <a>Github</a>
+                <div className='w-12'>-</div>
+                <a
+                  className='hover:text-green'
+                  href='https://github.com/elen-oz/difference-calculator'
+                >
+                  Github
+                </a>
               </div>
             </div>
-            <div className='flex-1 h-[200px] bg-black self-end'>
-              <img />
+            <div className='flex-1 flex flex-col justify-center items-center h-[320px] bg-black self-end overflow-hidden'>
+              <img
+                className='w-[400px]'
+                src={diffCalc}
+                alt='Difference calculator screenshot'
+              />
             </div>
           </li>
+
           <li className='w-full flex flex-col md:flex-row gap-x-2 hover:bg-gray'>
             <div className='flex-1'>
-              <h3 className='pt-2 uppercase'>Title</h3>
+              <h3 className='pt-2 uppercase'>Difference Calculator: CLI App</h3>
               <p className='py-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                beatae, iure distinctio perspiciatis temporibus! Nisi illo
-                architecto sit!
+                Brain Games is a console app with collection of five mini-games
+                designed to challenge the users mental agility. Each game begins
+                with a greeting, personalized with the users name, and consists
+                of three rounds.
               </p>
               <div className='flex justify-between uppercase'>
-                <a>LIVE</a>
-                <a>Github</a>
+                <div className='w-12'>-</div>
+                <a
+                  className='hover:text-green'
+                  href='https://github.com/elen-oz/brain-games'
+                >
+                  Github
+                </a>
               </div>
             </div>
-            <div className='flex-1 h-[200px] bg-black self-end'>
-              <img />
+            <div className='flex-1 flex flex-col justify-center items-center h-[320px] bg-black self-end overflow-hidden'>
+              <img
+                className='w-[400px]'
+                src={brainGames}
+                alt='Brain Games screenshot'
+              />
             </div>
           </li>
         </ul>
