@@ -19,28 +19,58 @@ const WorkPage = () => {
       </div>
 
       <div className='mb-10'>
-        <ul>
-          <li className='w-full flex gap-x-2 hover:bg-gray'>
+        <ul className=''>
+          <li className='w-full flex flex-col md:flex-row gap-x-2 hover:bg-gray'>
             <div className='flex-1'>
-              <h3 className='uppercase'>Title</h3>
-              <p className=''>
+              <h3 className='pt-2 uppercase'>Title</h3>
+              <p className='py-4'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                beatae, nobis repellat quisquam aliquid incidunt excepturi saepe
-                cumque neque corrupti laudantium officiis, iure distinctio
-                perspiciatis temporibus! Nisi illo architecto sit!
+                beatae, iure distinctio perspiciatis temporibus! Nisi illo
+                architecto sit!
               </p>
-              <div className='flex justify-between'>
+              <div className='flex justify-between uppercase'>
                 <a>LIVE</a>
                 <a>Github</a>
               </div>
             </div>
-            <div className='flex-1 h-[200px] bg-black'>
+            <div className='flex-1 h-[200px] bg-black self-end'>
               <img />
             </div>
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li className='w-full flex flex-col md:flex-row gap-x-2 hover:bg-gray'>
+            <div className='flex-1'>
+              <h3 className='pt-2 uppercase'>Title</h3>
+              <p className='py-4'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                beatae, iure distinctio perspiciatis temporibus! Nisi illo
+                architecto sit!
+              </p>
+              <div className='flex justify-between uppercase'>
+                <a>LIVE</a>
+                <a>Github</a>
+              </div>
+            </div>
+            <div className='flex-1 h-[200px] bg-black self-end'>
+              <img />
+            </div>
+          </li>
+          <li className='w-full flex flex-col md:flex-row gap-x-2 hover:bg-gray'>
+            <div className='flex-1'>
+              <h3 className='pt-2 uppercase'>Title</h3>
+              <p className='py-4'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                beatae, iure distinctio perspiciatis temporibus! Nisi illo
+                architecto sit!
+              </p>
+              <div className='flex justify-between uppercase'>
+                <a>LIVE</a>
+                <a>Github</a>
+              </div>
+            </div>
+            <div className='flex-1 h-[200px] bg-black self-end'>
+              <img />
+            </div>
+          </li>
         </ul>
       </div>
       {/* <p className='text-3xl'>
