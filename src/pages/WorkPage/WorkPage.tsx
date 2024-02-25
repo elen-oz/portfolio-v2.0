@@ -39,12 +39,16 @@ const WorkPage = () => {
                 <a
                   className='text-3xl hover:text-yellow'
                   href='https://frontend-project-11-01.vercel.app/'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   LIVE
                 </a>
                 <a
                   className='text-3xl hover:text-green'
                   href='https://github.com/elen-oz/rss-aggregator'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   Github
                 </a>
@@ -69,6 +73,8 @@ const WorkPage = () => {
                 <a
                   className='text-3xl hover:text-green'
                   href='https://github.com/elen-oz/difference-calculator'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   Github
                 </a>
@@ -93,6 +99,8 @@ const WorkPage = () => {
                 <a
                   className='text-3xl hover:text-green'
                   href='https://github.com/elen-oz/brain-games'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   Github
                 </a>
@@ -104,18 +112,24 @@ const WorkPage = () => {
           </li>
         </ul>
       </div>
-      {/* <p className='text-3xl'>
-          In the meantime,
-          <a
-            className='underline text-red'
-            href='https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
-            target='_blank'
-            rel='noreferrer'
-          >
-            &nbsp;check this out
-          </a>
-          &nbsp;(my projects)
-        </p> */}
+      <p className='text-center text-3xl uppercase mb-10'>
+        see more apps&nbsp;
+        <a
+          className='underline'
+          href='https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
+          target='_blank'
+          rel='noreferrer'
+        >
+          here
+        </a>
+        &nbsp;or&nbsp;
+        <a
+          href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
+          className=' underline hover:text-yellow'
+        >
+          PING ME
+        </a>
+      </p>
     </section>
   );
 };
