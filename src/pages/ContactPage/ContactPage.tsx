@@ -84,9 +84,9 @@ const ContactPage = () => {
               </li>
               <li className='hover:text-white'>
                 <CopyToClipboard text='@elenoz'>
-                  <button className='text-left' onClick={onCopy}>
+                  <div className='text-left' onClick={onCopy}>
                     {copied ? 'username is copied' : 'TELEGRAM'}
-                  </button>
+                  </div>
                 </CopyToClipboard>
               </li>
             </ul>
