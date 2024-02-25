@@ -4,6 +4,11 @@ import { useState } from 'react';
 
 const bgColors = [
   'bg-stone-600',
+  'bg-yellow',
+  'bg-blue',
+  'bg-white',
+  'bg-blue',
+  'bg-white',
   'bg-purple',
   'bg-grey',
   'bg-green',
@@ -11,12 +16,16 @@ const bgColors = [
   'bg-red',
   'bg-rose',
   'bg-violet',
+  'bg-yellow',
+  'bg-sky',
+  'bg-white',
   'bg-blue',
   'bg-white',
   'bg-grey',
   'bg-purple',
   'bg-red',
   'bg-green',
+  'bg-yellow',
   'bg-sky',
   'bg-violet',
   'bg-grey',
@@ -24,6 +33,8 @@ const bgColors = [
   'bg-[#92400e]',
   'bg-[#adebb2]',
   'bg-violet',
+  'bg-yellow',
+  'bg-blue',
 ];
 
 const ContactPage = () => {
