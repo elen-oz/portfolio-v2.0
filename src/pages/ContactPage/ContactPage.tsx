@@ -9,7 +9,7 @@ const bgColors = [
   'bg-green',
   'bg-white',
   'bg-red',
-  'bg-[#ffbaba]',
+  'bg-rose',
   'bg-violet',
   'bg-blue',
   'bg-white',
