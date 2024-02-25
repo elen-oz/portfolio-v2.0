@@ -6,9 +6,9 @@ const ContainerPage = () => {
   return (
     <div className='relative flex flex-col min-h-screen w-screen'>
       <Header />
-      <div className='flex-1' id='top'>
+      <main className='flex-1' id='top'>
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   );
