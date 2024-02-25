@@ -29,7 +29,7 @@ const SkillsSection = () => {
             <li>Tailwind</li>
           </ul>
         </div>
-        {/* <ul className='flex gap-8 flex-wrap justify-center text-2xl list-disc'> */}
+
         <ul className='max-w-[700px] mx-auto flex justify-center gap-x-9 text-xl md:text-3xl flex-wrap list-disc'>
           <li>Git</li>
           <li>Yup</li>
