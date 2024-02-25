@@ -50,7 +50,7 @@ const WorkPage = () => {
                 </a>
               </div>
             </div>
-            <div className='flex-1 max-h-[320px] bg-black self-end overflow-hidden'>
+            <div className='flex-1 flex flex-col justify-center items-center h-[320px] bg-black md:self-end overflow-hidden'>
               <img src={rssApp} alt='RSS Aggregator screenshot' />
             </div>
           </li>
