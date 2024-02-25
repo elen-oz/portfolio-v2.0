@@ -12,7 +12,7 @@ const SkillsSection = () => {
         <div className='w-[30px] h-full bg-sky hidden sm:block'></div>
       </div>
 
-      <div className='relative z-5 h-full w-[500px] mx-auto text-4xl uppercase flex flex-col justify-around'>
+      <div className='relative z-5 h-full w-[300px] md:w-[500px] mx-auto text-3xl md:text-4xl uppercase flex flex-col justify-around'>
         <h2 className='mb-5 text-6xl text-center pt-8'>| Skills |</h2>
         <div className='grid grid-cols-2 text-center'>
           <ul>
