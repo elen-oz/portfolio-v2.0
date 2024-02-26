@@ -16,35 +16,19 @@ const SkillsSection = () => {
         <h2 className='mb-5 text-6xl text-center pt-8'>| Skills |</h2>
         <div className='grid grid-cols-2 text-center text-3xl sm:text-5xl'>
           <ul className='text-left'>
-            <li className='hover:bg-white hover:underline hover:underline-red'>
+            <li className='hover:bg-white'>
               <span className='hidden sm:inline'>ES6 </span>JavaScript
             </li>
-            <li className='hover:bg-white hover:underline hover:underline-blue'>
-              TypeScript
-            </li>
-            <li className='hover:bg-white hover:underline hover:underline-green'>
-              HTML5
-            </li>
-            <li className='hover:bg-white hover:underline hover:underline-purple'>
-              CSS3
-            </li>
-            <li className='hover:bg-white hover:underline hover:underline-yellow'>
-              SCSS
-            </li>
+            <li className='hover:bg-white'>TypeScript</li>
+            <li className='hover:bg-white'>HTML5</li>
+            <li className='hover:bg-white'>CSS3</li>
+            <li className='hover:bg-white'>SCSS</li>
           </ul>
           <ul className='text-right'>
-            <li className='hover:bg-white hover:underline hover:underline-sky'>
-              React.js
-            </li>
-            <li className='hover:bg-white hover:underline hover:underline-violet'>
-              Redux
-            </li>
-            <li className='hover:bg-white hover:underline hover:underline-lightGreen'>
-              Next.js
-            </li>
-            <li className='hover:bg-white hover:underline hover:underline-pink'>
-              Tailwind
-            </li>
+            <li className='hover:bg-white'>React.js</li>
+            <li className='hover:bg-white'>Redux</li>
+            <li className='hover:bg-white'>Next.js</li>
+            <li className='hover:bg-white'>Tailwind</li>
           </ul>
         </div>
 
@@ -54,8 +38,8 @@ const SkillsSection = () => {
           <li className='hover:underline hover:underline-yellow'>Axios</li>
           <li className='hover:underline hover:underline-pink'>I18next</li>
           <li className='hover:underline hover:underline-lightGreen'>ESLint</li>
-          <li className='hover:underline hover:underline-violet'>Chakra UI</li>
-          <li className='hover:underline hover:underline-blue'>Bootstrap</li>
+          <li className='hover:underline hover:underline-red'>Chakra UI</li>
+          <li className='hover:underline hover:underline-sky'>Bootstrap</li>
         </ul>
       </div>
     </section>
