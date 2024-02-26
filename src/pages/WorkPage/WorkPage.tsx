@@ -1,8 +1,4 @@
-import rssApp from '../../assets/projects/RSS-App.webp';
-import diffCalc from '../../assets/projects/diff-calc.webp';
-import brainGames from '../../assets/projects/brain-games.webp';
-
-import projects, { type Project } from './../../data.ts';
+import projects from './../../data.ts';
 
 const WorkPage = () => {
   return (
