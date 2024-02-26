@@ -17,7 +17,7 @@ const SkillsSection = () => {
         <div className='grid grid-cols-2 text-center text-3xl sm:text-5xl'>
           <ul className='text-left'>
             <li className='hover:bg-white hover:underline hover:underline-red'>
-              ES6 JavaScript
+              <span className='hidden sm:inline'>ES6 </span>JavaScript
             </li>
             <li className='hover:bg-white hover:underline hover:underline-blue'>
               TypeScript
