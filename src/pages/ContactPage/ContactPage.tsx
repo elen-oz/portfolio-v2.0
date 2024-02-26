@@ -59,61 +59,59 @@ const ContactPage = () => {
   };
 
   return (
-    <div className='z-90 h-screen uppercase'>
-      <div className='fixed z-100 mt-[1vh] top-[80px] left-8 h-full w-full md:px-8'>
-        <div className='h-[80vh] flex flex-col justify-end items-start'>
-          <ul className='flex flex-col text-6xl'>
-            <li className='lowercase'>&#8921;SCROLL&#8920;</li>
+    <div className='relative z-90 h-screen uppercase'>
+      <div className='fixed z-100 top-[250px] left-8 md:px-8'>
+        <ul className='text-6xl'>
+          <li className='lowercase'>&#8921;SCROLL&#8920;</li>
 
-            <li className='hover:text-white'>
-              <Link to='/work'>work</Link>
-            </li>
-            <li className='hover:text-white'>
-              <a
-                href='https://rebrand.ly/elen-oz-cv'
-                target='_blank'
-                rel='noreferrer'
-              >
-                resume
-              </a>
-            </li>
+          <li className='hover:text-white'>
+            <Link to='/work'>work</Link>
+          </li>
+          <li className='hover:text-white'>
+            <a
+              href='https://rebrand.ly/elen-oz-cv'
+              target='_blank'
+              rel='noreferrer'
+            >
+              resume
+            </a>
+          </li>
 
-            <li className='text-lg'>&rsaquo; contact me &rsaquo;</li>
+          <li className='text-lg'>&rsaquo; contact me &rsaquo;</li>
 
-            <li className='hover:text-white'>
-              <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>
-                Email me
-              </a>
-            </li>
+          <li className='hover:text-white'>
+            <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>
+              Email me
+            </a>
+          </li>
 
-            <li className='hover:text-white'>
-              <a
-                href='https://www.linkedin.com/in/elen-oz/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                LinkedIn
-              </a>
-            </li>
+          <li className='hover:text-white'>
+            <a
+              href='https://www.linkedin.com/in/elen-oz/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              LinkedIn
+            </a>
+          </li>
 
-            <li className='hover:text-white'>
-              <a
-                href='https://github.com/elen-oz'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Github
-              </a>
-            </li>
-            <li className='hover:text-white'>
-              <CopyToClipboard text='@elenoz'>
-                <div className='text-left' onClick={onCopy}>
-                  {copied ? 'username is copied' : 'TELEGRAM'}
-                </div>
-              </CopyToClipboard>
-            </li>
-          </ul>
-        </div>
+          <li className='hover:text-white'>
+            <a
+              href='https://github.com/elen-oz'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Github
+            </a>
+          </li>
+          <li className='hover:text-white'>
+            <CopyToClipboard text='@elenoz'>
+              <div className='text-left' onClick={onCopy}>
+                {copied ? 'username is copied' : 'TELEGRAM'}
+              </div>
+            </CopyToClipboard>
+          </li>
+        </ul>
       </div>
 
       {bgColors.map((color, index) => (
