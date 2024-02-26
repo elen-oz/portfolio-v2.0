@@ -32,6 +32,22 @@ const bgColors = [
   'bg-white',
   'bg-blue',
   'bg-yellow',
+  'bg-purple',
+  'bg-[#daf67c]',
+  'bg-grey',
+  'bg-green',
+  'bg-white',
+  'bg-red',
+  'bg-rose',
+  'bg-violet',
+  'bg-yellow',
+  'bg-white',
+  'bg-grey',
+  'bg-purple',
+  'bg-red',
+  'bg-green',
+  'bg-sky',
+  'bg-yellow',
 ];
 
 const ContactPage = () => {
