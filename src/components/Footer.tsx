@@ -12,9 +12,9 @@ const Footer = () => {
 
       <ul className='flex gap-1'>
         <li>
-          Elena<span className='hidden sm:block'> Ozerova</span>/
+          Elena<span className='hidden sm:inline'> Ozerova</span>/
         </li>
-        <li className='hidden sm:block'>Frontend Developer /</li>
+        <li className='hidden sm:block'>Frontend Developer/</li>
         <li className='hidden md:block'>Stockholm, Sweden</li>
       </ul>
     </footer>
