@@ -1,30 +1,30 @@
-import projects from "./../../data.ts";
+import projects from './../../data.ts';
 
 const WorkPage = () => {
   return (
-    <section className=" h-full p-4 text-lg">
-      <div className="relative">
-        <div className="pf-container absolute left-0 right-0 top-0 z-0 flex h-full justify-between sm:justify-evenly sm:px-0">
-          <div className="h-full w-[30px] bg-yellow"></div>
-          <div className="h-full w-[30px] bg-yellow"></div>
-          <div className="h-full w-[30px] bg-yellow"></div>
-          <div className="h-full w-[30px] bg-yellow"></div>
-          <div className="hidden h-full w-[30px] bg-yellow sm:block"></div>
-          <div className="hidden h-full w-[30px] bg-yellow sm:block"></div>
-          <div className="hidden h-full w-[30px] bg-yellow sm:block"></div>
-          <div className="hidden h-full w-[30px] bg-yellow sm:block"></div>
+    <section className=' h-full p-4  text-lg'>
+      <div className='relative'>
+        <div className='z-0 absolute top-0 left-0 right-0 flex pf-container sm:px-0 justify-between sm:justify-evenly h-full'>
+          <div className='w-[30px] h-full bg-yellow'></div>
+          <div className='w-[30px] h-full bg-yellow'></div>
+          <div className='w-[30px] h-full bg-yellow'></div>
+          <div className='w-[30px] h-full bg-yellow'></div>
+          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
+          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
+          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
+          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
         </div>
 
-        <div className="z-100 relative flex h-screen flex-col justify-center gap-x-4 pt-[100px] md:flex-row md:items-center">
-          <h2 className="mb-4 text-6xl uppercase md:flex-1 md:text-8xl">
+        <div className='relative z-100 h-screen flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px]'>
+          <h2 className='mb-4 md:flex-1 text-6xl md:text-8xl uppercase'>
             Projects
           </h2>
-          <p className="text-2xl leading-none md:flex-1 lg:text-3xl">
+          <p className='md:flex-1 text-2xl lg:text-3xl leading-none'>
             Below is a list of selected projects I have done. If you have any
             questions feel free to&nbsp;
             <a
-              href="mailto: ozerova.lenka@gmail.com"
-              className="hover:text-yellow"
+              href='mailto: ozerova.lenka@gmail.com'
+              className='hover:text-yellow'
             >
               PING ME
             </a>
@@ -33,59 +33,61 @@ const WorkPage = () => {
         </div>
       </div>
 
-      <div className="mb-10">
-        <ul className="uppercase ">
+      <div className='mb-10'>
+        <ul className='uppercase '>
           {projects.map((project) => (
-            <li key={project.id} className="mb-4 h-screen w-full md:mb-2 ">
-              <div className="flex flex-col gap-x-4 hover:bg-gray-300 md:flex-row md:items-center">
-                <div className="flex flex-1 flex-col justify-end md:block ">
-                  <h3 className="pt-2 text-4xl">{project.name}</h3>
-                  <p className="py-4 leading-none">{project.description}</p>
-                  <div className="flex justify-between">
-                    {project.live.length === 0 ? (
-                      <div className="w-12">-</div>
-                    ) : (
-                      <a
-                        className="text-3xl hover:text-yellow"
-                        href={project.live}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        LIVE
-                      </a>
-                    )}
+            <li
+              key={project.id}
+              className='h-screen w-full mb-4 md:mb-2 flex flex-col md:flex-row md:items-center gap-x-4 hover:bg-gray-200'
+            >
+              {/* <div className=''></div> */}
+              <div className='flex-1 flex flex-col justify-end md:block'>
+                <h3 className='pt-2 text-4xl'>{project.name}</h3>
+                <p className='py-4 leading-none'>{project.description}</p>
+                <div className='flex justify-between'>
+                  {project.live.length === 0 ? (
+                    <div className='w-12'>-</div>
+                  ) : (
                     <a
-                      className="text-3xl hover:text-green"
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
+                      className='text-3xl hover:text-yellow'
+                      href={project.live}
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      Github
+                      LIVE
                     </a>
-                  </div>
+                  )}
+                  <a
+                    className='text-3xl hover:text-green'
+                    href={project.github}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Github
+                  </a>
                 </div>
-                <div className="flex h-full flex-1 flex-col items-center justify-center overflow-hidden bg-black md:h-[320px]">
-                  <img src={project.image} alt={`${project.name} screenshot`} />
-                </div>
+              </div>
+              <div className='flex-1 flex flex-col justify-center items-center h-full md:h-[320px] bg-black overflow-hidden'>
+                <img src={project.image} alt={`${project.name} screenshot`} />
               </div>
             </li>
           ))}
         </ul>
       </div>
-      <p className="mb-10 text-center text-3xl uppercase">
+      <p className='text-center text-3xl uppercase mb-10'>
         see more apps&nbsp;
         <a
-          className="underline hover:text-red"
-          href="https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4"
-          target="_blank"
-          rel="noreferrer"
+          className='underline hover:text-red'
+          href='https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
+          target='_blank'
+          rel='noreferrer'
         >
           here
         </a>
         &nbsp;or&nbsp;
         <a
-          href="mailto: ozerova.lenka@gmail.com"
-          className=" underline hover:text-yellow"
+          href='mailto: ozerova.lenka@gmail.com'
+          className=' underline hover:text-yellow'
         >
           ping me
         </a>
