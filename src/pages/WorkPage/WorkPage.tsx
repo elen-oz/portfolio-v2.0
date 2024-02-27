@@ -2,7 +2,7 @@ import projects from './../../data.ts';
 
 const WorkPage = () => {
   return (
-    <section className=' h-full p-4  text-lg'>
+    <section className='h-full text-lg'>
       <div className='relative'>
         <div className='z-0 absolute top-0 left-0 right-0 flex pf-container sm:px-0 justify-between sm:justify-evenly h-full'>
           <div className='w-[30px] h-full bg-yellow'></div>
@@ -15,7 +15,7 @@ const WorkPage = () => {
           <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
         </div>
 
-        <div className='relative z-100 h-screen flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px]'>
+        <div className='relative z-100 h-screen px-4 flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px]'>
           <h2 className='mb-4 md:flex-1 text-6xl md:text-8xl uppercase'>
             Projects
           </h2>
@@ -38,37 +38,42 @@ const WorkPage = () => {
           {projects.map((project) => (
             <li
               key={project.id}
-              className='h-screen w-full mb-4 md:mb-2 flex flex-col md:flex-row md:items-center gap-x-4 hover:bg-gray-200'
+              className='h-screen w-full mb-4 md:mb-2 grid grid-cols-1 md:grid-cols-2 md:items-center'
             >
-              {/* <div className=''></div> */}
-              <div className='flex-1 flex flex-col justify-end md:block'>
-                <h3 className='pt-2 text-4xl'>{project.name}</h3>
-                <p className='py-4 leading-none'>{project.description}</p>
-                <div className='flex justify-between'>
-                  {project.live.length === 0 ? (
-                    <div className='w-12'>-</div>
-                  ) : (
+              <div className='h-[320px] px-4 hover:bg-gray-200'>
+                <div className='flex flex-col justify-end md:block'>
+                  <h3 className='pt-2 text-4xl'>{project.name}</h3>
+                  <p className='py-4 leading-none'>{project.description}</p>
+                  <div className='flex justify-between'>
+                    {project.live.length === 0 ? (
+                      <div className='w-12'>-</div>
+                    ) : (
+                      <a
+                        className='text-3xl hover:text-yellow'
+                        href={project.live}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        LIVE
+                      </a>
+                    )}
                     <a
-                      className='text-3xl hover:text-yellow'
-                      href={project.live}
+                      className='text-3xl hover:text-green'
+                      href={project.github}
                       target='_blank'
                       rel='noreferrer'
                     >
-                      LIVE
+                      Github
                     </a>
-                  )}
-                  <a
-                    className='text-3xl hover:text-green'
-                    href={project.github}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    Github
-                  </a>
+                  </div>
                 </div>
               </div>
-              <div className='flex-1 flex flex-col justify-center items-center h-full md:h-[320px] bg-black overflow-hidden'>
-                <img src={project.image} alt={`${project.name} screenshot`} />
+              <div className='flex flex-col justify-center items-center h-full md:h-[320px] bg-black overflow-hidden'>
+                <img
+                  className='w-full object-cover'
+                  src={project.image}
+                  alt={`${project.name} screenshot`}
+                />
               </div>
             </li>
           ))}
