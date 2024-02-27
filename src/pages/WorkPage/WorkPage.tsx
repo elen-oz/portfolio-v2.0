@@ -40,7 +40,7 @@ const WorkPage = () => {
               key={project.id}
               className='h-screen w-full mb-4 md:mb-2 grid grid-cols-1 md:grid-cols-2 md:items-center'
             >
-              <div className='h-[320px] mt-auto p-2 md:mt-0 md:px-4 hover:bg-gray-200'>
+              <div className='h-[320px] mt-auto p-2 md:mt-0 md:px-4 hover:bg-gray-100'>
                 <div className='h-full flex flex-col justify-end md:justify-between'>
                   <h3 className='pt-2 text-4xl'>{project.name}</h3>
                   <p className='py-4 leading-none'>{project.description}</p>
