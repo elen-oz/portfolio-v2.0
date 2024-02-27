@@ -5,7 +5,7 @@ const WorkList = () => {
   return (
     <>
       <div className='mb-10'>
-        <ul>
+        <ul className='pt-[7rem]'>
           {projects.map((project) => (
             <WorkItem
               key={project.id}
@@ -15,6 +15,7 @@ const WorkList = () => {
               image={project.image}
               github={project.github}
               live={project.live}
+              details={project.details}
             />
           ))}
         </ul>

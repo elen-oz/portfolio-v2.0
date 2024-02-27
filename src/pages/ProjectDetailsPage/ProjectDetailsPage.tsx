@@ -15,7 +15,7 @@ const ProjectDetailsPage = () => {
 
   if (!project) return <ProjectNotFoundPage />;
 
-  const { name, description, image, github, live } = project;
+  const { name, description, image, github, live, details } = project;
 
   return (
     <>
@@ -63,7 +63,7 @@ const ProjectDetailsPage = () => {
           </div>
         </div>
       </section>
-      <section className='h-screen'>
+      <section className='min-h-screen'>
         <div className='bg-black text-white'>
           <h2 className='text-5xl text-center py-10'>(Details)</h2>
           <div className='mx-auto w-full md:max-w-[70%]'>
@@ -74,6 +74,8 @@ const ProjectDetailsPage = () => {
             />
           </div>
         </div>
+
+        <div>{details}</div>
       </section>
     </>
   );
