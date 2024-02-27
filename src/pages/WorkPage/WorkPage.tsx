@@ -24,7 +24,7 @@ const WorkPage = () => {
             questions feel free to&nbsp;
             <a
               href='mailto: ozerova.lenka@gmail.com'
-              className='hover:text-yellow'
+              className='hover:text-red'
             >
               PING ME
             </a>
@@ -58,7 +58,7 @@ const WorkPage = () => {
                       </a>
                     )}
                     <a
-                      className='text-3xl hover:text-green'
+                      className='text-3xl hover:text-sky'
                       href={project.github}
                       target='_blank'
                       rel='noreferrer'
@@ -82,7 +82,7 @@ const WorkPage = () => {
       <p className='text-center text-3xl uppercase mb-10'>
         see more apps&nbsp;
         <a
-          className='underline hover:text-red'
+          className='underline hover:text-yellow'
           href='https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
           target='_blank'
           rel='noreferrer'
@@ -92,7 +92,7 @@ const WorkPage = () => {
         &nbsp;or&nbsp;
         <a
           href='mailto: ozerova.lenka@gmail.com'
-          className=' underline hover:text-yellow'
+          className=' underline hover:text-red'
         >
           ping me
         </a>
