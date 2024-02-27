@@ -1,15 +1,24 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useEffect, useState } from 'react';
 
 const ContainerPage = () => {
+  const [isNotContactPage, setIsNotContactPage] = useState(false);
+  const currentLocation = useLocation();
+  console.log(currentLocation.pathname);
+
+  useEffect(() => {
+    setIsNotContactPage(currentLocation.pathname !== '/contact');
+  }, [currentLocation.pathname]);
+
   return (
     <div className='relative flex flex-col min-h-screen w-screen'>
       <Header />
       <main className='flex-1' id='top'>
         <Outlet />
       </main>
-      <Footer />
+      {isNotContactPage && <Footer />}
     </div>
   );
 };
