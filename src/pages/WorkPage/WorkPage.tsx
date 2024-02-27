@@ -1,4 +1,4 @@
-import projects from './../../data.ts';
+import WorkList from './WorkList.tsx';
 
 const WorkPage = () => {
   return (
@@ -33,70 +33,7 @@ const WorkPage = () => {
         </div>
       </div>
 
-      <div className='mb-10'>
-        <ul className='uppercase '>
-          {projects.map((project) => (
-            <li
-              key={project.id}
-              className='h-screen w-full mb-4 md:mb-2 grid grid-cols-1 md:grid-cols-2 md:items-center'
-            >
-              <div className='h-[320px] mt-auto p-2 md:mt-0 md:px-4 hover:bg-gray-100'>
-                <div className='h-full flex flex-col justify-end md:justify-between'>
-                  <h3 className='pt-2 text-4xl'>{project.name}</h3>
-                  <p className='py-4 leading-none'>{project.description}</p>
-                  <div className='flex justify-between'>
-                    {project.live.length === 0 ? (
-                      <div className='w-12'>-</div>
-                    ) : (
-                      <a
-                        className='text-3xl hover:text-yellow'
-                        href={project.live}
-                        target='_blank'
-                        rel='noreferrer'
-                      >
-                        LIVE
-                      </a>
-                    )}
-                    <a
-                      className='text-3xl hover:text-sky'
-                      href={project.github}
-                      target='_blank'
-                      rel='noreferrer'
-                    >
-                      Github
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='flex flex-col justify-center items-center h-full md:h-[320px] bg-black overflow-hidden'>
-                <img
-                  className='w-full object-cover'
-                  src={project.image}
-                  alt={`${project.name} screenshot`}
-                />
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <p className='text-center text-3xl uppercase mb-10'>
-        see more apps&nbsp;
-        <a
-          className='underline hover:text-yellow'
-          href='https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
-          target='_blank'
-          rel='noreferrer'
-        >
-          here
-        </a>
-        &nbsp;or&nbsp;
-        <a
-          href='mailto: ozerova.lenka@gmail.com'
-          className=' underline hover:text-red'
-        >
-          ping me
-        </a>
-      </p>
+      <WorkList />
     </section>
   );
 };

@@ -1,9 +1,9 @@
-import rssApp from './assets/projects/RSS-App.webp';
-import diffCalc from './assets/projects/diff-calc.webp';
-import brainGames from './assets/projects/brain-games.webp';
-import Dojo from './assets/projects/Dojo.webp';
-import ReactMeals from './assets/projects/ReactMeals.webp';
-import todayILearned from './assets/projects/today-i-learned.webp';
+import rssApp from '../assets/projects/RSS-App.webp';
+import diffCalc from '../assets/projects/diff-calc.webp';
+import brainGames from '../assets/projects/brain-games.webp';
+import Dojo from '../assets/projects/Dojo.webp';
+import ReactMeals from '../assets/projects/ReactMeals.webp';
+import todayILearned from '../assets/projects/today-i-learned.webp';
 
 export type Project = {
   id: number;
