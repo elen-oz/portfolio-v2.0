@@ -1,54 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useState } from 'react';
-
-const bgColors = [
-  'bg-stone-600',
-  'bg-white',
-  'bg-blue',
-  'bg-white',
-  'bg-sky',
-  'bg-yellow',
-  'bg-purple',
-  'bg-[#daf67c]',
-  'bg-grey',
-  'bg-green',
-  'bg-white',
-  'bg-red',
-  'bg-rose',
-  'bg-violet',
-  'bg-yellow',
-  'bg-white',
-  'bg-grey',
-  'bg-purple',
-  'bg-red',
-  'bg-green',
-  'bg-sky',
-  'bg-yellow',
-  'bg-violet',
-  'bg-grey',
-  'bg-[#adebb2]',
-  'bg-violet',
-  'bg-white',
-  'bg-blue',
-  'bg-yellow',
-  'bg-purple',
-  'bg-[#daf67c]',
-  'bg-grey',
-  'bg-green',
-  'bg-white',
-  'bg-red',
-  'bg-rose',
-  'bg-violet',
-  'bg-yellow',
-  'bg-white',
-  'bg-grey',
-  'bg-purple',
-  'bg-red',
-  'bg-green',
-  'bg-sky',
-  'bg-yellow',
-];
+import bgColors from '../../utils/colors';
 
 const ContactPage = () => {
   const [copied, setCopied] = useState(false);

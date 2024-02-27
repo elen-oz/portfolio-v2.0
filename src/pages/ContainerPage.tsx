@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 const ContainerPage = () => {
   const [isNotContactPage, setIsNotContactPage] = useState(false);
   const currentLocation = useLocation();
-  console.log(currentLocation.pathname);
 
   useEffect(() => {
     setIsNotContactPage(currentLocation.pathname !== '/contact');
