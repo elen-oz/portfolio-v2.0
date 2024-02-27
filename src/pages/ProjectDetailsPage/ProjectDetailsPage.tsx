@@ -35,18 +35,52 @@ const ProjectDetailsPage = () => {
           <h2 className='mb-4 md:flex-1 text-6xl md:text-6xl uppercase'>
             {name}
           </h2>
-          <p className='md:flex-1 text-2xl lg:text-3xl leading-none'>
+          <p className='md:flex-1 text-xl lg:text-2xl leading-none'>
             {description}
           </p>
+
+          <div className='absolute bottom-0 right-4 flex flex-col justify-between uppercase text-right'>
+            {live.length === 0 ? (
+              <div className='w-12'></div>
+            ) : (
+              <a
+                className='text-3xl hover:text-red hover:underline'
+                href={live}
+                target='_blank'
+                rel='noreferrer'
+              >
+                see live
+              </a>
+            )}
+            <a
+              className='text-3xl hover:text-sky hover:underline'
+              href={github}
+              target='_blank'
+              rel='noreferrer'
+            >
+              explore Github
+            </a>
+          </div>
         </div>
       </section>
-      <div>ProjectDetailsPage</div>
-      <ul>
-        <li>{description}</li>
-        <li>{image}</li>
-        <li>{github}</li>
-        <li>{live}</li>
-      </ul>
+      <section className='h-screen'>
+        <div className='bg-black text-white'>
+          <h2 className='text-5xl text-center py-10'>(Details)</h2>
+          <div className='mx-auto max-w-[70%]'>
+            <img
+              className='w-full object-cover'
+              src={image}
+              alt={`${name} screenshot`}
+            />
+          </div>
+        </div>
+
+        {/* <ul>
+          <li>{image}</li>
+          <li>{github}</li>
+          <li>{live}</li>
+        </ul> */}
+      </section>
     </>
   );
 };
