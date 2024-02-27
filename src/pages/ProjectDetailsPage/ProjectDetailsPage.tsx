@@ -66,7 +66,7 @@ const ProjectDetailsPage = () => {
       <section className='h-screen'>
         <div className='bg-black text-white'>
           <h2 className='text-5xl text-center py-10'>(Details)</h2>
-          <div className='mx-auto max-w-[70%]'>
+          <div className='mx-auto w-full md:max-w-[70%]'>
             <img
               className='w-full object-cover'
               src={image}
@@ -74,12 +74,6 @@ const ProjectDetailsPage = () => {
             />
           </div>
         </div>
-
-        {/* <ul>
-          <li>{image}</li>
-          <li>{github}</li>
-          <li>{live}</li>
-        </ul> */}
       </section>
     </>
   );
