@@ -74,7 +74,7 @@ const ProjectDetailsPage = () => {
         </div>
 
         <div className='min-h-screen flex flex-col'>
-          <div className='mx-auto w-[70%] mt-[6rem] my-[3rem] text-4xl sm:text-5xl'>
+          <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-4xl sm:text-5xl'>
             <ul className='flex justify-center gap-3 flex-wrap'>
               {stack.map((item, index) => (
                 <li key={index} className='whitespace-nowrap'>
