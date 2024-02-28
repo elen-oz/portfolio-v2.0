@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import { type Project } from '../../utils/data';
 
 const WorkItem = ({ id, name, description, image, github, live }: Project) => {
+  const goToLink = (e) => {
+    e.stopPropagation();
+  };
+
   return (
     <li key={id} className='w-full mb-4 md:mb-[7rem] uppercase'>
       <Link
@@ -21,15 +25,17 @@ const WorkItem = ({ id, name, description, image, github, live }: Project) => {
                   href={live}
                   target='_blank'
                   rel='noreferrer'
+                  onClick={(e) => goToLink(e)}
                 >
                   LIVE
                 </a>
               )}
               <a
-                className='text-3xl hover:text-sky'
+                className='z-100 text-3xl hover:text-sky'
                 href={github}
                 target='_blank'
                 rel='noreferrer'
+                onClick={(e) => goToLink(e)}
               >
                 Github
               </a>
