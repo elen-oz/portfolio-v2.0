@@ -5,7 +5,7 @@ const WorkItem = ({ id, name, description, image, github, live }: Project) => {
   return (
     <li key={id} className='w-full mb-4 md:mb-[7rem] uppercase'>
       <Link
-        to={`/project/${id}`}
+        to={`/work/${id}`}
         className='h-[320px] grid grid-cols-1 md:grid-cols-2 md:items-center hover:bg-gray-100'
       >
         <div className='h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
