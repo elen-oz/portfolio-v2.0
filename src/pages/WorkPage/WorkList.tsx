@@ -36,7 +36,7 @@ const WorkList = () => {
           href='mailto: ozerova.lenka@gmail.com'
           className=' underline hover:text-red'
         >
-          ping me
+          <span className='whitespace-nowrap'>ping me</span>
         </a>
       </p>
     </>

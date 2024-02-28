@@ -2,7 +2,7 @@ import WorkList from './WorkList.tsx';
 
 const WorkPage = () => {
   return (
-    <section className='h-full text-lg'>
+    <section className='min-h-screen text-lg'>
       <div className='relative'>
         <div className='z-0 absolute top-0 left-0 right-0 flex pf-container sm:px-0 justify-between sm:justify-evenly h-full'>
           <div className='w-[30px] h-full bg-yellow'></div>

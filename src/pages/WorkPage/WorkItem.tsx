@@ -8,14 +8,14 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
   };
 
   return (
-    <li key={id} className='w-full mb-4 md:mb-[7rem] uppercase'>
+    <li key={id} className='w-full mb-[5rem] md:mb-[10rem] uppercase'>
       <Link
         to={`/work/${id}`}
-        className='h-[320px] grid grid-cols-1 md:grid-cols-2 md:items-center hover:bg-gray-100'
+        className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center hover:bg-gray-100'
       >
-        <div className='h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
+        <div className='md:h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
           <div className='h-full flex flex-col justify-end md:justify-between'>
-            <h3 className='pt-2 text-4xl'>{name}</h3>
+            <h3 className='py-2 text-4xl'>{name}</h3>
             <div className='flex justify-between'>
               {live.length === 0 ? (
                 <div className='w-12'>-</div>
@@ -42,11 +42,20 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col justify-center items-center h-full md:h-[320px] bg-black overflow-hidden'>
+        {/* <div className='flex flex-col justify-center items-center h-full md:h-[320px] bg-black'>
           <img
-            className='w-full object-cover'
+            className='hidden md:block w-full object-cover'
             src={image}
             alt={`${name} screenshot`}
+            loading='lazy'
+          />
+        </div> */}
+        <div className='h-30px bg-black sm:flex sm:flex-col sm:justify-center sm:items-center md:h-[320px] overflow-hidden'>
+          <img
+            className='md:w-full md:object-cover'
+            src={image}
+            alt={`${name} screenshot`}
+            loading='lazy'
           />
         </div>
       </Link>
