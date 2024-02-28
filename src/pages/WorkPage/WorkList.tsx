@@ -3,7 +3,7 @@ import WorkItem from './WorkItem.tsx';
 
 const WorkList = () => {
   return (
-    <div className='bg-grey'>
+    <div className='bg-gray-200'>
       <div className='mb-10'>
         <ul className='pt-[7rem]'>
           {projects.map((project) => (
