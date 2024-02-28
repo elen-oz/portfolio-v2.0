@@ -8,7 +8,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
   };
 
   return (
-    <li key={id} className='w-full mb-[5rem] md:mb-[10rem] uppercase'>
+    <li key={id} className='w-full mb-[5rem] md:mb-[10rem] uppercase bg-white'>
       <Link
         to={`/work/${id}`}
         className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center hover:bg-yellow'
@@ -31,7 +31,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
                 </a>
               )}
               <a
-                className='z-100 text-3xl hover:text-sky'
+                className='z-100 text-3xl hover:text-blue'
                 href={github}
                 target='_blank'
                 rel='noreferrer'

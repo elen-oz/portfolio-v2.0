@@ -3,7 +3,7 @@ import WorkItem from './WorkItem.tsx';
 
 const WorkList = () => {
   return (
-    <>
+    <div className='bg-grey'>
       <div className='mb-10'>
         <ul className='pt-[7rem]'>
           {projects.map((project) => (
@@ -39,7 +39,7 @@ const WorkList = () => {
           <span className='whitespace-nowrap'>ping me</span>
         </a>
       </p>
-    </>
+    </div>
   );
 };
 export default WorkList;
