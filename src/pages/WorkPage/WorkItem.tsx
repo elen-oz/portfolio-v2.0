@@ -15,7 +15,6 @@ const WorkItem = ({ id, name, description, image, github, live }: Project) => {
         <div className='h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
           <div className='h-full flex flex-col justify-end md:justify-between'>
             <h3 className='pt-2 text-4xl'>{name}</h3>
-            <p className='py-4 leading-none'>{description}</p>
             <div className='flex justify-between'>
               {live.length === 0 ? (
                 <div className='w-12'>-</div>
