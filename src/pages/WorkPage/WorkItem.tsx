@@ -11,7 +11,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
     <li key={id} className='w-full mb-[5rem] md:mb-[10rem] uppercase'>
       <Link
         to={`/work/${id}`}
-        className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center hover:bg-gray-100'
+        className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center hover:bg-yellow'
       >
         <div className='md:h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
           <div className='h-full flex flex-col justify-end md:justify-between'>
@@ -21,7 +21,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
                 <div className='w-12'>-</div>
               ) : (
                 <a
-                  className='text-3xl hover:text-yellow'
+                  className='text-3xl hover:text-white'
                   href={live}
                   target='_blank'
                   rel='noreferrer'
@@ -42,14 +42,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
             </div>
           </div>
         </div>
-        {/* <div className='flex flex-col justify-center items-center h-full md:h-[320px] bg-black'>
-          <img
-            className='hidden md:block w-full object-cover'
-            src={image}
-            alt={`${name} screenshot`}
-            loading='lazy'
-          />
-        </div> */}
+
         <div className='h-30px bg-black sm:flex sm:flex-col sm:justify-center sm:items-center md:h-[320px] overflow-hidden'>
           <img
             className='md:w-full md:object-cover'

@@ -65,11 +65,11 @@ const ProjectDetailsPage = () => {
           </div>
         </div>
 
-        <div className='min-h-screen flex flex-col'>
-          <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-4xl sm:text-5xl'>
+        <div className='min-h-screen flex flex-col bg-rose'>
+          <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-4xl sm:text-5xl '>
             <ul className='flex justify-center gap-3 flex-wrap'>
               {stack.map((item, index) => (
-                <li key={index} className='whitespace-nowrap'>
+                <li key={index} className='whitespace-nowrap hover:bg-white'>
                   &#9737;{item}
                 </li>
               ))}
@@ -80,7 +80,9 @@ const ProjectDetailsPage = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10'>
               <ul className='list-disc text-2xl'>
                 {features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
+                  <li key={index} className='hover:bg-white'>
+                    {feature}
+                  </li>
                 ))}
               </ul>
               <div className='text-3xl md:text-4xl'>{description}</div>
@@ -88,7 +90,7 @@ const ProjectDetailsPage = () => {
 
             <a
               href='/work'
-              className='text-3xl text-center uppercase hover:underline hover:text-rose'
+              className='text-3xl text-center uppercase hover:underline hover:underline'
             >
               To the list of works
             </a>
