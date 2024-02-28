@@ -15,7 +15,8 @@ const WorkList = () => {
               image={project.image}
               github={project.github}
               live={project.live}
-              details={project.details}
+              features={project.features}
+              stack={project.stack}
             />
           ))}
         </ul>

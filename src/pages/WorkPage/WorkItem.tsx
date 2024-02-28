@@ -1,8 +1,9 @@
+import { SyntheticEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { type Project } from '../../utils/data';
 
-const WorkItem = ({ id, name, description, image, github, live }: Project) => {
-  const goToLink = (e) => {
+const WorkItem = ({ id, name, image, github, live }: Project) => {
+  const goToLink = (e: SyntheticEvent) => {
     e.stopPropagation();
   };
 
