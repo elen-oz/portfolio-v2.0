@@ -1,19 +1,11 @@
+import StripedBackground from '../../components/StripedBackground.tsx';
 import WorkList from './WorkList.tsx';
 
 const WorkPage = () => {
   return (
     <section className='min-h-screen text-lg'>
       <div className='relative'>
-        <div className='z-0 absolute top-0 left-0 right-0 flex pf-container sm:px-0 justify-between sm:justify-evenly h-full'>
-          <div className='w-[30px] h-full bg-yellow'></div>
-          <div className='w-[30px] h-full bg-yellow'></div>
-          <div className='w-[30px] h-full bg-yellow'></div>
-          <div className='w-[30px] h-full bg-yellow'></div>
-          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
-          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
-          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
-          <div className='w-[30px] h-full bg-yellow hidden sm:block'></div>
-        </div>
+        <StripedBackground color={'yellow'} />
 
         <div className='relative z-100 h-screen px-4 flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px]'>
           <h2 className='mb-4 md:flex-1 text-6xl md:text-8xl uppercase'>

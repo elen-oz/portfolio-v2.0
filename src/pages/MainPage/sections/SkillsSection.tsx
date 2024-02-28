@@ -1,16 +1,9 @@
+import StripedBackground from '../../../components/StripedBackground';
+
 const SkillsSection = () => {
   return (
     <section className='relative h-screen' id='skills'>
-      <div className='absolute top-0 left-0 right-0 flex pf-container sm:px-0 justify-between sm:justify-evenly h-full'>
-        <div className='w-[30px] h-full bg-sky'></div>
-        <div className='w-[30px] h-full bg-sky'></div>
-        <div className='w-[30px] h-full bg-sky'></div>
-        <div className='w-[30px] h-full bg-sky'></div>
-        <div className='w-[30px] h-full bg-sky hidden sm:block'></div>
-        <div className='w-[30px] h-full bg-sky hidden sm:block'></div>
-        <div className='w-[30px] h-full bg-sky hidden sm:block'></div>
-        <div className='w-[30px] h-full bg-sky hidden sm:block'></div>
-      </div>
+      <StripedBackground color='sky' />
 
       <div className='relative z-5 h-full px-3 max-w-[700px] mx-auto md:text-5xl uppercase flex flex-col justify-around'>
         <h2 className='mb-5 text-6xl text-center pt-8'>| Skills |</h2>
