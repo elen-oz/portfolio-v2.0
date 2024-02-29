@@ -66,7 +66,7 @@ const ProjectDetailsPage = () => {
         </div>
 
         <div className='min-h-screen flex flex-col bg-rose'>
-          <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-4xl sm:text-5xl '>
+          <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-3xl sm:text-5xl '>
             <ul className='flex justify-center gap-3 flex-wrap'>
               {stack.map((item, index) => (
                 <li key={index} className='whitespace-nowrap hover:bg-white'>
