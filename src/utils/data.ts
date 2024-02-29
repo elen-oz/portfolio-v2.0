@@ -153,7 +153,6 @@ const data: Project[] = [
       'JavaScript',
       'React.js',
       'HTML',
-      'CSS',
       'Supabase: Database',
       'Supabase: Hosting',
     ],
