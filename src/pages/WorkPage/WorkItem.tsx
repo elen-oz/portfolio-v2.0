@@ -11,7 +11,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
     <li key={id} className='w-full mb-[5rem] md:mb-[10rem] uppercase bg-white'>
       <Link
         to={`/work/${id}`}
-        className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center hover:bg-yellow'
+        className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center transition duration-180 ease-in-out transform hover:bg-yellow'
       >
         <div className='md:h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
           <div className='h-full flex flex-col justify-end md:justify-between'>

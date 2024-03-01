@@ -6,6 +6,7 @@
   body {
     @apply font-serif;
   }
+
   h1 {
     @apply font-accent;
   }
@@ -16,7 +17,7 @@
 }
 
 .hover\:underline-blue:hover {
-  text-decoration-color: #0047ff;
+  text-decoration-color: #086a93;
 }
 
 .hover\:underline-green:hover {
@@ -36,7 +37,7 @@
 }
 
 .hover\:underline-violet:hover {
-  text-decoration-color: #620fcb;
+  text-decoration-color: #714ca2;
 }
 
 .hover\:underline-lightGreen:hover {
