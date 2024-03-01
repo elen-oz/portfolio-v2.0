@@ -6,7 +6,7 @@ const LinksSection = () => {
       className='h-screen bg-black text-white uppercase md:px-8  '
       id='work'
     >
-      <h2 className='text-6xl text-center pt-8'>(FIND HERE)</h2>
+      <h2 className='text-5xl lg:text-6xl text-center pt-8'>(FIND HERE)</h2>
 
       <div className='md:h-[50vh] h-full flex flex-col justify-center items-center pb-4'>
         <ul className='flex flex-col text-6xl'>

@@ -24,7 +24,7 @@ const SummarySection = () => {
         transition={{ type: 'tween', ease: 'backOut', duration: 0.2 }}
       >
         <p
-          className='max-w-[700px] py-[80px] text-2xl font-semibold'
+          className='max-w-[700px] py-[80px] px-8 text-3xl md:text-2xl font-semibold'
           onMouseEnter={() => {
             setIsHovered(true);
           }}
