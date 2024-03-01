@@ -1,5 +1,7 @@
-.main {
-  height: 100vh;
+.section {
+  // position: relative;
+  // height: 100vh;
+  // background-color: black;
 
   .mask,
   .body {
@@ -8,9 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #afa18f;
-    font-size: 64px;
-    line-height: 66px;
+    color: white;
+    // font-size: 64px;
+    // line-height: 66px;
     cursor: default;
 
     p {
@@ -19,17 +21,18 @@
     }
 
     span {
+      text-wrap: nowrap;
       color: #ec4e39;
     }
   }
 
   .mask {
-    mask-image: url('../public/ellipse.svg');
+    mask-image: url('/mask.svg');
     mask-repeat: no-repeat;
     mask-size: 40px;
     background: #ec4e39;
     position: absolute;
     color: black;
-    // cursor: none;
+    cursor: none;
   }
 }

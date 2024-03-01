@@ -6,20 +6,28 @@ import styles from './SummarySection.module.scss';
 const SummarySection = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
-  const size = isHovered ? 400 : 40;
+
+  // console.log(`{ ${x}, ${y} }`);
+  console.log(isHovered);
+
+  const size = isHovered ? 300 : 40;
 
   return (
-    <section className='w-full bg-black h-screen pt-4 px-4'>
-      <h2 className='text-6xl text-center pt-4 uppercase'>/About/</h2>
+    <>
+      {/* <section className='w-full bg-black h-screen pt-4 px-4 uppercase text-white'> */}
+      {/* <h2 className='text-6xl text-center pt-4'>/About/</h2> */}
 
-      <div className={styles.main}>
+      <div
+        className={`${styles.section} relative h-screen bg-black text-3xl uppercase`}
+      >
+        <h2 className='text-6xl text-center pt-4'>/About/</h2>
         <motion.div
           className={styles.mask}
           animate={{
             WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
             WebkitMaskSize: `${size}px`,
           }}
-          transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
+          transition={{ type: 'tween', ease: 'backOut', duration: 0.3 }}
         >
           <p
             onMouseEnter={() => {
@@ -42,7 +50,8 @@ const SummarySection = () => {
           </p>
         </div>
       </div>
-    </section>
+      {/* </section> */}
+    </>
   );
 };
 export default SummarySection;
