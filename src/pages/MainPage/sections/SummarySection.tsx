@@ -7,9 +7,6 @@ const SummarySection = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
 
-  // console.log(`{ ${x}, ${y} }`);
-  // console.log(isHovered);
-
   const size = isHovered ? 340 : 40;
 
   return (

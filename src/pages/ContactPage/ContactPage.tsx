@@ -11,10 +11,14 @@ const ContactPage = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const sectionStyles = 'relative z-90 h-screen uppercase';
+  const linksListWrapperStyles = 'fixed z-100 top-[250px] left-8 md:px-8';
+  const listStyles = 'text-6xl';
+
   return (
-    <div className='relative z-90 h-screen uppercase'>
-      <div className='fixed z-100 top-[250px] left-8 md:px-8'>
-        <ul className='text-6xl'>
+    <div className={sectionStyles}>
+      <div className={linksListWrapperStyles}>
+        <ul className={listStyles}>
           <li className='lowercase'>&#8921;SCROLL&#8920;</li>
 
           <li className='hover:text-white'>
