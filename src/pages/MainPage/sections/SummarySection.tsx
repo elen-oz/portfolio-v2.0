@@ -8,50 +8,47 @@ const SummarySection = () => {
   const { x, y } = useMousePosition();
 
   // console.log(`{ ${x}, ${y} }`);
-  console.log(isHovered);
+  // console.log(isHovered);
 
-  const size = isHovered ? 300 : 40;
+  const size = isHovered ? 340 : 40;
 
   return (
-    <>
-      {/* <section className='w-full bg-black h-screen pt-4 px-4 uppercase text-white'> */}
-      {/* <h2 className='text-6xl text-center pt-4'>/About/</h2> */}
+    <section className={`relative h-screen pt-4 bg-black uppercase text-white`}>
+      <h2 className='text-center pt-4 text-5xl lg:text-6xl'>/About/</h2>
+      <motion.div
+        className={`${styles.mask} w-full h-full flex justify-center items-center bg-red`}
+        animate={{
+          WebkitMaskPosition: `${x! - size / 2}px ${y! - size / 2}px`,
+          WebkitMaskSize: `${size}px`,
+        }}
+        transition={{ type: 'tween', ease: 'backOut', duration: 0.2 }}
+      >
+        <p
+          className='max-w-[700px] py-[80px] text-2xl font-semibold'
+          onMouseEnter={() => {
+            setIsHovered(true);
+          }}
+          onMouseLeave={() => {
+            setIsHovered(false);
+          }}
+        >
+          A frontend developer - with skills that haven't been replaced by A.I
+          (yet) - making really good things.
+        </p>
+      </motion.div>
 
       <div
-        className={`${styles.section} relative h-screen bg-black text-3xl uppercase`}
+        className={`w-full h-full flex justify-center items-center text-white`}
       >
-        <h2 className='text-6xl text-center pt-4'>/About/</h2>
-        <motion.div
-          className={styles.mask}
-          animate={{
-            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
-            WebkitMaskSize: `${size}px`,
-          }}
-          transition={{ type: 'tween', ease: 'backOut', duration: 0.3 }}
-        >
-          <p
-            onMouseEnter={() => {
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovered(false);
-            }}
-          >
-            A frontend developer - with skills that haven't been replaced by A.I
-            (yet) - making really good things.
-          </p>
-        </motion.div>
-
-        <div className={styles.body}>
-          <p>
-            Mastering code to sculpt <span>excellent digital experiences</span>,
-            I prioritize user satisfaction through <span>best practices</span>,
-            ensuring an unrivaled user journey.
-          </p>
-        </div>
+        <p className='w-[700px] p-[40px] text-3xl'>
+          Mastering code to sculpt{' '}
+          <span className='text-red'>excellent digital experiences</span>, I
+          prioritize user satisfaction through{' '}
+          <span className='text-red'>best practices</span>, ensuring an
+          unrivaled user journey.
+        </p>
       </div>
-      {/* </section> */}
-    </>
+    </section>
   );
 };
 export default SummarySection;
