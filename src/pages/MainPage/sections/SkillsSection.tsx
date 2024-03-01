@@ -6,7 +6,7 @@ const SkillsSection = () => {
       <StripedBackground color='sky' />
 
       <div className='relative z-5 h-full px-3 max-w-[700px] mx-auto md:text-5xl uppercase flex flex-col justify-around'>
-        <h2 className='mb-5 text-6xl text-center pt-8'>| Skills |</h2>
+        <h2 className='mb-5 text-5xl lg:text-6xl text-center'>| Skills |</h2>
         <div className='grid grid-cols-2 text-center text-3xl sm:text-5xl'>
           <ul className='text-left'>
             <li className='hover:bg-white'>
@@ -25,7 +25,7 @@ const SkillsSection = () => {
           </ul>
         </div>
 
-        <ul className='max-w-[700px] mx-auto flex justify-center gap-x-9 text-xl sm:text-3xl flex-wrap list-disc'>
+        <ul className='max-w-[700px] mx-auto flex justify-center gap-x-9 text-2xl md:text-4xl flex-wrap list-disc'>
           <li className='hover:underline hover:underline-green'>Git</li>
           <li className='hover:underline hover:underline-purple'>Yup</li>
           <li className='hover:underline hover:underline-yellow'>Axios</li>
