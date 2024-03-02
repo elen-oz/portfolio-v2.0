@@ -13,15 +13,15 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
         to={`/work/${id}`}
         className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center transition duration-180 ease-in-out transform hover:bg-yellow'
       >
-        <div className='md:h-[320px] mt-auto p-2 md:mt-0 md:px-4'>
+        <div className='md:h-[320px] mt-auto md:mt-0'>
           <div className='h-full flex flex-col justify-end md:justify-between'>
-            <h3 className='py-2 text-4xl'>{name}</h3>
+            <h3 className='p-2 text-4xl md:text-5xl'>{name}</h3>
             <div className='flex justify-between'>
               {live.length === 0 ? (
                 <div className='w-12'>-</div>
               ) : (
                 <a
-                  className='text-3xl hover:text-white'
+                  className='px-2 text-4xl bg-white hover:text-red'
                   href={live}
                   target='_blank'
                   rel='noreferrer'
@@ -31,7 +31,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
                 </a>
               )}
               <a
-                className='z-100 text-3xl hover:text-blue'
+                className='z-100 px-2 text-4xl bg-white hover:text-sky'
                 href={github}
                 target='_blank'
                 rel='noreferrer'

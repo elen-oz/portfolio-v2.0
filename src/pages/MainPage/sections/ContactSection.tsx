@@ -23,7 +23,7 @@ const ContactSection = () => {
             </a>
           </li>
           <li className='text-lg'>&rsaquo; or contact me on &rsaquo;</li>
-          <li className='hover:text-blue'>
+          <li className='hover:text-green'>
             <a
               href='https://www.linkedin.com/in/elen-oz/'
               target='_blank'
