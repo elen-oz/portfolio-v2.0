@@ -8,7 +8,7 @@ const WorkPage = () => {
         <StripedBackground color={'yellow'} />
 
         <div className='relative z-100 h-screen px-4 flex flex-col justify-center md:items-center md:flex-row pt-[100px]'>
-          <h2 className='md:flex-1 py-4 pr-2 text-6xl md:text-8xl uppercase bg-white'>
+          <h2 className='md:flex-1 py-4 pr-2 text-6xl md:text-8xl uppercase '>
             Projects
           </h2>
           <p className='md:flex-1 py-4 pl-2 text-2xl lg:text-3xl leading-none bg-white'>
