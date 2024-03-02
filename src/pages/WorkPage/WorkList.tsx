@@ -21,7 +21,7 @@ const WorkList = () => {
           ))}
         </ul>
       </div>
-      <p className='text-center text-3xl uppercase mb-10'>
+      <p className='mb-10 text-center text-3xl uppercase'>
         see more apps&nbsp;
         <a
           className='underline hover:text-yellow'

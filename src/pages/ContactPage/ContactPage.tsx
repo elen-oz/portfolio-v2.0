@@ -11,21 +11,16 @@ const ContactPage = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const sectionStyles = 'relative z-90 h-screen uppercase';
-  const linksListWrapperStyles = 'fixed z-100 top-[250px] left-8 md:px-8';
-  const listStyles = 'text-6xl';
-  const listItemStyles = 'hover:text-white';
-
   return (
-    <div className={sectionStyles}>
-      <div className={linksListWrapperStyles}>
-        <ul className={listStyles}>
+    <div className='z-90 relative h-screen uppercase'>
+      <div className='z-100 fixed left-8 top-[250px] md:px-8'>
+        <ul className='text-6xl'>
           <li className='lowercase'>&#8921;SCROLL&#8920;</li>
 
-          <li className={listItemStyles}>
+          <li className='hover:text-white'>
             <Link to='/work'>work</Link>
           </li>
-          <li className={listItemStyles}>
+          <li className='hover:text-white'>
             <a
               href='https://rebrand.ly/elen-oz-cv'
               target='_blank'
@@ -37,13 +32,13 @@ const ContactPage = () => {
 
           <li className='text-lg'>&rsaquo; contact me &rsaquo;</li>
 
-          <li className={listItemStyles}>
+          <li className='hover:text-white'>
             <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>
               Email me
             </a>
           </li>
 
-          <li className={listItemStyles}>
+          <li className='hover:text-white'>
             <a
               href='https://www.linkedin.com/in/elen-oz/'
               target='_blank'
@@ -53,7 +48,7 @@ const ContactPage = () => {
             </a>
           </li>
 
-          <li className={listItemStyles}>
+          <li className='hover:text-white'>
             <a
               href='https://github.com/elen-oz'
               target='_blank'
@@ -62,7 +57,7 @@ const ContactPage = () => {
               Github
             </a>
           </li>
-          <li className={listItemStyles}>
+          <li className='hover:text-white'>
             <CopyToClipboard text='@elenoz'>
               <div className='text-left' onClick={onCopy}>
                 {copied ? 'username is copied' : 'TELEGRAM'}

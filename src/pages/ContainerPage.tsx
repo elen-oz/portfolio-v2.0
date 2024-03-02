@@ -12,7 +12,7 @@ const ContainerPage = () => {
   }, [currentLocation.pathname]);
 
   return (
-    <div className='relative flex flex-col min-h-screen w-screen'>
+    <div className='relative flex min-h-screen w-screen flex-col'>
       <Header />
       <main className='flex-1' id='top'>
         <Outlet />

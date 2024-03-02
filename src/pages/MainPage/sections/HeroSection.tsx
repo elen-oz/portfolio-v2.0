@@ -3,11 +3,11 @@ import photoMdImg from '../../../assets/hero-md.webp';
 
 const HeroSection = () => {
   return (
-    <section className='min-h-screen flex flex-col justify-end px-4 pt-[100px] md:px-8 md:pt-0 md:pb-8'>
-      <div className='flex flex-col md:flex-row justify-between md:gap-2'>
-        <div className='flex-1 flex flex-col justify-end'>
+    <section className='flex min-h-screen flex-col justify-end px-4 pt-[100px] md:px-8 md:pb-8 md:pt-0'>
+      <div className='flex flex-col justify-between md:flex-row md:gap-2'>
+        <div className='flex flex-1 flex-col justify-end'>
           <p className='pb-2 lg:text-3xl'>HELLO, I'M</p>
-          <h1 className='text-4xl max-w-64 pb-2 leading-normal md:text-3xl md:leading-normal lg:text-6xl lg:leading-normal'>
+          <h1 className='max-w-64 pb-2 text-4xl leading-normal md:text-3xl md:leading-normal lg:text-6xl lg:leading-normal'>
             ELENA OZEROVA
           </h1>
           <h2 className='text-3xl lg:text-6xl'>FRONTEND DEVELOPER</h2>
@@ -15,7 +15,7 @@ const HeroSection = () => {
         </div>
 
         <div className='relative flex-1 pt-[50px] md:pt-0'>
-          <div className='absolute w-[100px] h-[100px] md:w-[150px] md:h-[150px] top-[10px] left-[50px] md:top-[35%] md:left-[-7%] bg-red rounded-full' />
+          <div className='absolute left-[50px] top-[10px] h-[100px] w-[100px] rounded-full bg-red md:left-[-7%] md:top-[35%] md:h-[150px] md:w-[150px]' />
 
           <picture>
             <source srcSet={photoImg} media='(min-width: 768px)' />
