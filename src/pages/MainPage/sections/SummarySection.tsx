@@ -10,7 +10,9 @@ const SummarySection = () => {
   const size = isHovered ? 340 : 40;
 
   return (
-    <section className={`relative h-screen pt-4 bg-black uppercase text-white`}>
+    <section
+      className={`relative h-screen pt-4 bg-black uppercase text-white overflow-hidden`}
+    >
       <h2 className='text-center pt-4 text-5xl lg:text-6xl'>/About/</h2>
       <motion.div
         className={`${styles.mask} w-full h-full flex justify-center items-center bg-red`}
@@ -21,7 +23,7 @@ const SummarySection = () => {
         transition={{ type: 'tween', ease: 'backOut', duration: 0.2 }}
       >
         <p
-          className='max-w-[700px] py-[80px] px-8 text-3xl md:text-2xl font-semibold'
+          className='max-w-[700px] py-[3rem] sm:py-[6rem] px-8 text-4xl text-center'
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -37,7 +39,7 @@ const SummarySection = () => {
       <div
         className={`w-full h-full flex justify-center items-center text-white`}
       >
-        <p className='w-[700px] p-[40px] text-3xl'>
+        <p className='w-[700px] p-[40px] text-3xl sm:text-4xl '>
           Mastering code to sculpt{' '}
           <span className='text-red'>excellent digital experiences</span>, I
           prioritize user satisfaction through{' '}
