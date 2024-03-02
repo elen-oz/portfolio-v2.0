@@ -25,6 +25,9 @@ export default {
         yellow: '#f8bc4b',
         rose: '#ffbaba',
       },
+      backgroundImage: {
+        maskRose: "url('/mask-rose.svg')",
+      },
     },
   },
   plugins: [],

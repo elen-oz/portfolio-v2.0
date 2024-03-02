@@ -24,17 +24,17 @@ const ProjectDetailsPage = () => {
         <StripedBackground color='rose' />
 
         <div className='relative z-100 h-screen px-4 flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px]'>
-          <h2 className='mb-4 md:flex-1 text-5xl sm:text-6xl md:text-6xl uppercase'>
+          <h2 className='mb-4 md:flex-1 text-6xl sm:text-7xl md:text-8xl uppercase'>
             {name}
           </h2>
           <div className='md:flex-1 text-xl lg:text-2xl leading-none'></div>
 
-          <div className='absolute bottom-0 right-4 flex flex-col justify-between text-4xl sm:text-5xl uppercase text-right'>
+          <div className='absolute bottom-0 right-4 flex flex-col text-5xl sm:text-6xl uppercase text-right'>
             {live.length === 0 ? (
               <div className='w-12'></div>
             ) : (
               <a
-                className='hover:text-red hover:underline'
+                className='pl-2 hover:text-red hover:underline hover:bg-white'
                 href={live}
                 target='_blank'
                 rel='noreferrer'
@@ -43,12 +43,12 @@ const ProjectDetailsPage = () => {
               </a>
             )}
             <a
-              className='hover:text-sky hover:underline'
+              className=' hover:text-sky hover:underline hover:bg-white'
               href={github}
               target='_blank'
               rel='noreferrer'
             >
-              explore code
+              github
             </a>
           </div>
         </div>
@@ -65,7 +65,7 @@ const ProjectDetailsPage = () => {
           </div>
         </div>
 
-        <div className='min-h-screen flex flex-col bg-rose'>
+        <div className='min-h-screen flex flex-col bg-maskRose'>
           <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-3xl sm:text-5xl '>
             <ul className='flex justify-center gap-3 flex-wrap'>
               {stack.map((item, index) => (
@@ -77,23 +77,22 @@ const ProjectDetailsPage = () => {
           </div>
 
           <div className='flex-1 flex flex-col justify-between mb-[4rem] px-8'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10'>
-              <ul className='list-disc text-2xl'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 mb-10'>
+              <ul className='p-4 pl-8 list-disc text-2xl bg-white'>
                 {features.map((feature, index) => (
-                  <li key={index} className='hover:bg-white'>
-                    {feature}
-                  </li>
+                  <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <div className='text-3xl md:text-4xl'>{description}</div>
+              <div className='p-4 text-3xl md:text-4xl bg-white'>
+                {description}
+              </div>
             </div>
 
-            <a
-              href='/work'
-              className='text-3xl text-center uppercase hover:underline hover:underline'
-            >
-              To the list of works
-            </a>
+            <div className='mx-auto px-2 hover:bg-white'>
+              <a href='/work' className='text-3xl uppercase hover:underline '>
+                To the list of works
+              </a>
+            </div>
           </div>
         </div>
       </section>
