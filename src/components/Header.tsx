@@ -7,22 +7,22 @@ const Header = () => {
   };
 
   return (
-    <header className='fixed top-0 left-0 right-0 w-screen z-10 text-xl md:py-[30px] md:text-[1.7rem]'>
-      <div className='mx-auto py-2 flex place-content-between'>
+    <header className='fixed left-0 right-0 top-0 z-10 w-screen text-xl md:py-[30px] md:text-[1.7rem]'>
+      <div className='mx-auto flex place-content-between py-2'>
         <Link
           to='/'
-          className='h-full grid relative pl-8 grid-cols-[auto,1fr] grid-rows-[29px] gap-x-2 bg-white hover:text-yellow'
+          className='relative grid h-full grid-cols-[auto,1fr] grid-rows-[29px] gap-x-2 bg-white pl-8 hover:text-yellow'
           onClick={handleClickToHome}
         >
           <div>elena.</div>
           <div>portfolio</div>
           <div>2024</div>
-          <div className='absolute text-xl right-0 bottom-0.5 md:bottom-0 px-[11px] pb-[3px] border-solid border-black border-2 md:border-[2.5px] rounded-full text-black'>
+          <div className='absolute bottom-0.5 right-0 rounded-full border-2 border-solid border-black px-[11px] pb-[3px] text-xl text-black md:bottom-0 md:border-[2.5px]'>
             c
           </div>
         </Link>
 
-        <nav className='px-8 bg-white flex md:items-center'>
+        <nav className='flex bg-white px-8 md:items-center'>
           <ul className='flex flex-col  text-right md:flex-row md:gap-2 '>
             <li className='hover:text-sky'>
               <Link to='/' onClick={handleClickToHome}>

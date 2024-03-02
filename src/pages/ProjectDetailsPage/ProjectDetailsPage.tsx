@@ -23,18 +23,18 @@ const ProjectDetailsPage = () => {
       <section className='relative h-screen'>
         <StripedBackground color='rose' />
 
-        <div className='relative z-100 h-screen px-4 flex flex-col justify-center gap-x-4 md:items-center md:flex-row pt-[100px]'>
-          <h2 className='mb-4 md:flex-1 text-6xl sm:text-7xl md:text-8xl uppercase'>
+        <div className='z-100 relative flex h-screen flex-col justify-center gap-x-4 px-4 pt-[100px] md:flex-row md:items-center'>
+          <h2 className='mb-4 text-6xl uppercase sm:text-7xl md:flex-1 md:text-8xl'>
             {name}
           </h2>
-          <div className='md:flex-1 text-xl lg:text-2xl leading-none'></div>
+          <div className='text-xl leading-none md:flex-1 lg:text-2xl'></div>
 
-          <div className='absolute bottom-0 right-4 flex flex-col text-5xl sm:text-6xl uppercase text-right'>
+          <div className='absolute bottom-0 right-4 flex flex-col text-right text-5xl uppercase sm:text-6xl'>
             {live.length === 0 ? (
               <div className='w-12'></div>
             ) : (
               <a
-                className='pl-2 hover:text-red hover:underline hover:bg-white'
+                className='pl-2 hover:bg-white hover:text-red hover:underline'
                 href={live}
                 target='_blank'
                 rel='noreferrer'
@@ -43,7 +43,7 @@ const ProjectDetailsPage = () => {
               </a>
             )}
             <a
-              className=' hover:text-sky hover:underline hover:bg-white'
+              className=' hover:bg-white hover:text-sky hover:underline'
               href={github}
               target='_blank'
               rel='noreferrer'
@@ -55,7 +55,7 @@ const ProjectDetailsPage = () => {
       </section>
       <section className='flex flex-col'>
         <div className='bg-black text-white'>
-          <h2 className='text-5xl text-center py-10'>(Details)</h2>
+          <h2 className='py-10 text-center text-5xl'>(Details)</h2>
           <div className='mx-auto w-full md:max-w-[70%]'>
             <img
               className='w-full object-cover'
@@ -65,9 +65,9 @@ const ProjectDetailsPage = () => {
           </div>
         </div>
 
-        <div className='min-h-screen flex flex-col bg-maskRose'>
-          <div className='mx-auto px-4 md:w-[70%] mt-[6rem] my-[3rem] text-3xl sm:text-5xl '>
-            <ul className='flex justify-center gap-3 flex-wrap'>
+        <div className='flex min-h-screen flex-col bg-maskRose'>
+          <div className='mx-auto my-[3rem] mt-[6rem] px-4 text-3xl sm:text-5xl md:w-[70%] '>
+            <ul className='flex flex-wrap justify-center gap-3'>
               {stack.map((item, index) => (
                 <li key={index} className='whitespace-nowrap hover:bg-white'>
                   &#9737;{item}
@@ -76,14 +76,14 @@ const ProjectDetailsPage = () => {
             </ul>
           </div>
 
-          <div className='flex-1 flex flex-col justify-between mb-[4rem] px-8'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 mb-10'>
-              <ul className='p-4 pl-8 list-disc text-2xl bg-white'>
+          <div className='mb-[4rem] flex flex-1 flex-col justify-between px-8'>
+            <div className='mb-10 grid grid-cols-1 sm:grid-cols-2'>
+              <ul className='list-disc bg-white p-4 pl-8 text-2xl'>
                 {features.map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <div className='p-4 text-3xl md:text-4xl bg-white'>
+              <div className='bg-white p-4 text-3xl md:text-4xl'>
                 {description}
               </div>
             </div>

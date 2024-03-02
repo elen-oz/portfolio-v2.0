@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 const LinksSection = () => {
   return (
     <section
-      className='h-screen bg-black text-white uppercase md:px-8  '
+      className='h-screen bg-black uppercase text-white md:px-8  '
       id='work'
     >
-      <h2 className='text-5xl lg:text-6xl text-center pt-8'>(FIND HERE)</h2>
+      <h2 className='pt-8 text-center text-5xl lg:text-6xl'>(FIND HERE)</h2>
 
-      <div className='md:h-[50vh] h-full flex flex-col justify-center items-center pb-4'>
+      <div className='flex h-full flex-col items-center justify-center pb-4 md:h-[50vh]'>
         <ul className='flex flex-col text-6xl'>
           <li className='hover:text-red'>
             <Link to='/work'>

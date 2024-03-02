@@ -11,10 +11,10 @@ const ContactSection = () => {
 
   return (
     <section
-      className='h-full pt-9 bg-white uppercase px-4 md:px-8 pb-[50px]'
+      className='h-full bg-white px-4 pb-[50px] pt-9 uppercase md:px-8'
       id='work'
     >
-      <div className='h-[80vh] flex flex-col justify-end items-start'>
+      <div className='flex h-[80vh] flex-col items-start justify-end'>
         <h2 className='text-6xl lowercase text-white'>contacts</h2>
         <ul className='flex flex-col text-6xl'>
           <li className='hover:text-yellow'>

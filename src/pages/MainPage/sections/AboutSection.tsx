@@ -1,11 +1,11 @@
 const AboutSection = () => {
   return (
-    <section className='w-full bg-gray-200 h-screen pt-4 px-4'>
-      <h2 className='text-5xl lg:text-6xl text-center pt-4 uppercase'>
+    <section className='h-screen w-full bg-gray-200 px-4 pt-4'>
+      <h2 className='pt-4 text-center text-5xl uppercase lg:text-6xl'>
         \beyond\
       </h2>
-      <div className='h-full flex flex-col justify-center items-center text-center'>
-        <ul className='max-w-[700px] mx-auto flex justify-center gap-1 text-2xl md:text-3xl flex-wrap uppercase'>
+      <div className='flex h-full flex-col items-center justify-center text-center'>
+        <ul className='mx-auto flex max-w-[700px] flex-wrap justify-center gap-1 text-2xl uppercase md:text-3xl'>
           <li className='whitespace-nowrap'>&#9737;Acrylic artist</li>
           <li className='whitespace-nowrap'>&#9737;Crossfit enthusiast</li>
           <li className='whitespace-nowrap'>&#9737;Hiking explorer</li>

@@ -8,20 +8,20 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
   };
 
   return (
-    <li key={id} className='w-full mb-[5rem] md:mb-[10rem] uppercase bg-white'>
+    <li key={id} className='mb-[5rem] w-full bg-white uppercase md:mb-[10rem]'>
       <Link
         to={`/work/${id}`}
-        className='md:h-[320px] grid grid-cols-1  md:grid-cols-2 md:items-center transition duration-180 ease-in-out transform hover:bg-yellow'
+        className='duration-180 grid transform  grid-cols-1 transition ease-in-out hover:bg-yellow md:h-[320px] md:grid-cols-2 md:items-center'
       >
-        <div className='md:h-[320px] mt-auto md:mt-0'>
-          <div className='h-full flex flex-col justify-end md:justify-between'>
+        <div className='mt-auto md:mt-0 md:h-[320px]'>
+          <div className='flex h-full flex-col justify-end md:justify-between'>
             <h3 className='p-2 text-4xl md:text-5xl'>{name}</h3>
             <div className='flex justify-between'>
               {live.length === 0 ? (
                 <div className='w-12'>-</div>
               ) : (
                 <a
-                  className='px-2 text-4xl bg-white hover:text-red'
+                  className='bg-white px-2 text-4xl hover:text-red'
                   href={live}
                   target='_blank'
                   rel='noreferrer'
@@ -31,7 +31,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
                 </a>
               )}
               <a
-                className='z-100 px-2 text-4xl bg-white hover:text-sky'
+                className='z-100 bg-white px-2 text-4xl hover:text-sky'
                 href={github}
                 target='_blank'
                 rel='noreferrer'
@@ -43,7 +43,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
           </div>
         </div>
 
-        <div className='h-30px bg-black sm:flex sm:flex-col sm:justify-center sm:items-center md:h-[320px] overflow-hidden'>
+        <div className='h-30px overflow-hidden bg-black sm:flex sm:flex-col sm:items-center sm:justify-center md:h-[320px]'>
           <img
             className='md:w-full md:object-cover'
             src={image}

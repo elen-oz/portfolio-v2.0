@@ -11,11 +11,11 @@ const SummarySection = () => {
 
   return (
     <section
-      className={`relative h-screen pt-4 bg-black uppercase text-white overflow-hidden`}
+      className={`relative h-screen overflow-hidden bg-black pt-4 uppercase text-white`}
     >
-      <h2 className='text-center pt-4 text-5xl lg:text-6xl'>/About/</h2>
+      <h2 className='pt-4 text-center text-5xl lg:text-6xl'>/About/</h2>
       <motion.div
-        className={`${styles.mask} w-full h-full flex justify-center items-center bg-red`}
+        className={`${styles.mask} flex h-full w-full items-center justify-center bg-red`}
         animate={{
           WebkitMaskPosition: `${x! - size / 2}px ${y! - size / 2}px`,
           WebkitMaskSize: `${size}px`,
@@ -23,7 +23,7 @@ const SummarySection = () => {
         transition={{ type: 'tween', ease: 'backOut', duration: 0.2 }}
       >
         <p
-          className='max-w-[700px] py-[3rem] sm:py-[6rem] px-8 text-4xl text-center'
+          className='max-w-[700px] px-8 py-[3rem] text-center text-4xl sm:py-[6rem]'
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -37,7 +37,7 @@ const SummarySection = () => {
       </motion.div>
 
       <div
-        className={`w-full h-full flex justify-center items-center text-white`}
+        className={`flex h-full w-full items-center justify-center text-white`}
       >
         <p className='w-[700px] p-[40px] text-3xl sm:text-4xl '>
           Mastering code to sculpt{' '}
