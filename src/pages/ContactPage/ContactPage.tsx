@@ -14,6 +14,7 @@ const ContactPage = () => {
   const sectionStyles = 'relative z-90 h-screen uppercase';
   const linksListWrapperStyles = 'fixed z-100 top-[250px] left-8 md:px-8';
   const listStyles = 'text-6xl';
+  const listItemStyles = 'hover:text-white';
 
   return (
     <div className={sectionStyles}>
@@ -21,10 +22,10 @@ const ContactPage = () => {
         <ul className={listStyles}>
           <li className='lowercase'>&#8921;SCROLL&#8920;</li>
 
-          <li className='hover:text-white'>
+          <li className={listItemStyles}>
             <Link to='/work'>work</Link>
           </li>
-          <li className='hover:text-white'>
+          <li className={listItemStyles}>
             <a
               href='https://rebrand.ly/elen-oz-cv'
               target='_blank'
@@ -36,13 +37,13 @@ const ContactPage = () => {
 
           <li className='text-lg'>&rsaquo; contact me &rsaquo;</li>
 
-          <li className='hover:text-white'>
+          <li className={listItemStyles}>
             <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>
               Email me
             </a>
           </li>
 
-          <li className='hover:text-white'>
+          <li className={listItemStyles}>
             <a
               href='https://www.linkedin.com/in/elen-oz/'
               target='_blank'
@@ -52,7 +53,7 @@ const ContactPage = () => {
             </a>
           </li>
 
-          <li className='hover:text-white'>
+          <li className={listItemStyles}>
             <a
               href='https://github.com/elen-oz'
               target='_blank'
@@ -61,7 +62,7 @@ const ContactPage = () => {
               Github
             </a>
           </li>
-          <li className='hover:text-white'>
+          <li className={listItemStyles}>
             <CopyToClipboard text='@elenoz'>
               <div className='text-left' onClick={onCopy}>
                 {copied ? 'username is copied' : 'TELEGRAM'}
