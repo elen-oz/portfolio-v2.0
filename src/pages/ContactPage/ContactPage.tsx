@@ -13,7 +13,7 @@ const ContactPage = () => {
 
   return (
     <div className='z-90 relative h-screen uppercase'>
-      <div className='fixed right-10 top-[130px] text-end text-2xl min-[600px]:right-0 min-[600px]:top-1/3 min-[600px]:translate-x-[6rem] min-[600px]:translate-y-1/2 min-[600px]:rotate-90 min-[600px]:transform min-[600px]:text-start min-[600px]:text-4xl'>
+      <div className='fixed right-10 top-[130px] text-end text-2xl min-[600px]:right-0 min-[600px]:top-1/2 min-[600px]:translate-x-[6rem] min-[600px]:translate-y-1/2 min-[600px]:rotate-90 min-[600px]:transform min-[600px]:text-start min-[600px]:text-4xl'>
         scroll for fun, <br />
         no more content here
       </div>
