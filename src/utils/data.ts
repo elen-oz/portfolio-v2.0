@@ -4,6 +4,7 @@ import brainGames from '../assets/projects/brain-games.webp';
 import Dojo from '../assets/projects/Dojo.webp';
 import ReactMeals from '../assets/projects/ReactMeals.webp';
 import todayILearned from '../assets/projects/today-i-learned.webp';
+import taskManager from '../assets/projects/tasks-manager.webp';
 
 export type Project = {
   id: number;
@@ -17,6 +18,35 @@ export type Project = {
 };
 
 const data: Project[] = [
+  {
+    id: 7,
+    name: 'Tasks manager',
+    image: taskManager,
+    github: 'https://github.com/elen-oz/hi_todo-fullstack',
+    live: 'https://to-do-app-git-main-g6d.vercel.app/',
+    description:
+      'This project is the final study project for the Beyond the Endpoint module at Hyper Island. It is a service designed for creating and managing tasks. The frontend is developed using React.js with TypeScript and styled with Tailwind CSS. The backend is built with Node.js, utilizing Express for server setup, Sequelize as the ORM, and PostgreSQL as the database, with JWT for authentication.',
+    features: [
+      'React.js with TypeScript',
+      'Tailwind CSS for styling',
+      'Node.js with Express for backend development',
+      'JWT for authentication',
+      'Sequelize ORM for database management',
+      'Asynchronous request handling (GET, PATCH, DELETE, POST)',
+      'Profile management including registration, login, and profile editing',
+      'Task management functionality',
+    ],
+    stack: [
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'Express',
+      'JWT',
+      'Sequelize',
+      'PostgreSQL',
+    ],
+  },
   {
     id: 1,
     name: 'RSS Aggregator',
