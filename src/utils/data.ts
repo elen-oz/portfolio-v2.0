@@ -5,6 +5,7 @@ import Dojo from '../assets/projects/Dojo.webp';
 import ReactMeals from '../assets/projects/ReactMeals.webp';
 import todayILearned from '../assets/projects/today-i-learned.webp';
 import taskManager from '../assets/projects/tasks-manager.webp';
+import chatFirebase from '../assets/projects/chat-firebase.webp';
 
 export type Project = {
   id: number;
@@ -46,6 +47,21 @@ const data: Project[] = [
       'Sequelize',
       'PostgreSQL',
     ],
+  },
+  {
+    id: 8,
+    name: 'Live Chat',
+    image: chatFirebase,
+    github: 'https://github.com/elen-oz/chat_react-firebase',
+    live: 'https://chat-react-firebase-6de84.web.app/',
+    description:
+      'Simple chat application built with React and Firebase. Users can sign in with Google authentication and send live messages in a chat room.',
+    features: [
+      'Google authentication',
+      'Real-time messaging',
+      'Responsive design',
+    ],
+    stack: ['React', 'Firebase', 'Tailwind CSS'],
   },
   {
     id: 1,

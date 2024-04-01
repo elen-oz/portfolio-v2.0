@@ -43,9 +43,9 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
           </div>
         </div>
 
-        <div className='h-30px overflow-hidden bg-black sm:flex sm:flex-col sm:items-center sm:justify-center md:h-[320px]'>
+        <div className='h-30px overflow-hidden bg-black  md:h-[320px]'>
           <img
-            className='md:w-full md:object-cover'
+            className='object-center md:w-full md:object-cover lg:object-top'
             src={image}
             alt={`${name} screenshot`}
             loading='lazy'
