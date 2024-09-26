@@ -48,10 +48,10 @@ const Header = () => {
         </nav>
 
         {/* -------- mobile menu -------- */}
-        <nav className='flex bg-white md:hidden'>
+        <nav className='flex  md:hidden'>
           {isMenuOpen ? (
-            <ul className='flex flex-col text-right'>
-              <li className='md:hidden p-6'>
+            <ul className='flex flex-col text-right bg-white'>
+              <li className='md:hidden p-4'>
                 <button onClick={toggleMenu}>
                   <TfiClose />
                 </button>
@@ -69,7 +69,7 @@ const Header = () => {
               </li>
             </ul>
           ) : (
-            <button onClick={toggleMenu} className='p-6'>
+            <button onClick={toggleMenu} className='p-4 rounded-full bg-white'>
               <TfiMenu />
             </button>
           )}
