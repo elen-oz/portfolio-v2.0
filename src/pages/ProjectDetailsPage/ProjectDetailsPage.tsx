@@ -90,9 +90,9 @@ const ProjectDetailsPage = () => {
               </div>
             </div>
 
-            <div className='mx-auto px-2 hover:bg-white'>
-              <a href='/work' className='text-3xl uppercase hover:underline '>
-                Go to the list of works
+            <div className='mr-auto px-2 hover:bg-white'>
+              <a href='/work' className='text-3xl uppercase underline '>
+                &lt; Back to the list of works
               </a>
             </div>
           </div>
