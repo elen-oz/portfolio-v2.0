@@ -1,4 +1,6 @@
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import useMenuStore from '../../stores/menuStore.ts';
 import data from '../../utils/data';
 
 import ProjectNotFoundPage from './ProjectNotFoundPage';
@@ -7,6 +9,7 @@ import StripedBackground from '../../components/StripedBackground';
 const ProjectDetailsPage = () => {
   const { id } = useParams<{ id: string }>();
   const projectId = id ? parseInt(id, 10) : undefined;
+  const closeMenu = useMenuStore((state) => state.closeMenu);
 
   const project = data.find((item) => {
     if (item.id) {
@@ -17,6 +20,10 @@ const ProjectDetailsPage = () => {
   if (!project) return <ProjectNotFoundPage />;
 
   const { name, description, image, github, live, features, stack } = project;
+
+  useEffect(() => {
+    closeMenu();
+  }, [closeMenu]);
 
   return (
     <>
@@ -29,7 +36,7 @@ const ProjectDetailsPage = () => {
           </h2>
           <div className='text-xl leading-none md:flex-1 lg:text-2xl'></div>
 
-          <div className='fixed bottom-6 right-6 min-[1940px]:right-40 min-[2370px]:right-80 flex flex-col text-right text-5xl uppercase sm:text-6xl'>
+          <div className='fixed bottom-6 right-6 flex flex-col text-right text-5xl uppercase sm:text-6xl min-[1940px]:right-40 min-[2370px]:right-80'>
             {live.length === 0 ? (
               <div className='w-12'></div>
             ) : (

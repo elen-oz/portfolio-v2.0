@@ -1,7 +1,15 @@
+import {useEffect} from "react";
+import useMenuStore from '../../stores/menuStore.ts';
 import StripedBackground from '../../components/StripedBackground.tsx';
 import WorkList from './WorkList.tsx';
 
 const WorkPage = () => {
+  const closeMenu = useMenuStore((state) => state.closeMenu);
+
+  useEffect(() => {
+    closeMenu();
+  }, [closeMenu]);
+
   return (
     <section className='min-h-screen text-lg'>
       <div className='relative'>

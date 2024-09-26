@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
-
 import useMenuStore from '../stores/menuStore.ts';
 
 const Header = () => {

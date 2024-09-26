@@ -1,15 +1,21 @@
+import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { useState } from 'react';
+import useMenuStore from '../../stores/menuStore.ts';
 import bgColors from '../../utils/colors';
 
 const ContactPage = () => {
   const [copied, setCopied] = useState(false);
+  const closeMenu = useMenuStore((state) => state.closeMenu)
 
   const onCopy = () => {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  useEffect(() => {
+    closeMenu()
+  }, [closeMenu])
 
   return (
     <div className='z-90 relative h-screen uppercase  overflow-y-auto scrollbar-hide-y'>
