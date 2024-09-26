@@ -20,6 +20,33 @@ export type Project = {
 
 const data: Project[] = [
   {
+    id: 10,
+    name: 'GYM app',
+    image: '',
+    github: 'https://github.com/elen-oz/zonixx',
+    live: 'https://zonixx.vercel.app/',
+    description:
+      'This is a mobile-focused web app to provide optimal usability on smartphones, especially for gym users. It uses Next.js 14 with App Router for efficient server-side rendering and routing, using TypeScript to enhance type safety, the frontend uses NextUI components styled with Tailwind CSS, creating a responsive and customisable user interface with a priority on mobile devices. State management is handled by Zustand. This combination of technologies results in a productive, mobile-optimised app that provides a seamless experience for users accessing it directly from their phone while at the gym.',
+    features: [
+      'Next.js 14 with App Router',
+      'TypeScript for type safety',
+      'NextUI components',
+      'Tailwind CSS for responsive styling',
+      'Zustand for state management',
+      'Mobile-first design approach',
+      'Optimized for gym environment usage',
+      'Responsive user interface',
+    ],
+    stack: [
+      'Next.js 14',
+      'TypeScript CSS',
+      'NextUI',
+      'Tailwind CSS',
+      'Zustand',
+    ],
+  },
+
+  {
     id: 7,
     name: 'Tasks manager',
     image: taskManager,
