@@ -7,7 +7,7 @@ const WorkPage = () => {
       <div className='relative'>
         <StripedBackground color={'yellow'} />
 
-        <div className='z-100 relative flex h-screen flex-col justify-center px-4 pt-[100px] md:flex-row md:items-center'>
+        <div className='z-100 content-container relative flex h-screen flex-col justify-center px-4 pt-[100px] md:flex-row md:items-center'>
           <h2 className='py-4 pr-2 text-6xl uppercase md:flex-1 md:text-8xl '>
             Projects
           </h2>

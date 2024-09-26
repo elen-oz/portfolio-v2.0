@@ -12,6 +12,12 @@
   }
 }
 
+@layer components {
+  .content-container {
+    @apply w-screen xl:max-w-screen-xl mx-auto;
+  }
+}
+
 .hover\:underline-red:hover {
   text-decoration-color: #e24848;
 }

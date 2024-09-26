@@ -23,7 +23,7 @@ const ProjectDetailsPage = () => {
       <section className='relative h-screen'>
         <StripedBackground color='rose' />
 
-        <div className='z-100 relative flex h-screen flex-col justify-center gap-x-4 px-4 pt-[100px] md:flex-row md:items-center'>
+        <div className='content-container z-100 relative flex h-screen flex-col justify-center gap-x-4 px-4 pt-[100px] md:flex-row md:items-center'>
           <h2 className='mb-4 text-6xl uppercase sm:text-7xl md:flex-1 md:text-8xl'>
             {name}
           </h2>
@@ -55,18 +55,20 @@ const ProjectDetailsPage = () => {
       </section>
       <section className='flex flex-col'>
         <div className='bg-black text-white'>
-          <h2 className='py-10 text-center text-5xl'>(Details)</h2>
-          <div className='mx-auto w-full md:max-w-[70%]'>
-            <img
-              className='w-full object-cover'
-              src={image}
-              alt={`${name} screenshot`}
-            />
+          <div className='content-container'>
+            <h2 className='py-10 text-center text-5xl'>(Details)</h2>
+            <div className='mx-auto w-full md:max-w-[70%]'>
+              <img
+                className='w-full object-cover'
+                src={image}
+                alt={`${name} screenshot`}
+              />
+            </div>
           </div>
         </div>
 
         <div className='flex min-h-screen flex-col bg-maskRose'>
-          <div className='mx-auto my-[3rem] mt-[6rem] px-4 text-3xl sm:text-5xl md:w-[70%] '>
+          <div className='content-container mx-auto my-[3rem] mt-[6rem] px-4 text-3xl sm:text-5xl md:w-[70%] '>
             <ul className='flex flex-wrap justify-center gap-3'>
               {stack.map((item, index) => (
                 <li key={index} className='whitespace-nowrap hover:bg-white'>
@@ -76,14 +78,14 @@ const ProjectDetailsPage = () => {
             </ul>
           </div>
 
-          <div className='mb-[4rem] flex flex-1 flex-col justify-between px-8'>
+          <div className='content-container mb-[4rem] flex flex-1 flex-col justify-between px-8'>
             <div className='mb-10 grid grid-cols-1 sm:grid-cols-2'>
               <ul className='list-disc bg-white p-4 pl-8 text-2xl'>
                 {features.map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <div className='bg-white p-4 text-3xl md:text-4xl text-justify'>
+              <div className='bg-white p-4 text-justify text-3xl md:text-4xl'>
                 {description}
               </div>
             </div>

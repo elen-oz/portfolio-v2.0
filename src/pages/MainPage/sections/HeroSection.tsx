@@ -4,7 +4,7 @@ import photoMdImg from '../../../assets/hero-md.webp';
 const HeroSection = () => {
   return (
     <section className='flex min-h-screen flex-col justify-end px-4 pt-[100px] md:pb-4 md:pt-0'>
-      <div className='flex flex-col justify-between md:flex-row md:justify-between md:gap-2'>
+      <div className='content-container flex flex-col justify-between md:flex-row md:justify-between md:gap-2'>
         <div className='flex flex-1 flex-col justify-end md:pb-4'>
           <p className='pb-2 lg:text-3xl'>HELLO, I'M</p>
           <h1 className='max-w-64 pb-2 text-4xl leading-normal md:text-3xl md:leading-normal lg:text-6xl lg:leading-normal'>

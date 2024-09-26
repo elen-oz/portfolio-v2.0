@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   return (
-    <header className='fixed left-0 right-0 top-0 z-10 w-screen text-xl md:py-[30px] md:text-[1.7rem]'>
+    <header className='content-container fixed left-0 right-0 top-0 z-10 text-xl md:py-[30px] md:text-[1.7rem]'>
       <div className='mx-auto flex place-content-between py-2'>
         <Link
           to='/'
