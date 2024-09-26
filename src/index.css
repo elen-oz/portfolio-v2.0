@@ -13,8 +13,21 @@
 }
 
 @layer components {
+
+}
+
+@layer utilities {
   .content-container {
     @apply w-full xl:max-w-screen-xl mx-auto;
+  }
+
+  .scrollbar-hide-y {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide-y::-webkit-scrollbar {
+    width: 0;
+    display: none;
   }
 }
 
