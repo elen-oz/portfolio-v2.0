@@ -6,6 +6,7 @@ import ReactMeals from '../assets/projects/ReactMeals.webp';
 import todayILearned from '../assets/projects/today-i-learned.webp';
 import taskManager from '../assets/projects/tasks-manager.webp';
 import chatFirebase from '../assets/projects/chat-firebase.webp';
+import zonixx from '../assets/projects/zonixx.webp';
 
 export type Project = {
   id: number;
@@ -22,7 +23,7 @@ const data: Project[] = [
   {
     id: 10,
     name: 'GYM app',
-    image: '',
+    image: zonixx,
     github: 'https://github.com/elen-oz/zonixx',
     live: 'https://zonixx.vercel.app/',
     description:
