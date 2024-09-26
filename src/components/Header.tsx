@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import { TfiClose, TfiMenu } from 'react-icons/tfi';
+import { MdMenu, MdClose } from 'react-icons/md';
+
+import useMenuStore from '../stores/menuStore.ts';
 
 const Header = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+  const { isMenuOpen, toggleMenu } = useMenuStore();
 
   const handleClickToHome = () => {
     const element = document.getElementById('top');
@@ -50,27 +47,27 @@ const Header = () => {
         {/* -------- mobile menu -------- */}
         <nav className='flex  md:hidden'>
           {isMenuOpen ? (
-            <ul className='flex flex-col text-right bg-white'>
-              <li className='md:hidden p-4'>
+            <ul className='flex flex-col bg-white text-right'>
+              <li className='p-4 md:hidden'>
                 <button onClick={toggleMenu}>
-                  <TfiClose />
+                  <MdClose size='35'  />
                 </button>
               </li>
-              <li className='hover:text-sky p-4'>
+              <li className='p-4 hover:text-sky'>
                 <Link to='/' onClick={handleClickToHome}>
                   Home
                 </Link>
               </li>
-              <li className='hover:text-purple p-4'>
+              <li className='p-4 hover:text-purple'>
                 <Link to='/work'>Work</Link>
               </li>
-              <li className='hover:text-green p-4'>
+              <li className='p-4 hover:text-green'>
                 <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           ) : (
-            <button onClick={toggleMenu} className='p-4 rounded-full bg-white'>
-              <TfiMenu />
+            <button onClick={toggleMenu} className='rounded-full bg-white p-4'>
+              <MdMenu size='35' />
             </button>
           )}
         </nav>
