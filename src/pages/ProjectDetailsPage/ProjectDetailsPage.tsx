@@ -83,14 +83,14 @@ const ProjectDetailsPage = () => {
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <div className='bg-white p-4 text-3xl md:text-4xl'>
+              <div className='bg-white p-4 text-3xl md:text-4xl text-justify'>
                 {description}
               </div>
             </div>
 
             <div className='mx-auto px-2 hover:bg-white'>
               <a href='/work' className='text-3xl uppercase hover:underline '>
-                To the list of works
+                Go to the list of works
               </a>
             </div>
           </div>
