@@ -18,7 +18,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
             <h3 className='p-2 text-4xl md:text-5xl'>{name}</h3>
             <div className='flex justify-between'>
               {live.length === 0 ? (
-                <div className='w-12'>-</div>
+                  <div className='w-40 px-4 py-2 text-sm text-gray-400'>No user interface<br/> <span className='font-mono lowercase'>&lt;Console application&gt;</span></div>
               ) : (
                 <a
                   className='bg-white px-2 text-4xl hover:text-red'
@@ -31,7 +31,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
                 </a>
               )}
               <a
-                className='z-100 bg-white px-2 text-4xl hover:text-sky'
+                className='z-100 bg-white p-4 text-4xl hover:text-sky'
                 href={github}
                 target='_blank'
                 rel='noreferrer'
