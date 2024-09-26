@@ -29,7 +29,7 @@ const ProjectDetailsPage = () => {
           </h2>
           <div className='text-xl leading-none md:flex-1 lg:text-2xl'></div>
 
-          <div className='fixed bottom-6 right-6 2xl:right-40 flex flex-col text-right text-5xl uppercase sm:text-6xl'>
+          <div className='fixed bottom-6 right-6 min-[1940px]:right-40 min-[2370px]:right-80 flex flex-col text-right text-5xl uppercase sm:text-6xl'>
             {live.length === 0 ? (
               <div className='w-12'></div>
             ) : (

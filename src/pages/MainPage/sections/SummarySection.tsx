@@ -15,14 +15,6 @@ const SummarySection = () => {
     >
       <div className='content-container mx-auto h-screen'>
         <h2 className='pt-4 text-center text-5xl lg:text-6xl'>/About/</h2>
-        {/*<motion.div*/}
-        {/*  className={`${styles.mask} flex h-full w-full items-center justify-center bg-red`}*/}
-        {/*  animate={{*/}
-        {/*    WebkitMaskPosition: `${x! - size / 2}px ${y! - size / 2}px`,*/}
-        {/*    WebkitMaskSize: `${size}px`,*/}
-        {/*  }}*/}
-        {/*  transition={{ type: 'tween', ease: 'backOut', duration: 0.2 }}*/}
-        {/*>*/}
         <motion.div
             className={`${styles.mask} flex h-full content-container mx-auto items-center justify-center bg-red`}
             animate={{
