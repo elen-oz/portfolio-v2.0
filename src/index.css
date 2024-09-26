@@ -14,7 +14,7 @@
 
 @layer components {
   .content-container {
-    @apply w-screen xl:max-w-screen-xl mx-auto;
+    @apply w-full xl:max-w-screen-xl mx-auto;
   }
 }
 
