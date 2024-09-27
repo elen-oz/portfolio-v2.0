@@ -10,19 +10,17 @@ const ProjectDetailsPage = () => {
   const projectId = id ? parseInt(id, 10) : undefined;
   const closeMenu = useMenuStore((state) => state.closeMenu);
 
-  const project = data.find((item) => {
-    if (item.id) {
-      return item.id === projectId;
-    }
-  });
+  useEffect(() => {
+    closeMenu();
+  }, [closeMenu]);
+
+  const project = data.find((item) => item.id === projectId);
 
   if (!project) return <ProjectNotFoundPage />;
 
   const { name, description, image, github, live, features, stack } = project;
 
-  useEffect(() => {
-    closeMenu();
-  }, [closeMenu]);
+
 
   return (
     <>
