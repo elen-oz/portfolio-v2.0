@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import useMenuStore from '../../stores/menuStore.ts';
 import data from '../../utils/data';
-
 import ProjectNotFoundPage from './ProjectNotFoundPage';
 import StripedBackground from '../../components/StripedBackground';
 
@@ -36,12 +35,12 @@ const ProjectDetailsPage = () => {
           </h2>
           <div className='text-xl leading-none md:flex-1 lg:text-2xl'></div>
 
-          <div className='fixed bottom-6 right-6 flex flex-col text-right text-5xl uppercase sm:text-6xl min-[1940px]:right-40 min-[2370px]:right-80'>
+          <div className='z-50 fixed px-2 bg-rose bottom-6 right-6 flex flex-col text-right text-3xl md:text-5xl uppercase sm:text-6xl min-[1940px]:right-40 min-[2370px]:right-80'>
             {live.length === 0 ? (
               <div className='w-12'></div>
             ) : (
               <a
-                className='pl-2 hover:bg-white hover:text-red hover:underline'
+                className='underline hover:bg-white hover:text-red'
                 href={live}
                 target='_blank'
                 rel='noreferrer'
@@ -50,7 +49,7 @@ const ProjectDetailsPage = () => {
               </a>
             )}
             <a
-              className=' hover:bg-white hover:text-sky hover:underline'
+              className='underline hover:bg-white hover:text-sky'
               href={github}
               target='_blank'
               rel='noreferrer'
@@ -97,8 +96,8 @@ const ProjectDetailsPage = () => {
               </div>
             </div>
 
-            <div className='mr-auto px-2 hover:bg-white'>
-              <a href='/work' className='text-3xl uppercase underline '>
+            <div className='w-[200px] sm:w-[270px] mr-auto px-2 hover:bg-white text-right'>
+              <a href='/work' className='text-2xl sm:text-3xl uppercase underline '>
                 &lt; Back to the list of works
               </a>
             </div>

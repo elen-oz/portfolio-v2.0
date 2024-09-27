@@ -21,7 +21,7 @@ const WorkItem = ({ id, name, image, github, live }: Project) => {
                   <div className='w-40 px-4 py-2 text-sm text-gray-400'>No user interface<br/> <span className='font-mono lowercase'>&lt;Console application&gt;</span></div>
               ) : (
                 <a
-                  className='bg-white px-2 text-4xl hover:text-red'
+                  className='bg-white p-4 text-4xl hover:text-red'
                   href={live}
                   target='_blank'
                   rel='noreferrer'
