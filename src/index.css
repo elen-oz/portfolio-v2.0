@@ -17,8 +17,9 @@
 }
 
 @layer utilities {
+  /*xl:max-w-screen-xl*/
   .content-container {
-    @apply w-full xl:max-w-screen-xl mx-auto;
+    @apply w-full 2xl:max-w-screen-2xl mx-auto;
   }
 
   .scrollbar-hide-y {
