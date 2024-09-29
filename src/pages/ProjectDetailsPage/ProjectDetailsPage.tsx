@@ -33,7 +33,7 @@ const ProjectDetailsPage = () => {
           </h2>
           <div className='text-xl leading-none md:flex-1 lg:text-2xl'></div>
 
-          <div className='z-50 fixed px-2 bg-rose bottom-6 right-6 flex flex-col text-right text-3xl md:text-5xl uppercase sm:text-6xl min-[1940px]:right-40 min-[2370px]:right-80'>
+          <div className='z-50 fixed px-2 bg-rose bottom-7 right-6 flex flex-col text-right text-3xl md:text-5xl uppercase sm:text-6xl min-[1940px]:right-40 min-[2370px]:right-80'>
             {live.length === 0 ? (
               <div className='w-12'></div>
             ) : (
@@ -89,7 +89,7 @@ const ProjectDetailsPage = () => {
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <div className='bg-white p-4 text-justify text-3xl md:text-4xl'>
+              <div className='bg-white p-4 text-justify text-2xl md:text-4xl'>
                 {description}
               </div>
             </div>
