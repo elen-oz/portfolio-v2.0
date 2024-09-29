@@ -49,7 +49,7 @@ const Header = () => {
             <ul className='flex flex-col bg-white text-right'>
               <li className='p-4 md:hidden'>
                 <button onClick={toggleMenu}>
-                  <MdClose size='35'  />
+                  <MdClose size='30'  />
                 </button>
               </li>
               <li className='p-4 hover:text-sky'>
@@ -65,8 +65,8 @@ const Header = () => {
               </li>
             </ul>
           ) : (
-            <button onClick={toggleMenu} className='rounded-full bg-white p-4'>
-              <MdMenu size='35' />
+            <button onClick={toggleMenu} className='rounded-full bg-white w-[57px] flex items-center justify-center'>
+              <MdMenu size='30' />
             </button>
           )}
         </nav>
