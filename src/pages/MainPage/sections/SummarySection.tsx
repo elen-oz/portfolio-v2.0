@@ -16,23 +16,23 @@ const SummarySection = () => {
       <div className='content-container mx-auto h-screen'>
         <h2 className='pt-4 text-center text-5xl lg:text-6xl'>/About/</h2>
         <motion.div
-            className={`${styles.mask} flex h-full content-container mx-auto items-center justify-center bg-red`}
-            animate={{
-              WebkitMaskPosition: `${x! - size / 2}px ${y! - size / 2}px`,
-              WebkitMaskSize: `${size}px`,
-            }}
-            transition={{type: 'tween', ease: 'backOut', duration: 0.2}}
+          className={`${styles.mask} content-container mx-auto flex h-full items-center justify-center bg-red`}
+          animate={{
+            WebkitMaskPosition: `${x! - size / 2}px ${y! - size / 2}px`,
+            WebkitMaskSize: `${size}px`,
+          }}
+          transition={{ type: 'tween', ease: 'backOut', duration: 0.2 }}
         >
           <div
-              className='mx-auto w-[1200px] text-justify text-4xl py-[6rem]'
-              onMouseEnter={() => {
-                setIsHovered(true);
-              }}
-              onMouseLeave={() => {
-                setIsHovered(false);
-              }}
+            className='mx-auto w-[1200px] py-[6rem] text-justify text-4xl'
+            onMouseEnter={() => {
+              setIsHovered(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovered(false);
+            }}
           >
-            <div className='mx-auto h-[350px] w-[300px] sm:w-[750px] p-10'>
+            <div className='mx-auto flex h-[450px] w-[300px] items-center justify-center p-10 sm:w-[750px]'>
               A frontend developer - with skills that haven't been replaced by
               A.I (yet) - making really good things.
             </div>
@@ -40,9 +40,9 @@ const SummarySection = () => {
         </motion.div>
 
         <div
-            className={`flex h-full w-full items-center justify-center text-white`}
+          className={`flex h-full w-full items-center justify-center text-white`}
         >
-          <p className='px-10 max-w-[650px] md:p-0 text-3xl sm:text-4xl text-justify'>
+          <p className='max-w-[650px] text-justify text-3xl sm:text-4xl'>
             Mastering code to sculpt{' '}
             <span className='text-red'>excellent digital experiences</span>, I
             prioritize user satisfaction through{' '}
