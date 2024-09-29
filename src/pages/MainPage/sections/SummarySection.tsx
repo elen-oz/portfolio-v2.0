@@ -32,7 +32,7 @@ const SummarySection = () => {
               setIsHovered(false);
             }}
           >
-            <div className='mx-auto flex h-[450px] w-[300px] items-center justify-center p-10 sm:w-[750px]'>
+            <div className='mx-auto flex items-center justify-center p-10 max-w-[640px]'>
               A frontend developer - with skills that haven't been replaced by
               A.I (yet) - making really good things.
             </div>
@@ -40,9 +40,9 @@ const SummarySection = () => {
         </motion.div>
 
         <div
-          className={`flex h-full w-full items-center justify-center text-white`}
+          className='flex h-full w-full items-center justify-center text-white md'
         >
-          <p className='max-w-[650px] text-justify text-3xl sm:text-4xl'>
+          <p className='max-w-[640px] px-8 md:px-0 text-justify text-3xl sm:text-4xl'>
             Mastering code to sculpt{' '}
             <span className='text-red'>excellent digital experiences</span>, I
             prioritize user satisfaction through{' '}
