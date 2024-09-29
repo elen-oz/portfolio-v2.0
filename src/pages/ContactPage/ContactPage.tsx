@@ -18,9 +18,9 @@ const ContactPage = () => {
   }, [closeMenu])
 
   return (
-      <div className='z-90 scrollbar-hide-y relative h-screen  overflow-y-auto uppercase'>
+      <div className='z-90 relative scrollbar-hide-y  h-screen  overflow-y-auto uppercase'>
         <div
-            className='z-100 fixed left-8 top-[100px] md:px-8 min-[1600px]:translate-x-[10rem] min-[2000px]:translate-x-[15rem] min-[2300px]:translate-x-[25rem]'>
+            className='z-100 sticky left-8 top-[100px] md:px-8 min-[1600px]:translate-x-[10rem] min-[2000px]:translate-x-[15rem] min-[2300px]:translate-x-[25rem]'>
           <ul className='text-5xl sm:text-6xl'>
             <li className='lowercase'>&#8921;SCROLL&#8920;</li>
 
@@ -75,7 +75,7 @@ const ContactPage = () => {
         </div>
 
         <div
-            className='text-md text-end text-gray-500 min-[600px]:text-start min-[600px]:text-2xl fixed bottom-16 right-10  min-[600px]:bottom-36  min-[600px]:translate-x-[1rem]   min-[600px]:rotate-90 min-[600px]:transform    min-[2500px]:translate-x-[-26rem]'>
+            className='fixed text-md text-end text-gray-500 min-[600px]:text-start min-[600px]:text-2xl  bottom-16 right-10  min-[600px]:bottom-36  min-[600px]:translate-x-[1rem]   min-[600px]:rotate-90 min-[600px]:transform    min-[2500px]:translate-x-[-26rem]'>
           scroll for fun
         </div>
 
