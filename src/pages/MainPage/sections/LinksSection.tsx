@@ -7,9 +7,9 @@ const LinksSection = () => {
       id='work'
     >
       <div className='content-container'>
-        <h2 className='pt-8 text-center text-5xl lg:text-6xl'>(FIND HERE)</h2>
+        <h2 className='py-20 text-center text-5xl lg:text-6xl'>(FIND HERE)</h2>
 
-        <div className='flex h-full flex-col items-center justify-center pb-4 md:h-[50vh]'>
+        <div className='flex flex-col items-center justify-center md:h-[50vh]'>
           <ul className='flex flex-col text-6xl'>
             <li className='hover:text-red'>
               <Link to='/work'>

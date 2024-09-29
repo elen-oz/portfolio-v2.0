@@ -5,8 +5,9 @@ const SkillsSection = () => {
     <section className='relative h-screen' id='skills'>
       <StripedBackground color='sky' />
       <div className='content-container h-screen'>
-        <div className='z-5 relative mx-auto flex h-full max-w-[700px] flex-col justify-around px-3 uppercase md:text-5xl'>
-          <h2 className='mb-5 text-center text-5xl lg:text-6xl'>| Skills |</h2>
+        <h2 className='z-5 relative py-20 text-center text-5xl lg:text-6xl'>| Skills |</h2>
+
+        <div className='z-5 relative mx-auto mt-40 flex max-w-[700px] flex-col justify-center px-3 uppercase md:text-5xl'>
           <div className='grid grid-cols-2 text-center text-3xl sm:text-5xl'>
             <ul className='text-left'>
               <li className='hover:bg-white'>JavaScript</li>

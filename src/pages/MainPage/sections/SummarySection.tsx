@@ -14,7 +14,7 @@ const SummarySection = () => {
       className={`relative h-screen overflow-hidden bg-black pt-4 uppercase text-white`}
     >
       <div className='content-container mx-auto h-screen'>
-        <h2 className='pt-4 text-center text-5xl lg:text-6xl'>/About/</h2>
+        <h2 className='pt-20 text-center text-5xl lg:text-6xl'>/About/</h2>
         <motion.div
           className={`${styles.mask} content-container mx-auto flex h-full items-center justify-center bg-red`}
           animate={{
