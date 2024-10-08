@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import useMenuStore from '../../stores/menuStore.ts';
-import bgColors from '../../utils/colors';
+// import bgColors from '../../utils/colors';
 
 const ContactPage = () => {
   const [copied, setCopied] = useState(false);
@@ -18,11 +18,10 @@ const ContactPage = () => {
   }, [closeMenu])
 
   return (
-      <div className='z-90 relative scrollbar-hide-y  h-screen  overflow-y-auto uppercase'>
-        <div
-            className='z-100 sticky left-8 top-[100px] md:px-8 min-[1600px]:translate-x-[10rem] min-[2000px]:translate-x-[15rem] min-[2300px]:translate-x-[25rem]'>
-          <ul className='text-5xl sm:text-6xl'>
-            <li className='lowercase'>&#8921;SCROLL&#8920;</li>
+      <div className='z-90 relative scrollbar-hide-y h-screen overflow-y-auto uppercase bg-yellow'>
+        <div className='z-100 sticky left-8 top-[100px] px-4 md:px-8 min-[1600px]:translate-x-[10rem] min-[2000px]:translate-x-[15rem] min-[2300px]:translate-x-[25rem]'>
+          <ul className='text-4xl sm:text-6xl'>
+            {/*<li className='lowercase'>&#8921;SCROLL&#8920;</li>*/}
 
             <li className='hover:text-white'>
               <Link to='/work'>work</Link>
@@ -74,14 +73,14 @@ const ContactPage = () => {
           </ul>
         </div>
 
-        <div
-            className='fixed text-md text-end text-gray-500 min-[600px]:text-start min-[600px]:text-2xl  bottom-16 right-10  min-[600px]:bottom-36  min-[600px]:translate-x-[1rem]   min-[600px]:rotate-90 min-[600px]:transform    min-[2500px]:translate-x-[-26rem]'>
-          scroll for fun
-        </div>
+        {/*<div*/}
+        {/*    className='fixed text-md text-end text-gray-500 min-[600px]:text-start min-[600px]:text-2xl  bottom-16 right-10  min-[600px]:bottom-36  min-[600px]:translate-x-[1rem]   min-[600px]:rotate-90 min-[600px]:transform    min-[2500px]:translate-x-[-26rem]'>*/}
+        {/*  scroll for fun*/}
+        {/*</div>*/}
 
-        {bgColors.map((color, index) => (
-            <div key={index} className={`h-full ${color}`}/>
-        ))}
+        {/*{bgColors.map((color, index) => (*/}
+        {/*    <div key={index} className={`h-full ${color}`}/>*/}
+        {/*))}*/}
       </div>
   );
 };
