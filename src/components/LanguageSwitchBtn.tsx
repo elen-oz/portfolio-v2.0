@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
 const LanguageSwitchBtn = () => {
-  const { t, i18n } = useTranslation('global');
+  const { i18n } = useTranslation('global');
 
   const changeLang = async (lang: string) => {
     await i18n.changeLanguage(lang);

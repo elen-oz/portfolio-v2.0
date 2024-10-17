@@ -2,8 +2,11 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from '../../../hooks/useMousePosition';
 import styles from './SummarySection.module.scss';
+import {useTranslation} from "react-i18next";
 
 const SummarySection = () => {
+  const { t } = useTranslation('summarySection');
+
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
 
@@ -14,7 +17,9 @@ const SummarySection = () => {
       className={`relative h-screen overflow-hidden bg-black pt-4 uppercase text-white`}
     >
       <div className='content-container mx-auto h-screen'>
-        <h2 className='pt-20 text-center text-5xl lg:text-6xl'>/About/</h2>
+        <h2 className='pt-20 text-center text-5xl lg:text-6xl'>
+          &#47;{t('title')}&#47;
+        </h2>
         <motion.div
           className={`${styles.mask} content-container mx-auto flex h-full items-center justify-center bg-red`}
           animate={{
@@ -32,22 +37,26 @@ const SummarySection = () => {
               setIsHovered(false);
             }}
           >
-            <div className='mx-auto flex items-center justify-center p-10 max-w-[640px]'>
-              A frontend developer - with skills that haven't been replaced by
-              A.I (yet) - making really good things.
+            {/*<div className='mx-auto flex items-center justify-center p-10 max-w-[640px]'>*/}
+            {/*  A frontend developer - with skills that haven't been replaced by*/}
+            {/*  A.I (yet) - making really good things.*/}
+            {/*</div>*/}
+            <div className='mx-auto flex max-w-[640px] items-center justify-center p-10'>
+              {t('hiddenContent')}
             </div>
           </div>
         </motion.div>
 
-        <div
-          className='flex h-full w-full items-center justify-center text-white md'
-        >
-          <p className='max-w-[640px] px-8 md:px-0 text-justify text-3xl sm:text-4xl'>
-            Mastering code to sculpt{' '}
-            <span className='text-red'>excellent digital experiences</span>, I
-            prioritize user satisfaction through{' '}
-            <span className='text-red'>best practices</span>, ensuring an
-            unrivaled user journey.
+        <div className='md flex h-full w-full items-center justify-center text-white'>
+          {/*<p className='max-w-[640px] px-8 text-justify text-3xl sm:text-4xl md:px-0'>*/}
+          {/*  Mastering code to sculpt{' '}*/}
+          {/*  <span className='text-red'>excellent digital experiences</span>, I*/}
+          {/*  prioritize user satisfaction through{' '}*/}
+          {/*  <span className='text-red'>best practices</span>, ensuring an*/}
+          {/*  unrivaled user journey.*/}
+          {/*</p>*/}
+          <p className='max-w-[640px] px-8 text-justify text-3xl sm:text-4xl md:px-0' dangerouslySetInnerHTML={{ __html: t('content') }} >
+            {/*<p dangerouslySetInnerHTML={{ __html: t('content') }} />*/}
           </p>
         </div>
       </div>
