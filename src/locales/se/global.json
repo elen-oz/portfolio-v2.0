@@ -1,3 +1,5 @@
 {
-  "header": "Hej, jag är"
+  "hello": "Hej, jag är",
+  "profession": "frontendutvecklare",
+  "location": "från Sverige"
 }

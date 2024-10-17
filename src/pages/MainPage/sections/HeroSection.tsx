@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 
 const HeroSection = () => {
-  const { t } = useTranslation('heroSection');
+  const { t } = useTranslation('global');
   
   return (
     <section className='flex min-h-screen flex-col justify-end pt-[100px] md:pb-[-1px] md:pt-0'>
