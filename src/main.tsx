@@ -16,6 +16,8 @@ import linksSection_en from './locales/en/links-section.json';
 import linksSection_se from './locales/se/links-section.json';
 import contactSection_en from './locales/en/contact-section.json';
 import contactSection_se from './locales/se/contact-section.json';
+import projectsPage_en from './locales/en/projects-page.json';
+import projectsPage_se from './locales/se/projects-page.json';
 
 
 import global_se from './locales/se/global.json';
@@ -33,6 +35,7 @@ i18next.init({
       skillsSection: skillsSection_en,
       linksSection: linksSection_en,
       contactSection: contactSection_en,
+      projectsPage: projectsPage_en,
     },
     se: {
       global: global_se,
@@ -42,6 +45,7 @@ i18next.init({
       skillsSection: skillsSection_se,
       linksSection: linksSection_se,
       contactSection: contactSection_se,
+      projectsPage: projectsPage_se,
     },
   },
 });
