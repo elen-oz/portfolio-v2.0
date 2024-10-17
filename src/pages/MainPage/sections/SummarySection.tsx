@@ -37,10 +37,6 @@ const SummarySection = () => {
               setIsHovered(false);
             }}
           >
-            {/*<div className='mx-auto flex items-center justify-center p-10 max-w-[640px]'>*/}
-            {/*  A frontend developer - with skills that haven't been replaced by*/}
-            {/*  A.I (yet) - making really good things.*/}
-            {/*</div>*/}
             <div className='mx-auto flex max-w-[640px] items-center justify-center p-10'>
               {t('hiddenContent')}
             </div>
@@ -48,15 +44,7 @@ const SummarySection = () => {
         </motion.div>
 
         <div className='md flex h-full w-full items-center justify-center text-white'>
-          {/*<p className='max-w-[640px] px-8 text-justify text-3xl sm:text-4xl md:px-0'>*/}
-          {/*  Mastering code to sculpt{' '}*/}
-          {/*  <span className='text-red'>excellent digital experiences</span>, I*/}
-          {/*  prioritize user satisfaction through{' '}*/}
-          {/*  <span className='text-red'>best practices</span>, ensuring an*/}
-          {/*  unrivaled user journey.*/}
-          {/*</p>*/}
           <p className='max-w-[640px] px-8 text-justify text-3xl sm:text-4xl md:px-0' dangerouslySetInnerHTML={{ __html: t('content') }} >
-            {/*<p dangerouslySetInnerHTML={{ __html: t('content') }} />*/}
           </p>
         </div>
       </div>
