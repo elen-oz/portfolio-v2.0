@@ -16,6 +16,9 @@ import skillsSection_en from './locales/en/skills-section.json';
 import skillsSection_se from './locales/se/skills-section.json';
 import linksSection_en from './locales/en/links-section.json';
 import linksSection_se from './locales/se/links-section.json';
+import contactSection_en from './locales/en/contact-section.json';
+import contactSection_se from './locales/se/contact-section.json';
+
 
 import global_se from './locales/se/global.json';
 import { I18nextProvider } from 'react-i18next';
@@ -32,6 +35,7 @@ i18next.init({
       aboutSection: aboutSection_en,
       skillsSection: skillsSection_en,
       linksSection: linksSection_en,
+      contactSection: contactSection_en,
     },
     se: {
       global: global_se,
@@ -41,6 +45,7 @@ i18next.init({
       aboutSection: aboutSection_se,
       skillsSection: skillsSection_se,
       linksSection: linksSection_se,
+      contactSection: contactSection_se,
     },
   },
 });

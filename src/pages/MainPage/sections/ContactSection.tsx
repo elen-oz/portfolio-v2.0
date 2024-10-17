@@ -1,8 +1,10 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useState } from 'react';
+import {useTranslation} from "react-i18next";
 
 const ContactSection = () => {
   const [copied, setCopied] = useState(false);
+  const { t } = useTranslation('contactSection');
 
   const onCopy = () => {
     setCopied(true);
@@ -16,21 +18,21 @@ const ContactSection = () => {
     >
       <div className='content-container h-full'>
         <div className='flex h-[80vh] flex-col items-start justify-end'>
-          <h2 className='text-6xl lowercase text-white'>contacts</h2>
+          <h2 className='text-6xl lowercase text-white'>{t('title')}</h2>
           <ul className='flex flex-col text-6xl'>
             <li className='hover:text-yellow'>
               <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>
-                Email me
+                {t('email')}
               </a>
             </li>
-            <li className='text-lg'>&rsaquo; or contact me on &rsaquo;</li>
+            <li className='text-lg'>&rsaquo; {t('description')} &rsaquo;</li>
             <li className='hover:text-green'>
               <a
                 href='https://www.linkedin.com/in/elen-oz/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                LinkedIn
+                {t('linkedin')}
               </a>
             </li>
 
@@ -40,13 +42,13 @@ const ContactSection = () => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                Github
+                {t('github')}
               </a>
             </li>
             <li className='hover:text-sky'>
               <CopyToClipboard text='@elenoz'>
                 <div className='text-left' onClick={onCopy}>
-                  {copied ? 'username is copied' : 'TELEGRAM'}
+                  {copied ? t('copy-text') : t('telegram')}
                 </div>
               </CopyToClipboard>
             </li>
