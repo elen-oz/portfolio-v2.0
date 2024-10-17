@@ -4,7 +4,6 @@ const AboutSection = () => {
   const { t } = useTranslation('aboutSection');
   const interests = t('interests', { returnObjects: true }) as string[];
 
-
   return (
     <section className='h-screen w-full bg-gray-200 px-4 pt-4'>
       <div className='content-container h-screen'>

@@ -12,6 +12,10 @@ import summarySection_en from './locales/en/summary-sectioin.json';
 import summarySection_se from './locales/se/summary-sectioin.json';
 import aboutSection_en from './locales/en/about-section.json';
 import aboutSection_se from './locales/se/about-section.json';
+import skillsSection_en from './locales/en/skills-section.json';
+import skillsSection_se from './locales/se/skills-section.json';
+
+
 
 
 import global_se from './locales/se/global.json';
@@ -27,13 +31,15 @@ i18next.init({
       header: header_en,
       summarySection: summarySection_en,
       aboutSection: aboutSection_en,
+      skillsSection: skillsSection_en,
     },
     se: {
       global: global_se,
       heroSection: heroSection_se,
       header: header_se,
       summarySection: summarySection_se,
-      aboutSection: aboutSection_se
+      aboutSection: aboutSection_se,
+      skillsSection: skillsSection_se,
     },
   },
 });
