@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 import useMenuStore from '../stores/menuStore.ts';
 import LanguageSwitchBtn from "./LanguageSwitchBtn.tsx";
-// import {useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 const Header = () => {
   const { isMenuOpen, toggleMenu } = useMenuStore();
-  // const { t } = useTranslation('global');
+  const { t } = useTranslation('header');
 
 
   const handleClickToHome = () => {
@@ -36,16 +36,16 @@ const Header = () => {
         {/* -------- desktop menu -------- */}
         <nav className='hidden bg-white px-8 md:flex md:items-center'>
           <ul className='flex flex-row gap-2 text-right '>
-            <li className='hover:text-sky'>
+            <li className='hover:text-sky capitalize'>
               <Link to='/' onClick={handleClickToHome}>
-                Home
+                {t('home')}
               </Link>
             </li>
-            <li className='hover:text-purple'>
-              <Link to='/work'>Work</Link>
+            <li className='hover:text-purple capitalize'>
+              <Link to='/work'>{t('work')}</Link>
             </li>
-            <li className='hover:text-green'>
-              <Link to='/contact'>Contact</Link>
+            <li className='hover:text-green capitalize'>
+              <Link to='/contact'>{t('contact')}</Link>
             </li>
           </ul>
         </nav>
@@ -59,16 +59,16 @@ const Header = () => {
                   <MdClose size='30'  />
                 </button>
               </li>
-              <li className='p-4 hover:text-sky'>
+              <li className='p-4 hover:text-sky capitalize'>
                 <Link to='/' onClick={handleClickToHome}>
-                  Home
+                  {t('home')}
                 </Link>
               </li>
-              <li className='p-4 hover:text-purple'>
-                <Link to='/work'>Work</Link>
+              <li className='p-4 hover:text-purple capitalize'>
+                <Link to='/work'>{t('work')}</Link>
               </li>
-              <li className='p-4 hover:text-green'>
-                <Link to='/contact'>Contact</Link>
+              <li className='p-4 hover:text-green capitalize'>
+                <Link to='/contact'>{t('contact')}</Link>
               </li>
             </ul>
           ) : (

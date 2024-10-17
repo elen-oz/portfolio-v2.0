@@ -4,8 +4,11 @@ import App from './App.tsx';
 import './index.css';
 import i18next from 'i18next';
 import global_en from './locales/en/global.json';
+import header_se from './locales/se/header.json';
+import header_en from './locales/en/header.json';
 import heroSection_en from './locales/en/hero-section.json';
 import heroSection_se from './locales/se/hero-section.json';
+
 
 
 import global_se from './locales/se/global.json';
@@ -18,10 +21,12 @@ i18next.init({
     en: {
       global: global_en,
       heroSection: heroSection_en,
+      header: header_en,
     },
     se: {
       global: global_se,
       heroSection: heroSection_se,
+      header: header_se,
     },
   },
 });
