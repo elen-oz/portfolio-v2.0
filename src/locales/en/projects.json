@@ -1,0 +1,112 @@
+{
+  "projects": {
+    "10": {
+      "name": "GYM app",
+      "description": "This is a mobile-focused web app to provide optimal usability on smartphones, especially for gym users. It uses Next.js 14 with App Router for efficient server-side rendering and routing, using TypeScript to enhance type safety, the frontend uses NextUI components styled with Tailwind CSS, creating a responsive and customisable user interface with a priority on mobile devices. State management is handled by Zustand. This combination of technologies results in a productive, mobile-optimised app that provides a seamless experience for users accessing it directly from their phone while at the gym.",
+      "features": [
+        "Next.js 14 with App Router",
+        "TypeScript for type safety",
+        "NextUI components",
+        "Tailwind CSS for responsive styling",
+        "Zustand for state management",
+        "Mobile-first design approach",
+        "Optimized for gym environment usage",
+        "Responsive user interface"
+      ]
+    },
+    "7": {
+      "name": "Tasks manager",
+      "description": "This project is the final study project for the Beyond the Endpoint module at Hyper Island. It is a service designed for creating and managing tasks. The frontend is developed using React.js with TypeScript and styled with Tailwind CSS. The backend is built with Node.js, utilizing Express for server setup, Sequelize as the ORM, and PostgreSQL as the database, with JWT for authentication.",
+      "features": [
+        "React.js with TypeScript",
+        "Tailwind CSS for styling",
+        "Node.js with Express for backend development",
+        "JWT for authentication",
+        "Sequelize ORM for database management",
+        "Asynchronous request handling (GET, PATCH, DELETE, POST)",
+        "Profile management including registration, login, and profile editing",
+        "Task management functionality"
+      ]
+    },
+    "1": {
+      "name": "RSS Aggregator",
+      "description": "RSS Aggregator is a specialized tool designed to collate news feeds, article announcements, and other content from various websites. This project is built with pure JavaScript and uses the Bootstrap library for styling.",
+      "features": [
+        "JavaScript",
+        "Asynchronous programming (Promises)",
+        "Development is done according to the MVC pattern",
+        "Parsing RSS feeds",
+        "Form validation",
+        "Internationalization",
+        "Automatic code quality checking",
+        "Interface markup using Bootstrap"
+      ]
+    },
+    "8": {
+      "name": "Live Chat",
+      "description": "Simple chat application built with React and Firebase. Users can sign in with Google authentication and send live messages in a chat room.",
+      "features": [
+        "Google authentication",
+        "Real-time messaging",
+        "Responsive design"
+      ]
+    },
+    "4": {
+      "name": "The Dojo",
+      "description": "This is a collaborative project management tool that allows users to register, invite colleagues, and work together on projects. This application is built with React.js, CSS, and HTML, and uses Firebase for backend services. If you do not want to create user: login: jake@email.com, password: 123123",
+      "features": [
+        "User Authentication: The application supports signup and login",
+        "Avatar Image Upload (100kb limit)",
+        "Project Creation and Management: Users can create new projects and manage them. They can also delete projects when they are completed.",
+        "Commenting on projects",
+        "Project Sorting: Projects can be sorted by categories"
+      ]
+    },
+    "5": {
+      "name": "Food Order App",
+      "description": "This is a food ordering application built with React.js, CSS, and HTML. The application allows users to browse through a menu, select their desired items, and place an order.",
+      "features": [
+        "Browse through a list of available food items",
+        "Add desired items to a shopping cart",
+        "Place an order for the selected items"
+      ]
+    },
+    "6": {
+      "name": "Today I learned",
+      "description": "This is a web application where users can share interesting facts and vote for others. This project is built with React and uses Supabase for backend services.",
+      "features": [
+        "Interaction with Supabase: The application uses Supabase for backend services",
+        "Adding New Facts",
+        "Liking Facts: Ability to vote for facts with 3 emojis",
+        "Sorting Facts: Facts can be sorted based on the number of likes they have received",
+        "Category Filter"
+      ]
+    },
+    "2": {
+      "name": "CLI App: Difference Calculator",
+      "description": "Difference Calculator is a console application that designed to determine the difference between two data structures. It supports various file formats including .json, yml and .yaml, and can handle both flat and nested structures.",
+      "features": [
+        "JavaScript",
+        "Functional programming (tree data structure, recursion, dynamic dispatch)",
+        "Library commander.js: initialization of command-line utility",
+        "Library lodash: methods for working with objects",
+        "NodeJS readFileSync: synchronous method for reading data from files",
+        "Parsing data from json, yaml, lml formats",
+        "Framework Jest: automated testing (Test Driven Development methodology)",
+        "Continuous Integration/CI (Github Actions, Travis)",
+        "Code style checking with CodeClimate"
+      ]
+    },
+    "3": {
+      "name": "CLI App: Brain Games",
+      "description": "Brain Games is a console app with collection of five mini-games designed to challenge the users mental agility. Each game begins with a greeting, personalized with the users name, and consists of three rounds.",
+      "features": [
+        "Functional programming (recursion)",
+        "npm package readlineSync: for reading user input in the console",
+        "Project environment setup (npm, eslint, node.js)",
+        "Code style checking with CodeClimate",
+        "Continuous Integration/CI (Github Actions, Travis)"
+      ]
+    }
+  }
+}

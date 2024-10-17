@@ -26,7 +26,7 @@ const WorkPage = () => {
             {t('description')}&nbsp;
             <a
               href='mailto: ozerova.lenka@gmail.com'
-              className='hover:text-red uppercase'
+              className='hover:text-red uppercase underline'
             >
               {t('contact')}
             </a>

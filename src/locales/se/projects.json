@@ -1,0 +1,112 @@
+{
+  "projects": {
+    "10": {
+      "name": "GYM-app",
+      "description": "Detta är en mobilfokuserad webbapp som ger optimal användbarhet på smartphones, särskilt för gymbesökare. Den använder Next.js 14 med App Router för effektiv serversidesrendering och routning, använder TypeScript för att förbättra typsäkerheten, frontenddelen använder NextUI-komponenter stilade med Tailwind CSS, vilket skapar ett responsivt och anpassningsbart användargränssnitt med prioritet på mobila enheter. Tillståndshantering hanteras av Zustand. Denna kombination av teknologier resulterar i en produktiv, mobiloptimerad app som ger en sömlös upplevelse för användare som använder den direkt från sin telefon när de är på gymmet.",
+      "features": [
+        "Next.js 14 med App Router",
+        "TypeScript för typsäkerhet",
+        "NextUI-komponenter",
+        "Tailwind CSS för responsiv stilisering",
+        "Zustand för tillståndshantering",
+        "Mobile-first designstrategi",
+        "Optimerad för användning i gymmiljö",
+        "Responsivt användargränssnitt"
+      ]
+    },
+    "7": {
+      "name": "Uppgiftshanterare",
+      "description": "Detta projekt är det avslutande studieprojektet för Beyond the Endpoint-modulen på Hyper Island. Det är en tjänst utformad för att skapa och hantera uppgifter. Frontenddelen är utvecklad med React.js med TypeScript och stilad med Tailwind CSS. Backenddelen är byggd med Node.js, använder Express för serveruppsättning, Sequelize som ORM, och PostgreSQL som databas, med JWT för autentisering.",
+      "features": [
+        "React.js med TypeScript",
+        "Tailwind CSS för stilisering",
+        "Node.js med Express för backendutveckling",
+        "JWT för autentisering",
+        "Sequelize ORM för databashantering",
+        "Asynkron hantering av förfrågningar (GET, PATCH, DELETE, POST)",
+        "Profilhantering inklusive registrering, inloggning och profilredigering",
+        "Funktionalitet för uppgiftshantering"
+      ]
+    },
+    "1": {
+      "name": "RSS-aggregator",
+      "description": "RSS-aggregatorn är ett specialiserat verktyg utformat för att samla nyhetsflöden, artikelmeddelanden och annat innehåll från olika webbplatser. Detta projekt är byggt med ren JavaScript och använder Bootstrap-biblioteket för stilisering.",
+      "features": [
+        "JavaScript",
+        "Asynkron programmering (Promises)",
+        "Utveckling enligt MVC-mönstret",
+        "Parsing av RSS-flöden",
+        "Formulärvalidering",
+        "Internationalisering",
+        "Automatisk kodkvalitetskontroll",
+        "Gränssnittsmarkup med Bootstrap"
+      ]
+    },
+    "8": {
+      "name": "Live-chatt",
+      "description": "Enkel chattapplikation byggd med React och Firebase. Användare kan logga in med Google-autentisering och skicka live-meddelanden i ett chattrum.",
+      "features": [
+        "Google-autentisering",
+        "Realtidsmeddelanden",
+        "Responsiv design"
+      ]
+    },
+    "4": {
+      "name": "The Dojo",
+      "description": "Detta är ett samarbetsverktyg för projekthantering som låter användare registrera sig, bjuda in kollegor och arbeta tillsammans på projekt. Denna applikation är byggd med React.js, CSS och HTML, och använder Firebase för backendtjänster. Om du inte vill skapa en användare: logga in: jake@email.com, lösenord: 123123",
+      "features": [
+        "Användarautentisering: Applikationen stödjer registrering och inloggning",
+        "Avatar-bilduppladdning (100kb gräns)",
+        "Projektskapande och -hantering: Användare kan skapa nya projekt och hantera dem. De kan också ta bort projekt när de är slutförda.",
+        "Kommentera på projekt",
+        "Projektsortering: Projekt kan sorteras efter kategorier"
+      ]
+    },
+    "5": {
+      "name": "Matbeställningsapp",
+      "description": "Detta är en matbeställningsapplikation byggd med React.js, CSS och HTML. Applikationen låter användare bläddra genom en meny, välja önskade artiklar och lägga en beställning.",
+      "features": [
+        "Bläddra genom en lista över tillgängliga matartiklar",
+        "Lägg till önskade artiklar i en kundvagn",
+        "Lägg en beställning för de valda artiklarna"
+      ]
+    },
+    "6": {
+      "name": "Idag lärde jag mig",
+      "description": "Detta är en webbapplikation där användare kan dela intressanta fakta och rösta på andras. Detta projekt är byggt med React och använder Supabase för backendtjänster.",
+      "features": [
+        "Interaktion med Supabase: Applikationen använder Supabase för backendtjänster",
+        "Lägga till nya fakta",
+        "Gilla fakta: Möjlighet att rösta på fakta med 3 emojis",
+        "Sortera fakta: Fakta kan sorteras baserat på antalet likes de har fått",
+        "Kategorifilter"
+      ]
+    },
+    "2": {
+      "name": "CLI-app: Skillnadsräknare",
+      "description": "Skillnadsräknaren är en konsolapplikation som är utformad för att bestämma skillnaden mellan två datastrukturer. Den stöder olika filformat inklusive .json, yml och .yaml, och kan hantera både platta och nästlade strukturer.",
+      "features": [
+        "JavaScript",
+        "Funktionell programmering (trädatastruktur, rekursion, dynamisk dispatch)",
+        "Bibliotek commander.js: initialisering av kommandoradverktyg",
+        "Bibliotek lodash: metoder för att arbeta med objekt",
+        "NodeJS readFileSync: synkron metod för att läsa data från filer",
+        "Parsing av data från json-, yaml-, lml-format",
+        "Ramverk Jest: automatiserad testning (Test Driven Development-metodik)",
+        "Kontinuerlig Integration/CI (Github Actions, Travis)",
+        "Kodstilskontroll med CodeClimate"
+      ]
+    },
+    "3": {
+      "name": "CLI-app: Hjärnspel",
+      "description": "Hjärnspel är en konsolapp med en samling av fem minispel utformade för att utmana användarens mentala smidighet. Varje spel börjar med en hälsning, personaliserad med användarens namn, och består av tre rundor.",
+      "features": [
+        "Funktionell programmering (rekursion)",
+        "npm-paket readlineSync: för att läsa användarinput i konsolen",
+        "Projektmiljöuppsättning (npm, eslint, node.js)",
+        "Kodstilskontroll med CodeClimate",
+        "Kontinuerlig Integration/CI (Github Actions, Travis)"
+      ]
+    }
+  }
+}
