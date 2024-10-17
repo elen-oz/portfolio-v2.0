@@ -10,6 +10,7 @@ import enLinksSection from './locales/en/links-section.json';
 import enContactSection from './locales/en/contact-section.json';
 import enProjectsPage from './locales/en/projects-page.json';
 import enProjects from './locales/en/projects.json';
+import enContactPage from './locales/en/contact-page.json';
 
 import seGlobal from './locales/se/global.json';
 import seHeader from './locales/se/header.json';
@@ -20,6 +21,8 @@ import seLinksSection from './locales/se/links-section.json';
 import seContactSection from './locales/se/contact-section.json';
 import seProjectsPage from './locales/se/projects-page.json';
 import seProjects from './locales/se/projects.json';
+import seContactPage from './locales/se/contact-page.json';
+
 
 
 const resources = {
@@ -33,6 +36,7 @@ const resources = {
         contactSection: enContactSection,
         projectsPage: enProjectsPage,
         projects: enProjects,
+        contactPage: enContactPage,
     },
     se: {
         global: seGlobal,
@@ -44,6 +48,7 @@ const resources = {
         contactSection: seContactSection,
         projectsPage: seProjectsPage,
         projects: seProjects,
+        contactPage: seContactPage,
     },
 };
 

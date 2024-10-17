@@ -2,11 +2,14 @@ import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import useMenuStore from '../../stores/menuStore.ts';
+import {useTranslation} from "react-i18next";
 // import bgColors from '../../utils/colors';
 
 const ContactPage = () => {
   const [copied, setCopied] = useState(false);
   const closeMenu = useMenuStore((state) => state.closeMenu)
+  const { t } = useTranslation('contactPage');
+
 
   const onCopy = () => {
     setCopied(true);
@@ -24,7 +27,7 @@ const ContactPage = () => {
             {/*<li className='lowercase'>&#8921;SCROLL&#8920;</li>*/}
 
             <li className='hover:text-white'>
-              <Link to='/work'>work</Link>
+              <Link to='/work'>{t('work')}</Link>
             </li>
             <li className='hover:text-white'>
               <a
@@ -32,15 +35,15 @@ const ContactPage = () => {
                   target='_blank'
                   rel='noreferrer'
               >
-                resume
+                {t('resume')}
               </a>
             </li>
 
-            <li className='text-lg'>&rsaquo; contact me &rsaquo;</li>
+            <li className='text-lg'>&rsaquo; {t('description')} &rsaquo;</li>
 
             <li className='hover:text-white'>
               <a href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'>
-                Email me
+                {t('email')}
               </a>
             </li>
 
@@ -50,7 +53,7 @@ const ContactPage = () => {
                   target='_blank'
                   rel='noreferrer'
               >
-                LinkedIn
+                {t('linkedin')}
               </a>
             </li>
 
@@ -60,13 +63,13 @@ const ContactPage = () => {
                   target='_blank'
                   rel='noopener noreferrer'
               >
-                Github
+                {t('github')}
               </a>
             </li>
             <li className='hover:text-white'>
               <CopyToClipboard text='@elenoz'>
                 <div className='text-left max-w-[200px] sm:max-w-[250px]' onClick={onCopy}>
-                  {copied ? 'username is copied' : 'TELEGRAM'}
+                  {copied ? t('copy-text') : t('telegram')}
                 </div>
               </CopyToClipboard>
             </li>
