@@ -6,9 +6,15 @@ const LanguageSwitchBtn = () => {
 
   const changeLang = async (lang: string) => {
     await i18n.changeLanguage(lang);
+    localStorage.setItem('language', lang);
   };
 
-  useEffect(() => {}, [i18n.language]);
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage && i18n.language !== savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
 
   return (
     <ul className='text-sm hidden gap-0 md:grid'>

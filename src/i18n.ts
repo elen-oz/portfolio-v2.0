@@ -52,11 +52,13 @@ const resources = {
     },
 };
 
+const savedLanguage = localStorage.getItem('language');
+
 i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: 'se',
+        lng: savedLanguage || 'se',
         fallbackLng: 'en',
         supportedLngs: ['en', 'se'],
         ns: [
