@@ -20,8 +20,7 @@ const ProjectDetailsPage: React.FC = () => {
 
   if (!project) return <ProjectNotFoundPage />;
 
-  const { image, github, live, stack } = project;
-  const name = t(`projects.${projectId}.name`);
+  const { name, image, github, live, stack } = project;
   const description = t(`projects.${projectId}.description`);
   const features = t(`projects.${projectId}.features`, { returnObjects: true }) as string[];
 

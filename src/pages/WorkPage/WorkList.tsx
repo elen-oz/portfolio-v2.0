@@ -9,19 +9,14 @@ const WorkList = () => {
     <div className='bg-gray-200'>
       <div className='content-container mb-10'>
         <ul className='pt-[7rem]'>
-          {projects.map((project) => (
-            <WorkItem
-              key={project.id}
-              id={project.id}
-              name={project.name}
-              description={project.description}
-              image={project.image}
-              github={project.github}
-              live={project.live}
-              features={project.features}
-              stack={project.stack}
-            />
-          ))}
+            {projects.map((project) => (
+                <WorkItem
+                    key={project.id}
+                    {...project}
+                    description={t(`projects.${project.id}.description`, '')}
+                    features={t(`projects.${project.id}.features`, { returnObjects: true }) as string[]}
+                />
+            ))}
         </ul>
       </div>
       <p className='mb-10 text-center text-3xl uppercase'>

@@ -10,15 +10,19 @@ import zonixx from '../assets/projects/zonixx.webp';
 
 export type Project = {
   id: number;
+  name: string;
   image: string;
   github: string;
   live: string;
   stack: string[];
+  description?: string;
+  features?: string[];
 };
 
 const data: Project[] = [
   {
     id: 10,
+    name: "GYM app",
     image: zonixx,
     github: 'https://github.com/elen-oz/zonixx',
     live: 'https://zonixx.vercel.app/',
@@ -32,6 +36,7 @@ const data: Project[] = [
   },
   {
     id: 7,
+    name: "Tasks manager",
     image: taskManager,
     github: 'https://github.com/elen-oz/hi_todo-fullstack',
     live: 'https://to-do-app-git-main-g6d.vercel.app/',
@@ -48,6 +53,7 @@ const data: Project[] = [
   },
   {
     id: 1,
+    name: "RSS Aggregator",
     image: rssApp,
     github: 'https://github.com/elen-oz/rss-aggregator',
     live: 'https://frontend-project-11-01.vercel.app/',
@@ -66,6 +72,7 @@ const data: Project[] = [
   },
   {
     id: 8,
+    name: "Live Chat",
     image: chatFirebase,
     github: 'https://github.com/elen-oz/chat_react-firebase',
     live: 'https://chat-react-firebase-6de84.web.app/',
@@ -73,6 +80,7 @@ const data: Project[] = [
   },
   {
     id: 4,
+    name: "The Dojo",
     image: Dojo,
     github: 'https://github.com/elen-oz/the-dojo',
     live: 'https://thedojosite-355e3.web.app/',
@@ -87,6 +95,7 @@ const data: Project[] = [
   },
   {
     id: 5,
+    name: "Food Order App",
     image: ReactMeals,
     github: 'https://github.com/elen-oz/food-order-app',
     live: 'https://food-order-app-9b4ad.web.app/',
@@ -94,6 +103,7 @@ const data: Project[] = [
   },
   {
     id: 6,
+    name: "Today I learned",
     image: todayILearned,
     github: 'https://github.com/elen-oz/today-i-learned-app',
     live: 'https://today-i-learned-app-mauve.vercel.app/',
@@ -107,6 +117,7 @@ const data: Project[] = [
   },
   {
     id: 2,
+    name: "CLI App: Difference Calculator",
     image: diffCalc,
     github: 'https://github.com/elen-oz/difference-calculator',
     live: '',
@@ -123,6 +134,7 @@ const data: Project[] = [
   },
   {
     id: 3,
+    name: "CLI App: Brain Games",
     image: brainGames,
     github: 'https://github.com/elen-oz/brain-games',
     live: '',
