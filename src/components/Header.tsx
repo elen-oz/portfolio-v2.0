@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 import useMenuStore from '../stores/menuStore.ts';
-import LanguageSwitchBtn from "./LanguageSwitchBtn.tsx";
-import {useTranslation} from "react-i18next";
+import LanguageSwitchBtn from './LanguageSwitchBtn.tsx';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { isMenuOpen, toggleMenu } = useMenuStore();
   const { t } = useTranslation('header');
-
 
   const handleClickToHome = () => {
     const element = document.getElementById('top');
@@ -17,7 +16,6 @@ const Header = () => {
   return (
     <header className='content-container fixed left-0 right-0 top-0 z-10 text-xl md:text-[1.7rem]'>
       <div className='mx-auto flex place-content-between pb-2'>
-
         <Link
           to='/'
           className='relative grid h-full grid-cols-[auto,1fr] grid-rows-[29px] gap-x-2 bg-white pl-8 hover:text-yellow'
@@ -31,24 +29,27 @@ const Header = () => {
           </div>
         </Link>
 
-        <LanguageSwitchBtn />
+        <div className='flex'>
 
-        {/* -------- desktop menu -------- */}
-        <nav className='hidden bg-white px-8 md:flex md:items-center'>
-          <ul className='flex flex-row gap-2 text-right '>
-            <li className='hover:text-sky capitalize'>
-              <Link to='/' onClick={handleClickToHome}>
-                {t('home')}
-              </Link>
-            </li>
-            <li className='hover:text-purple capitalize'>
-              <Link to='/work'>{t('work')}</Link>
-            </li>
-            <li className='hover:text-green capitalize'>
-              <Link to='/contact'>{t('contact')}</Link>
-            </li>
-          </ul>
-        </nav>
+          {/* -------- desktop menu -------- */}
+          <nav className='hidden bg-white px-8 md:flex md:items-center'>
+            <ul className='flex flex-row gap-2 text-right '>
+              <li className='capitalize hover:text-sky'>
+                <Link to='/' onClick={handleClickToHome}>
+                  {t('home')}
+                </Link>
+              </li>
+              <li className='capitalize hover:text-purple'>
+                <Link to='/work'>{t('work')}</Link>
+              </li>
+              <li className='capitalize hover:text-green'>
+                <Link to='/contact'>{t('contact')}</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <LanguageSwitchBtn />
+        </div>
 
         {/* -------- mobile menu -------- */}
         <nav className='flex  md:hidden'>
@@ -56,23 +57,26 @@ const Header = () => {
             <ul className='flex flex-col bg-white text-right'>
               <li className='p-4 md:hidden'>
                 <button onClick={toggleMenu}>
-                  <MdClose size='30'  />
+                  <MdClose size='30' />
                 </button>
               </li>
-              <li className='p-4 hover:text-sky capitalize'>
+              <li className='p-4 capitalize hover:text-sky'>
                 <Link to='/' onClick={handleClickToHome}>
                   {t('home')}
                 </Link>
               </li>
-              <li className='p-4 hover:text-purple capitalize'>
+              <li className='p-4 capitalize hover:text-purple'>
                 <Link to='/work'>{t('work')}</Link>
               </li>
-              <li className='p-4 hover:text-green capitalize'>
+              <li className='p-4 capitalize hover:text-green'>
                 <Link to='/contact'>{t('contact')}</Link>
               </li>
             </ul>
           ) : (
-            <button onClick={toggleMenu} className='rounded-full bg-white w-[57px] flex items-center justify-center'>
+            <button
+              onClick={toggleMenu}
+              className='flex w-[57px] items-center justify-center rounded-full bg-white'
+            >
               <MdMenu size='30' />
             </button>
           )}

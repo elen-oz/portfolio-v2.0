@@ -11,7 +11,7 @@ const LanguageSwitchBtn = () => {
   useEffect(() => {}, [i18n.language]);
 
   return (
-    <ul className='text-md hidden w-[100px] gap-0 md:grid md:grid-cols-2'>
+    <ul className='text-sm hidden gap-0 md:grid'>
       <li>
         <input
           type='radio'
@@ -24,9 +24,9 @@ const LanguageSwitchBtn = () => {
         />
         <label
           htmlFor='se'
-          className='inline-flex w-full cursor-pointer items-center justify-center rounded-full p-3 text-gray-400 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-gray-800 peer-checked:bg-white peer-checked:text-gray-800'
+          className='inline-flex w-full cursor-pointer items-center justify-center p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-gray-800 peer-checked:bg-white peer-checked:text-gray-800'
         >
-          se
+          svenska
         </label>
       </li>
       <li>
@@ -41,9 +41,9 @@ const LanguageSwitchBtn = () => {
         />
         <label
           htmlFor='en'
-          className='inline-flex w-full cursor-pointer items-center  justify-center rounded-full p-3 text-gray-400 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-gray-800 peer-checked:bg-white peer-checked:text-gray-800'
+          className='inline-flex w-full cursor-pointer items-center  justify-center p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-gray-800 peer-checked:bg-white peer-checked:text-gray-800'
         >
-          en
+          english
         </label>
       </li>
     </ul>

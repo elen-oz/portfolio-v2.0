@@ -56,7 +56,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: 'en', // язык по умолчанию
+        lng: 'se',
         fallbackLng: 'en',
         supportedLngs: ['en', 'se'],
         ns: [
