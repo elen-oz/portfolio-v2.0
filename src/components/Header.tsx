@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 import useMenuStore from '../stores/menuStore.ts';
+import LanguageSwitchBtn from "./LanguageSwitchBtn.tsx";
+// import {useTranslation} from "react-i18next";
 
 const Header = () => {
   const { isMenuOpen, toggleMenu } = useMenuStore();
+  // const { t } = useTranslation('global');
+
 
   const handleClickToHome = () => {
     const element = document.getElementById('top');
@@ -13,6 +17,7 @@ const Header = () => {
   return (
     <header className='content-container fixed left-0 right-0 top-0 z-10 text-xl md:text-[1.7rem]'>
       <div className='mx-auto flex place-content-between pb-2'>
+
         <Link
           to='/'
           className='relative grid h-full grid-cols-[auto,1fr] grid-rows-[29px] gap-x-2 bg-white pl-8 hover:text-yellow'
@@ -25,6 +30,8 @@ const Header = () => {
             c
           </div>
         </Link>
+
+        <LanguageSwitchBtn />
 
         {/* -------- desktop menu -------- */}
         <nav className='hidden bg-white px-8 md:flex md:items-center'>
