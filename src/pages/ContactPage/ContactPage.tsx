@@ -1,17 +1,15 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import useMenuStore from '../../stores/menuStore.ts';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next';
 // import bgColors from '../../utils/colors';
 import { motion } from 'framer-motion';
 
-
 const ContactPage = () => {
   const [copied, setCopied] = useState(false);
-  const closeMenu = useMenuStore((state) => state.closeMenu)
+  const closeMenu = useMenuStore((state) => state.closeMenu);
   const { t } = useTranslation('contactPage');
-
 
   const onCopy = () => {
     setCopied(true);
@@ -19,8 +17,8 @@ const ContactPage = () => {
   };
 
   useEffect(() => {
-    closeMenu()
-  }, [closeMenu])
+    closeMenu();
+  }, [closeMenu]);
 
   return (
     <div className='z-90 scrollbar-hide-y relative h-screen overflow-y-auto bg-yellow uppercase'>
@@ -80,8 +78,16 @@ const ContactPage = () => {
       </div>
 
       <motion.div
-        className='absolute bg-red hidden sm:block sm:h-[500px] sm:w-[500px] sm:right-[-30%] sm:bottom-[-90%] md:h-[1000px] md:w-[1000px]'
+        className='absolute hidden bg-red sm:bottom-[-90%] sm:right-[-30%] sm:block sm:h-[500px] sm:w-[500px] md:h-[1000px] md:w-[1000px]'
         animate={{ rotate: 360 }}
+        whileTap={{
+          scale: 0.8,
+          rotate: -360,
+        }}
+        whileHover={{
+          scale: 0.8,
+          rotate: -360,
+        }}
         transition={{
           duration: 30,
           repeat: Infinity,

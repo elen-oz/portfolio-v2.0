@@ -9,14 +9,14 @@ const HeroSection = () => {
   const variants = {
     circle: {
       borderRadius: '50%',
-      rotate: 0
+      rotate: 0,
     },
     square: {
       borderRadius: '0',
-      rotate: 360
-    }
+      rotate: 360,
+    },
   };
-  
+
   return (
     <section className='flex min-h-screen flex-col justify-end pt-[100px] md:pb-[-1px] md:pt-0'>
       <div className='content-container flex flex-col justify-between md:flex-row md:justify-between md:gap-2'>
@@ -30,11 +30,12 @@ const HeroSection = () => {
         </div>
 
         <div className='relative flex-1 pt-[50px] md:pt-0'>
-          <motion.div className='absolute left-[50px] top-[10px] h-[100px] w-[100px]  bg-red sm:left-[90px] md:left-[-5%] md:top-[35%] md:h-[150px] md:w-[150px] lg:left-[10%]'
+          <motion.div
+            className='absolute left-[50px] top-[10px] h-[100px] w-[100px]  bg-red sm:left-[90px] md:left-[-5%] md:top-[35%] md:h-[150px] md:w-[150px] lg:left-[10%]'
             initial='circle'
             whileHover='square'
+            whileTap='square'
             variants={variants}
-
             transition={{
               duration: 0.5,
               rotate: {

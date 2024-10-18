@@ -14,6 +14,11 @@ const AboutSection = () => {
         rotate: -90,
         borderRadius: '100%',
       }}
+      whileTap={{
+        scale: 0.8,
+        rotate: -90,
+        borderRadius: '100%',
+      }}
       transition={{
         duration: 0.15,
         ease: 'easeOut',
