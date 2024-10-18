@@ -22,14 +22,15 @@
         @apply w-full 2xl:max-w-screen-2xl mx-auto;
     }
 
-  .scrollbar-hide-y {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .scrollbar-hide-y::-webkit-scrollbar {
-    width: 0;
-    display: none;
-  }
+    .scrollbar-hide-y {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .scrollbar-hide-y::-webkit-scrollbar {
+        width: 0;
+        display: none;
+    }
 }
 
 .hover\:underline-red:hover {
