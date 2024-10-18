@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-serif;
-  }
+    body {
+        @apply font-serif;
+    }
 
-  h1 {
-    @apply font-accent;
-  }
+    h1 {
+        @apply font-accent;
+    }
 }
 
 @layer components {
@@ -17,10 +17,10 @@
 }
 
 @layer utilities {
-  /*xl:max-w-screen-xl*/
-  .content-container {
-    @apply w-full 2xl:max-w-screen-2xl mx-auto;
-  }
+    /*xl:max-w-screen-xl*/
+    .content-container {
+        @apply w-full 2xl:max-w-screen-2xl mx-auto;
+    }
 
   .scrollbar-hide-y {
     scrollbar-width: none;
@@ -33,41 +33,41 @@
 }
 
 .hover\:underline-red:hover {
-  text-decoration-color: #e24848;
+    text-decoration-color: #e24848;
 }
 
 .hover\:underline-blue:hover {
-  text-decoration-color: #086a93;
+    text-decoration-color: #086a93;
 }
 
 .hover\:underline-green:hover {
-  text-decoration-color: #008f64;
+    text-decoration-color: #008f64;
 }
 
 .hover\:underline-purple:hover {
-  text-decoration-color: #dbacff;
+    text-decoration-color: #dbacff;
 }
 
 .hover\:underline-yellow:hover {
-  text-decoration-color: #d9ae02;
+    text-decoration-color: #d9ae02;
 }
 
 .hover\:underline-sky:hover {
-  text-decoration-color: #50a8dc;
+    text-decoration-color: #50a8dc;
 }
 
 .hover\:underline-violet:hover {
-  text-decoration-color: #714ca2;
+    text-decoration-color: #714ca2;
 }
 
 .hover\:underline-lightGreen:hover {
-  text-decoration-color: #daf67c;
+    text-decoration-color: #daf67c;
 }
 
 .hover\:underline-pink:hover {
-  text-decoration-color: #ffbaba;
+    text-decoration-color: #ffbaba;
 }
 
 .hover\:underline-cyan:hover {
-  text-decoration-color: #adebb2;
+    text-decoration-color: #adebb2;
 }
