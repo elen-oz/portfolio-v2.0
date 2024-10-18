@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
@@ -7,16 +6,6 @@ const AboutSection = () => {
   const interests = t('interests', { returnObjects: true }) as string[];
 
   const gridItems = Array.from({ length: 300 }, (_, i) => (
-    // <motion.div
-    //     key={i}
-    //     className='bg-blue opacity-30'
-    //     whileHover={{
-    //         scale: 0.8,
-    //         rotate: -90,
-    //         borderRadius: '100%',
-    //     }}
-    //     transition={{ duration: 0.2 }}
-    // />
     <motion.div
       key={i}
       className='cursor-pointer bg-blue opacity-30'
