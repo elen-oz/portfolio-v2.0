@@ -7,7 +7,6 @@ import ContactSection from './sections/ContactSection';
 import SummarySection from './sections/SummarySection';
 import useMenuStore from '../../stores/menuStore.ts';
 
-
 const MainPage = () => {
   const closeMenu = useMenuStore((state) => state.closeMenu);
 
@@ -19,8 +18,8 @@ const MainPage = () => {
     <>
       <HeroSection />
       <SummarySection />
-      <AboutSection />
       <SkillsSection />
+      <AboutSection />
       <LinksSection />
       <ContactSection />
     </>

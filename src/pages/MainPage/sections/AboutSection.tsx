@@ -15,7 +15,7 @@ const AboutSection = () => {
         borderRadius: '100%',
       }}
       transition={{
-        duration: 0.2,
+        duration: 0.15,
         ease: 'easeOut',
         scale: {
           type: 'spring',
@@ -29,7 +29,7 @@ const AboutSection = () => {
           stiffness: 100,
         },
         borderRadius: {
-          duration: 0.2,
+          duration: 0.1,
           ease: 'easeOut',
         },
       }}
