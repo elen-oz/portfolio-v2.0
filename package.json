@@ -11,6 +11,7 @@
     "ngrok": "ngrok http http://localhost:5173"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001669",
     "firebase": "^10.8.0",
     "i18next": "^23.16.0",
     "i18next-browser-languagedetector": "^8.0.0",

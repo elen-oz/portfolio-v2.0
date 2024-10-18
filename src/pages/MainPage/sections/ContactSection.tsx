@@ -13,7 +13,7 @@ const ContactSection = () => {
 
   return (
     <section
-      className='h-full bg-white px-4 pb-[50px] pt-9 uppercase md:px-8'
+      className='h-screen bg-green px-4 pb-[50px] pt-9 uppercase md:px-8'
       id='work'
     >
       <div className='content-container h-full'>
@@ -26,7 +26,7 @@ const ContactSection = () => {
               </a>
             </li>
             <li className='text-lg'>&rsaquo; {t('description')} &rsaquo;</li>
-            <li className='hover:text-green'>
+            <li className='hover:text-blue'>
               <a
                 href='https://www.linkedin.com/in/elen-oz/'
                 target='_blank'

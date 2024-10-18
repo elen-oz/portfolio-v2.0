@@ -30,9 +30,9 @@ const LanguageSwitchBtn = () => {
         />
         <label
           htmlFor='se'
-          className='inline-flex w-full cursor-pointer items-center justify-center p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-gray-800 peer-checked:bg-white peer-checked:text-gray-800'
+          className='inline-flex w-full px-2 cursor-pointer items-center justify-center h-full text-gray-400 hover:bg-gray-100 hover:text-gray-600 bg-white peer-checked:text-gray-800 uppercase'
         >
-          svenska
+          sve
         </label>
       </li>
       <li>
@@ -47,9 +47,9 @@ const LanguageSwitchBtn = () => {
         />
         <label
           htmlFor='en'
-          className='inline-flex w-full cursor-pointer items-center  justify-center p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-gray-800 peer-checked:bg-white peer-checked:text-gray-800'
+          className='inline-flex w-full cursor-pointer items-center  justify-center h-full text-gray-400 hover:bg-gray-100 hover:text-gray-600 bg-white peer-checked:text-gray-800 uppercase'
         >
-          english
+          eng
         </label>
       </li>
     </ul>
